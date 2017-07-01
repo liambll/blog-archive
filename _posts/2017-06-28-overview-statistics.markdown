@@ -7,7 +7,7 @@ date:   2017-06-28 15:22:00
 permalink: 2017/06/28/overview-statistics/
 mathjax: true
 tags: Overview Statistics
-categories: Statistics
+categories: Overview Statistics
 img: /blog/assets/overview/statistics.png
 summary: Statistics is a branch of mathematics that deals with the collection, analysis, interpretation, presentation, and organization of data...
 ---
