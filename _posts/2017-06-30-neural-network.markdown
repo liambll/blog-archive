@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "Neural Network"
 title2:  "Neural Network"
-date:   2017-06-29 17:22:00
+date:   2017-06-30 17:22:00
 permalink: /neural-network/
 mathjax: true
 tags: Machine-Learning Neural-Network Supervised-Learning
