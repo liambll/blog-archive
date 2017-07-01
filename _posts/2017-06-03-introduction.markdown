@@ -23,7 +23,7 @@ Data analytics techniques generally fall in to one of three non mutually exclusi
 "Operations research is a discipline that deals with the application of advanced analytical methods to help make better decisions."
 Examples:
 * A manufacturing firm wants to find an optimal inventory level in order to minimize inventory storage cost but still be able to meet demand 95% of the time.
-* A postal service company wants to find out the optimal route for its delivery truck to fulfill delivery requests in shortest distances.
+* A postal service company wants to find out the optimal route for its delivery truck to fulfill delivery requests in shortest distance.
 
 ## [Statistics](/blog//overview-statistics/)
 "Statistics is a branch of mathematics that deals with the collection, analysis, interpretation, presentation, and organization of data."
@@ -35,7 +35,7 @@ Examples:
 "Machine Learning is a subfield of computer science that give computers the ability to learn from data without being explicitly programmed."
 Examples:
 * An e-commerce company has historical data on customer purchases. The company wants to find products that each customer is most likely to purchase and send email marketing on those products to each customer. 
-* An IT security firm wants to build an application to detect network intrusion based on network conenction characteristics.
+* An IT security firm wants to build an application to detect network intrusion based on network connection characteristics.
 
 ## [Big Data](/blog/overview-big-data/)
 "Big data is a term for datasets that are so large or complex that it would be challenging to ingest, store, analyze, query and visualize such datasets."
