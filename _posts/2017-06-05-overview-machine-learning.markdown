@@ -4,7 +4,7 @@ comments: true
 title:  "Machine Learning Overview"
 title2:  "Machine Learning Overview"
 date:   2017-06-05 15:22:00
-permalink: 2017/06/05/overview-machine-learning/
+permalink: /overview-machine-learning/
 mathjax: true
 tags: Overview Machine-Learning
 categories: Overview Machine-Learning
