@@ -26,7 +26,7 @@ summary: Queueing model is a mathematical model that predict queue lengths and w
   * The time between consecutive arrivals to a queueing system is the interarrival time.
   * Mean arrival rate \\(\lambda\\) is the expected number of arrivals per unit time.
 \\[
-text{Expected interarrival time} = 1/\lambda
+{text{Expected interarrival time}} = 1/\lambda
 \\]
   * Most queueing models assume that the form of the probability distribution of inter‐arrival times is an exponential distribution. That means the probability of an arrival in the next time unit is completely uninfluenced by when the last arrival occurs (i.e. lack-of-memory property) and there is a high likelihood g of small interarrival times, and a small chance of a very large interarrival time.
 * Queue:
@@ -38,9 +38,16 @@ text{Expected interarrival time} = 1/\lambda
   * Service time is the elapsed time from the begining to the end of service.
   * Mean service rate \\(\mu\\) is expected number of service completions per unit time for a single busy server
 \\[
-text{Expected service time} = 1/\mu
+{text{Expected service time}} = 1/\mu
 \\]
   * Most queueing models assume that the service time has a particular probability distribution, such as exponential distribution, constant-time service time, etc.
 
+Queuing models are usually labeled in the form of: Interarrival time distribution / Service time distribution / No. Servers.
+  * M: Exponential distribution (Markovian)
+  * D: Degenerate distribution (constant times)
+  * GI: General independent interarrival‐time distribution (any distribution)
+  * G: General service‐time distribution (any distribution)
+For example, M/M/s denotes a queuing model with multiple services and exponential distribution for interarrival time and service time.
 
+## 2. Learning:
 
