@@ -1,16 +1,16 @@
 ---
 layout: post
 comments: true
-title:  "Hypothesis Testing"
-title2:  "Hypothesis Testing"
-date:   2017-07-01 15:22:00
-permalink: /hypothesis-testing/
+title:  "Probability Distribution"
+title2:  "Probability Distribution"
+date:   2017-07-01 10:22:00
+permalink: /probability-distribution/
 mathjax: true
-tags: Statistics Hypothesis-Testing
+tags: Statistics Probability-Distribution
 categories: Statistics
-img: /blog/assets/hypothesis-testing/hypothesis-testing.png
-summary: Hypothesis testing refers to the formal procedures used to accept or reject statistical hypotheses...
+img: /blog/assets/probability-distribution/probability-distribution.png
+summary: Probability distribution is a mathematical function that, stated in simple terms, can be thought of as providing the probabilities of occurrence of different possible outcomes in an experiment.
 ---
 
 
-"Hypothesis testing refers to the formal procedures used to accept or reject statistical hypotheses."
+"Probability distribution is a mathematical function that, stated in simple terms, can be thought of as providing the probabilities of occurrence of different possible outcomes in an experiment..."
