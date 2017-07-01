@@ -13,7 +13,8 @@ summary: Operations research is a discipline that deals with the application of 
 ---
 
 
-Operations research is a discipline that deals with the application of advanced analytical methods to help make better decisions. Characteristics of operations research techniques:
+"Operations research is a discipline that deals with the application of advanced analytical methods to help make better decisions."
+Characteristics of operations research techniques:
 * Unlike Machine Learning and Statistics which focus on inference and prediction, Opeartions Research focuses on decision making under constraints
 * Operations research is often concerned with determining the maximum (of profit, performance, or yield) or minimum (of loss, risk, or cost) of some real-world objectives given certain constraints
 
