@@ -8,7 +8,7 @@ permalink: /survival-analysis/
 mathjax: true
 tags: Statistics Survival Analysis
 categories: Statistics
-img: /blog/assets/survival-analysis/survival-analysis.png
+img: /blog/assets/survival-analysis/survival-analysis.gif
 summary: Survival analysis is generally defined as a set of methods for analyzing data where the outcome variable is the time until the occurrence of an event of interest...
 ---
 
