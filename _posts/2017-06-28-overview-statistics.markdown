@@ -19,19 +19,17 @@ Characteristics of statistics techniques:
 * Unlike machine learning techniques which focus on prediction, Statistics seeks understanding and intepretation of data.
 * Statistics has strong focus on likelihood and confidence. While machine learning techniques only asnwer with the "best estimate", statistics techniques can provide interval estimation and associated likelihoods. A Machine learning engineer might say the stock price is most likely to be $40, and a Statistician would say at 95% confidence level, the stock price is within $36-$44.
 
-## 1. Probability Distribution
+## [1. Probability Distribution](/blog/probability-distribution/)
 
-## 2. Hypothesis Testing
+## [2. Hypothesis Testing](/blog/hypotehsis-testing/)
 
-## 3. Design of Experiment
+## 3. Multivariate Analysis
 
-## 4. Multivariate Analysis
+## [4. Time Series](/blog/time-series/)
 
-## 5. Time Series
+## 5. Spatial Statistics
 
-## 6. Spacial Statistics
+## [6. Survival Analysis](/blog/survival-analysis/)
 
-## 7. Survival Analysis
-
-## 8. Bayesian Statistics
+## 7. Bayesian Statistics
 
