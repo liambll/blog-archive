@@ -9,12 +9,11 @@ mathjax: true
 tags: Operations-Research Queuing-Model
 categories: Operations-Research
 img: /blog/assets/queuing-model/queuing-model.jpg
-summary: Queueing model is a mathematical model that predict queue lengths and waiting time...
+summary: Queuing model is a mathematical model that predict queue lengths and waiting time...
 ---
 
 
-"Queueing model is a mathematical model that predict queue lengths and waiting time."
-
+"Queuing model is a mathematical model that predict queue lengths and waiting time" to help business decide actions to take in order to keep waiting time or queue length at desired level.
 
 ## 1. Model
 <div class="imgcap">
@@ -22,19 +21,21 @@ summary: Queueing model is a mathematical model that predict queue lengths and w
     <img src="/blog/assets/queuing-model/queuing-model.jpg" width = "500">
 </div>
 </div>
-* Arrivals:
+__* Arrivals:__
   * The time between consecutive arrivals to a queueing system is the interarrival time.
   * Mean arrival rate \\(\lambda\\) is the expected number of arrivals per unit time.
 \\[
 {\text{Expected interarrival time}} = 1/\lambda
 \\]
   * Most queueing models assume that the form of the probability distribution of inter‐arrival times is an exponential distribution. That means the probability of an arrival in the next time unit is completely uninfluenced by when the last arrival occurs (i.e. lack-of-memory property) and there is a high likelihood g of small interarrival times, and a small chance of a very large interarrival time.
-* Queue:
+
+__* Queue:__
   * The number of customers in the queue \\(L_q\\) is the number of customers waiting for service to begin.
-  * The number of customers in the system (L) is the number in the queue plus the number currently being served.
+  * The number of customers in the system \\(L\\) is the number in the queue plus the number currently being served.
   * The queue capacity is the maximum number of customers that can be held in the queue.
   * The queue discipline refers to the order in which members of the queue are selected to begin service. Examples include First-In-First Out (FIFO), random selection, priority procedure, and even Last-In-First-Out (LIFO)
-* Service:
+
+__* Service:__
   * Service time is the elapsed time from the begining to the end of service.
   * Mean service rate \\(\mu\\) is expected number of service completions per unit time for a single busy server
 \\[
@@ -50,4 +51,8 @@ Queuing models are usually labeled in the form of: Interarrival time distributio
 For example, M/M/s denotes a queuing model with multiple services and exponential distribution for interarrival time and service time.
 
 ## 2. Learning:
-
+Queuing models can provide estimations for:
+  * \\(L\\) = Expected number of customers in the system, including those being served (Line Length).
+  * \\(L_q\\) = Expected number of customers in the queue, which excludes customers being served.
+  * \\(W\\) = Expected waiting time in the system (including service time) for an individual customer
+  * \\(W_q\\) = Expected waiting time in the queue (excludes service time) for an individual customer.
