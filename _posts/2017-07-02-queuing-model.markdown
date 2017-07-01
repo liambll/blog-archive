@@ -43,17 +43,36 @@ __* Service:__
 \\]
   * Most queueing models assume that the service time has a particular probability distribution, such as exponential distribution, constant-time service time, etc.
 
-Queuing models are usually labeled in the form of \\({\text{Interarrival time distribution / Service time distribution / No. Servers}}\\).
-  * \\(\M\\): Exponential distribution (Markovian)
-  * \\(\D\\): Degenerate distribution (constant times)
-  * \\(\GI\\): General independent interarrival‐time distribution (any distribution)
-  * \\(\G\\): General service‐time distribution (any distribution)
+Queuing models are usually labeled in the form:
+\\[
+{\text{Interarrival time distribution / Service time distribution / No. Servers}}\\)
+\\]
+  * \\(M\\): Exponential distribution (Markovian)
+  * \\(D\\): Degenerate distribution (constant times)
+  * \\(GI\\): General independent interarrival‐time distribution (any distribution)
+  * \\(G\\): General service‐time distribution (any distribution)
 
 For example, M/M/s denotes a queuing model with multiple services and exponential distribution for interarrival time and service time.
 
-## 2. Learning:
 Queuing models can provide estimations for:
   * \\(L\\) = Expected number of customers in the system, including those being served (Line Length).
   * \\(L_q\\) = Expected number of customers in the queue, which excludes customers being served.
   * \\(W\\) = Expected waiting time in the system (including service time) for an individual customer
   * \\(W_q\\) = Expected waiting time in the queue (excludes service time) for an individual customer.
+
+## 2. Learning:
+Little's Formula:
+\\[
+L = \lambda W
+\\]
+\\[
+L_q = \lambda W_q
+\\]
+\\[
+W = W_q + 1/\mu
+\\]
+\\[
+L = L_q + \lambda /\mu
+\\]
+
+
