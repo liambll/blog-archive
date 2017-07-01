@@ -42,14 +42,14 @@ __* Service:__
 {\text{Expected service time}} = 1/\mu
 \\]
   * Most queueing models assume that the service time has a particular probability distribution, such as exponential distribution, constant-time service time, etc.
-  * Utilization factor \\(\ρ\\) is the average fraction of time that a server is busy serving customers
+  * Utilization factor \\(ρ\\) is the average fraction of time that a server is busy serving customers
 \\[
 ρ = \lambda /\mu
 \\]
 
 Queuing models are usually labeled in the form:
 \\[
-{\text{Interarrival time distribution / Service time distribution / No. Servers}}\\)
+{\text{Interarrival time distribution / Service time distribution / No. Servers}}
 \\]
   * \\(M\\): Exponential distribution (Markovian)
   * \\(D\\): Degenerate distribution (constant times)
@@ -79,7 +79,7 @@ W = W_q + 1/\mu
 L = L_q + \lambda /\mu
 \\]
 
-__* M/M/1 Model__
+__* M/M/1 Model:__
 \\[
 L = \lambda /(\mu - \lambda)
 \\]
@@ -91,4 +91,12 @@ W = 1 /(\mu - \lambda)
 \\]
 \\[
 W_q = = \lambda /[\mu (\mu - \lambda)]
+\\]
+Probability of having exactly n customers in the system:
+\\[
+P(L=n) = ρ(1-ρ)
+\\]
+Probability of waiting time in the system exceeding t:
+\\[
+P(W > t) = e^-\mu(1-ρ)t
 \\]
