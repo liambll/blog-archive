@@ -21,7 +21,7 @@ Characteristics of statistics techniques:
 
 ## [1. Probability Distribution](/blog/probability-distribution/)
 
-## [2. Hypothesis Testing](/blog/hypotehsis-testing/)
+## [2. Hypothesis Testing](/blog/hypothesis-testing/)
 
 ## 3. Multivariate Analysis
 
