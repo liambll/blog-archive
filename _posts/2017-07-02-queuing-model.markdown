@@ -83,7 +83,7 @@ Below are mathematical solution to several simple queuing models.
 
 __* M/M/1 Model:__
 
-M/M/1 denotes a queuing model with one server and exponential distribution for interarrival time and service time.
+M/M/1 denotes a queuing model with single server and exponential distribution for interarrival time and service time.
 \\[
 L_q = ρ^2(1-ρ) = \lambda ^2/[\mu (\mu - \lambda)]
 \\]
@@ -112,7 +112,7 @@ P(W_q > t) = ρexp(-\mu(1-ρ)t)
 
 __* M/G/1 Model:__
 
-M/G/1 denotes a queuing model with one server, exponential distribution for interarrival time and general distribution for service time, which has mean \\(1/\mu\\) and standard deviation \\(\sigma\\).
+M/G/1 denotes a queuing model with single server, exponential distribution for interarrival time and general distribution for service time, which has mean \\(1/\mu\\) and standard deviation \\(\sigma\\).
 \\[
 L_q = (\lambda^2 \sigma^2 + ρ^2)/(2(1-ρ))
 \\]
