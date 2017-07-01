@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "Logistic Regression"
 title2:  "Logistic Regression"
-date:   2017-06-29 10:22:00
+date:   2017-06-30 10:22:00
 permalink: /logistic-regression/
 mathjax: true
 tags: Statistics Machine-Learning Logistic-Regression Supervised-Learning
