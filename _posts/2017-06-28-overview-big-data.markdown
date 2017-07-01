@@ -4,7 +4,7 @@ comments: true
 title:  "Big Data Overview"
 title2:  "Big Data Overview"
 date:   2017-06-28 21:22:00
-permalink: 2017/06/28/overview-big-data/
+permalink: /overview-big-data/
 mathjax: true
 tags: Overview Big-Data
 categories: Overview Big-Data
