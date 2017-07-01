@@ -4,7 +4,7 @@ comments: true
 title:  "Linear Regression"
 title2:  "Linear Regression"
 date:   2017-06-29 15:22:00
-permalink: 2017/06/29/linear-regression/
+permalink: /linear-regression/
 mathjax: true
 tags: Statistics Machine-Learning Linear-Regression Supervised-Learning
 categories: Statistics Machine-Learning
