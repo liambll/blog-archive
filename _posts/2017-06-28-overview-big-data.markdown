@@ -13,7 +13,7 @@ summary: Big data is a term for datasets that are so large or complex that it wo
 ---
 
 
-Big data is a term for datasets that are so large or complex that it would be challenging to ingest, store, analyze, query and visualize such datasets. There is no way to list out all big data technologies. Below is the list of big data tools commonly used in the market.
+"Big data is a term for datasets that are so large or complex that it would be challenging to ingest, store, analyze, query and visualize such datasets." There is a huge number of big data technologies. Below are commonly used big data tools:
 
 ## 1. Ingestion - Data Streaming
 * Kafka
