@@ -4,7 +4,7 @@ comments: true
 title:  "Introduction"
 title2:  "Introduction"
 date:   2017-06-03 15:22:00
-permalink: 2017/06/03/introduction/
+permalink: /introduction/
 mathjax: true
 tags: Overview
 categories: Overview
@@ -19,23 +19,23 @@ Data analytics techniques generally fall in to one of three non mutually exclusi
 </div>
 </div>
 
-## [Operations Research](/blog/2017/06/28/overview-operations-research/)
+## [Operations Research](/blog/overview-operations-research/)
 "Operations research is a discipline that deals with the application of advanced analytical methods to help make better decisions."
 Examples:
 * A manufacturing firm wants to find an optimal inventory level in order to minimize inventory storage cost but still be able to meet demand 95% of the time.
 * A postal service company wants to find out the optimal route for its delivery truck to fulfill delivery requests in shortest distances.
 
-## [Statistics](/blog/2017/06/28/overview-statistics/)
+## [Statistics](/blog//overview-statistics/)
 "Statistics is a branch of mathematics that deals with the collection, analysis, interpretation, presentation, and organization of data."
 Examples:
 * An e-commerce company has several alternative designs for its new web product. The company wants to find out which design would bring more customer click rate.
 * A research institution wants to find out if higher mortality rate is associated with tobacco use.
 
-## [Machine Learning](/blog/2017/06/05/overview-machine-learning/)
+## [Machine Learning](/blog/overview-machine-learning/)
 "Machine Learning is a subfield of computer science that give computers the ability to learn from data without being explicitly programmed."
 Examples:
 * An e-commerce company has historical data on customer purchases. The company wants to find products that each customer is most likely to purchase and send email marketing on those products to each customer. 
 * An IT security firm wants to build an application to detect network intrusion based on network conenction characteristics.
 
-## [Big Data](/blog/2017/06/28/overview-big-data/)
+## [Big Data](/blog/overview-big-data/)
 "Big data is a term for datasets that are so large or complex that it would be challenging to ingest, store, analyze, query and visualize such datasets."
