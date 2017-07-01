@@ -42,9 +42,10 @@ __* Service:__
 {\text{Expected service time}} = 1/\mu
 \\]
   * Most queueing models assume that the service time has a particular probability distribution, such as exponential distribution, constant-time service time, etc.
+  * Number of servers \\(s\\)
   * Utilization factor \\(ρ\\) is the average fraction of time that a server is busy serving customers
 \\[
-ρ = \lambda /\mu
+ρ = \lambda /s\mu
 \\]
 
 Queuing models are usually labeled in the form:
@@ -78,19 +79,20 @@ W = W_q + 1/\mu
 \\[
 L = L_q + \lambda /\mu
 \\]
+That means we just need to estimate one of these four variables and caculate the remaining.
 
 __* M/M/1 Model:__
-\\[
-L = ρ(1-ρ) = \lambda /(\mu - \lambda)
-\\]
 \\[
 L_q = ρ^2(1-ρ) = \lambda ^2/[\mu (\mu - \lambda)]
 \\]
 \\[
-W = 1 /(\mu - \lambda)
+L = ρ(1-ρ) = \lambda /(\mu - \lambda)
 \\]
 \\[
 W_q = \lambda /[\mu (\mu - \lambda)]
+\\]
+\\[
+W = 1 /(\mu - \lambda)
 \\]
 Probability of having exactly n customers in the system:
 \\[
@@ -119,3 +121,5 @@ We can clearly see the impact of service variability on the system performance: 
 that has no variability has a dramatic impact on reducing waiting time and queue length.
 
 __* M/M/s Model:__
+
+
