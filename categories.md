@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Categories
+title: Sections
 ---
 
 <div class="tags-expo">
