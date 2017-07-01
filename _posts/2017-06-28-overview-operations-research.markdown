@@ -4,7 +4,7 @@ comments: true
 title:  "Operations Research Overview"
 title2:  "Operations Research Overview"
 date:   2017-06-28 18:22:00
-permalink: 2017/06/28/overview-operations-research/
+permalink: /overview-operations-research/
 mathjax: true
 tags: Overview Operations-Research
 categories: Overview Operations-Research
