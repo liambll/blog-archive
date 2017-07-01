@@ -28,7 +28,7 @@ Some examples:
 ## [Statistics](/blog/2017/06/28/overview-statistics/)
 Statistics is a branch of mathematics that deals with the collection, analysis, interpretation, presentation, and organization of data.
 Some examples:
-* An e-commerce company has several alternative design for its new web product. The company wants to find out which designs would bring more customer click rate.
+* An e-commerce company has several alternative designs for its new web product. The company wants to find out which design would bring more customer click rate.
 * A research institution wants to find out if higher mortality rate is associated with tobacco use.
 
 ## [Machine Learning](/blog/2017/06/05/overview-machine-learning/)
