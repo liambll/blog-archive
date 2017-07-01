@@ -26,9 +26,9 @@ summary: Queueing model is a mathematical model that predict queue lengths and w
   * The time between consecutive arrivals to a queueing system is the interarrival time.
   * Mean arrival rate \\(\lambda\\) is the expected number of arrivals per unit time.
 \\[
-Expected interarrival time = 1/\lambda
+text{Expected interarrival time} = 1/\lambda
 \\]
-Most queueing models assume that the form of the probability distribution of inter‐arrival times is an exponential distribution. That means the probability of an arrival in the next time unit is completely uninfluenced by when the last arrival occurs (i.e. lack-of-memory property) and there is a high likelihood g of small interarrival times, and a small chance of a very large interarrival time.
+  * Most queueing models assume that the form of the probability distribution of inter‐arrival times is an exponential distribution. That means the probability of an arrival in the next time unit is completely uninfluenced by when the last arrival occurs (i.e. lack-of-memory property) and there is a high likelihood g of small interarrival times, and a small chance of a very large interarrival time.
 * Queue:
   * The number of customers in the queue \\(L_q\\) is the number of customers waiting for service to begin.
   * The number of customers in the system (L) is the number in the queue plus the number currently being served.
@@ -38,8 +38,9 @@ Most queueing models assume that the form of the probability distribution of int
   * Service time is the elapsed time from the begining to the end of service.
   * Mean service rate \\(\mu\\) is expected number of service completions per unit time for a single busy server
 \\[
-Expected service time = 1/\mu
+text{Expected service time} = 1/\mu
 \\]
-Most queueing models assume that the service time has a particular probability distribution, such as exponential distribution, constant-time service time, etc.
+  * Most queueing models assume that the service time has a particular probability distribution, such as exponential distribution, constant-time service time, etc.
+
 
 
