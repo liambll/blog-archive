@@ -8,7 +8,7 @@ permalink: /queueing-model/
 mathjax: true
 tags: Operations-Research Queueing-Model
 categories: Operations-Research
-img: /blog/assets/queueing-model/queueing-model.jpg
+img: /blog/assets/queuing-model/queuing-model.jpg
 summary: Queueing model is a mathematical model that predict queue lengths and waiting time...
 ---
 
