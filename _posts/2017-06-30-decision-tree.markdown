@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "Decision Tree"
 title2:  "Decision Tree"
-date:   2017-06-30 15:22:00
+date:   2017-06-30 19:22:00
 permalink: /decision-tree/
 mathjax: true
 tags: Statistics Machine-Learning Decision-Tree Supervised-Learning
