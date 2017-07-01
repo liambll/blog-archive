@@ -50,7 +50,7 @@ __* Service:__
 
 Queuing models are usually labeled in the form:
 \\[
-{\text{Interarrival time distribution / Service time distribution / No. Servers / Queue capacity}}
+{\text{Interarrival time distribution / Service time distribution / No. Servers}}
 \\]
   * \\(M\\): Exponential distribution (Markovian)
   * \\(D\\): Degenerate distribution (constant times)
@@ -123,5 +123,5 @@ L_q = ρ^2/(2(1-ρ))
 We can clearly see the impact of service variability on the system performance: Changing from the exponential service time to the one
 that has no variability has a dramatic impact on reducing waiting time and queue length.
 
-
+## 3. Examples
 
