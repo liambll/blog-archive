@@ -57,7 +57,7 @@ Queuing models are usually labeled in the form:
   * \\(GI\\): General independent interarrival‐time distribution (any distribution)
   * \\(G\\): General service‐time distribution (any distribution)
 
-For example, M/M/s denotes a queuing model with multiple services and exponential distribution for interarrival time and service time.
+For example, M/M/s denotes a queuing model with multiple servers and exponential distribution for interarrival time and service time.
 
 Queuing models can provide estimations for:
   * \\(L\\) = Expected number of customers in the system, including those being served (Line Length).
@@ -82,6 +82,8 @@ L = L_q + \lambda /\mu
 Below are mathematical solution to several simple queuing models.
 
 __* M/M/1 Model:__
+
+M/M/1 denotes a queuing model with one server and exponential distribution for interarrival time and service time.
 \\[
 L_q = ρ^2(1-ρ) = \lambda ^2/[\mu (\mu - \lambda)]
 \\]
@@ -109,6 +111,8 @@ P(W_q > t) = ρexp(-\mu(1-ρ)t)
 
 
 __* M/G/1 Model:__
+
+M/G/1 denotes a queuing model with one server, exponential distribution for interarrival time and general distribution for service time, which has mean \\(1/\mu\\) and standard deviation \\(\sigma\\).
 \\[
 L_q = (\lambda^2 \sigma^2 + ρ^2)/(2(1-ρ))
 \\]
