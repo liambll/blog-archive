@@ -18,17 +18,17 @@ Characteristics of operations research techniques:
 * Unlike Machine Learning and Statistics which focus on inference and prediction, Opeartions Research focuses on decision making under constraints
 * Operations research is often concerned with determining the maximum (of profit, performance, or yield) or minimum (of loss, risk, or cost) of some real-world objectives given certain constraints
 
-## 1. Linear Programming
+## [1. Linear Programming](/blog/linear-programming/)
 
-## 2. Network Models
+## 2. Network Model
 
-## 3. Inventory Modeling
+## [3. Inventory Modeling](/blog/inventory-model/)
 
-## 4. Queue Modeling
+## [4. Queuing Modeling](/blog/queuing-model/)
 
-## 5. Simulation Modeling
+## 5. Simulation Model
 
-## 6. Decision Analysis
+## [6. Forecasting](/blog/time-series/)
 
-## 7. Forecasting
+## 7. Decision Analysis
 
