@@ -42,6 +42,10 @@ __* Service:__
 {\text{Expected service time}} = 1/\mu
 \\]
   * Most queueing models assume that the service time has a particular probability distribution, such as exponential distribution, constant-time service time, etc.
+  * Utilization factor \\(\ρ\\) is the average fraction of time that a server is busy serving customers
+\\[
+ρ = \lambda /\mu
+\\]
 
 Queuing models are usually labeled in the form:
 \\[
@@ -60,8 +64,8 @@ Queuing models can provide estimations for:
   * \\(W\\) = Expected waiting time in the system (including service time) for an individual customer
   * \\(W_q\\) = Expected waiting time in the queue (excludes service time) for an individual customer.
 
-## 2. Learning:
-Little's Formula:
+## 2. Estimation
+__Little's Formula:__
 \\[
 L = \lambda W
 \\]
@@ -75,4 +79,16 @@ W = W_q + 1/\mu
 L = L_q + \lambda /\mu
 \\]
 
-
+__* M/M/1 Model__
+\\[
+L = \lambda /(\mu - \lambda)
+\\]
+\\[
+L_q = \lambda ^2/[\mu (\mu - \lambda)]
+\\]
+\\[
+W = 1 /(\mu - \lambda)
+\\]
+\\[
+W_q = = \lambda /[\mu (\mu - \lambda)]
+\\]
