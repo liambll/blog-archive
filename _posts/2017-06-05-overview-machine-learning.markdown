@@ -34,7 +34,7 @@ Characteristics of machine learning techniques:
   * Adversarial Learning
 
 ## 2. Supervised Learning
-* [Linear Regression](/blog/2017/06/29/linear-regression/)
+* [Linear Regression](/blog/linear-regression/)
 * Logistics Regression
 * Support Vector Machine
 * Decision Tree
