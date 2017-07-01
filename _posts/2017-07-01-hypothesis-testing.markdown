@@ -1,32 +1,16 @@
 ---
 layout: post
 comments: true
-title:  "Linear Regression"
-title2:  "Linear Regression"
-date:   2017-06-29 15:22:00
-permalink: 2017/06/29/linear-regression/
+title:  "Hypothesis Testing"
+title2:  "Hypothesis Testing"
+date:   2017-07-01 15:22:00
+permalink: /hypothesis-testing/
 mathjax: true
-tags: Statistics Machine-Learning Linear-Regression Supervised-Learning
-categories: Statistics Machine-Learning
-img: /blog/assets/linear-regression/linear-regression.png
-summary: Linear regression is an approach for modeling the relationship between a scalar dependent variable y and one or more explanatory variables (or independent variables) denoted X...
+tags: Statistics Hypothesis-Testing
+categories: Statistics
+img: /blog/assets/hypothesis-testing/hypothesis-testing.png
+summary: Hypothesis testing refers to the formal procedures used to accept or reject statistical hypotheses...
 ---
 
 
-"Linear regression is an approach for modeling the relationship between a dependent variable and one or more explanatory variables." In Statistics, Linear regression is used to understand how changes in explanatory variables would affect the dependent variable. In machine learning, the focus is more to predict value of dependent variable based on explanatory variables.
-
-Some examples:
-- analyze relationship between customer's satisfaction and customer's waiting time, call duration, discussion topic, etc
-- predict house price based on the house's characteristics (location, areas, number of bed rooms, number of bath rooms, etc)
-
-## 1. Model
-
-
-## 2. Learning
-
-## 3. Examples
-
-## 4. Further thought
-
-## 5. Statistical perspectives
-
+"Hypothesis testing refers to the formal procedures used to accept or reject statistical hypotheses."
