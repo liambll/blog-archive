@@ -22,7 +22,7 @@ Characteristics of machine learning techniques:
 ## 1. Unsupervised Learning
 * Clustering
   * Hierachical Clustering
-  * K-means
+  * [K-means](/blog/k-means/)
   * DBSCAN
   * Mixture Model
 * Association Rule Mining
@@ -35,9 +35,9 @@ Characteristics of machine learning techniques:
 
 ## 2. Supervised Learning
 * [Linear Regression](/blog/linear-regression/)
-* Logistics Regression
-* Support Vector Machine
-* Decision Tree
+* [Logistics Regression](/blog/logistic-regression/)
+* [Support Vector Machine](/blog/svm/)
+* [Decision Tree](/blog/decision-tree/)
 * Neural Network
   * Convolutional Neural Network
   * Recurrent Neural Network
