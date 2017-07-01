@@ -7,7 +7,7 @@ date:   2017-06-28 21:22:00
 permalink: 2017/06/28/overview-big-data/
 mathjax: true
 tags: Overview Big-Data
-categories: Big-Data
+categories: Overview Big-Data
 img: /blog/assets/overview/big-data.png
 summary: Big data is a term for datasets that are so large or complex that it would be challenging to ingest, store, analyze, query and visualize such datasets...
 ---
