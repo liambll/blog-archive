@@ -7,7 +7,7 @@ date:   2017-06-05 15:22:00
 permalink: 2017/06/05/overview-machine-learning/
 mathjax: true
 tags: Overview Machine-Learning
-categories: Machine-Learning
+categories: Overview Machine-Learning
 img: /blog/assets/overview/machine-learning.jpg
 summary: Machine Learning is a subfield of computer science that give computers the ability to learn from data without being explicitly programmed.
 ---
