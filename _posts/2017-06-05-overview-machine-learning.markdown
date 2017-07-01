@@ -38,7 +38,7 @@ Characteristics of machine learning techniques:
 * [Logistics Regression](/blog/logistic-regression/)
 * [Support Vector Machine](/blog/svm/)
 * [Decision Tree](/blog/decision-tree/)
-* Neural Network
+* [Neural Network](/blog/neural-network/)
   * Convolutional Neural Network
   * Recurrent Neural Network
 * Probabilistic Model
