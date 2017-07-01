@@ -7,7 +7,7 @@ date:   2017-06-28 18:22:00
 permalink: 2017/06/28/overview-operations-research/
 mathjax: true
 tags: Overview Operations-Research
-categories: Operations-Research
+categories: Overview Operations-Research
 img: /blog/assets/overview/operations-research.png
 summary: Operations research is a discipline that deals with the application of advanced analytical methods to help make better decisions...
 ---
