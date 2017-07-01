@@ -1,0 +1,48 @@
+---
+layout: post
+comments: true
+title:  "Machine Learning Overview"
+title2:  "Machine Learning Overview"
+date:   2017-06-05 15:22:00
+permalink: 2017/06/05/overview-machine-learning/
+mathjax: true
+tags: Overview Machine-Learning
+categories: Machine-Learning
+img: /blog/assets/overview/machine-learning.jpg
+summary: Machine Learning is a subfield of computer science that give computers the ability to learn from data without being explicitly programmed.
+---
+
+
+Machine Learning is a subfield of computer science that give computers the ability to learn from data without being explicitly programmed. Several characteristics of machine learning techniques:
+* Machine Learning techniques generally do not make any assumption of underlying data. A machine learning engineer would apply linear regression model on a data that follow Poisson distribution, but a statistician might not be happy about it.
+* Machine Learning techniques focus on prediction rather than explanation or interpretation of data
+* Machine Learning techniques usually formulate problem in terms of minimizing a related cost function, and in doing so, we hope to achieve the best prediction.
+
+## 1. Unsupervised Learning
+* Clustering
+  * Hierachical Clustering
+  * K-means
+  * DBSCAN
+  * Mixture Model
+* Association Rule Mining
+* Latent variable model
+  * Principal Component Analysis
+  * Singular Value Decomposition<!---  * Collaborative Filtering -->
+* Neural Network
+  * Autoencoder
+  * Adversarial Learning
+
+## 2. Supervised Learning
+* [Linear Regression](/blog/2017/06/29/linear-regression/)
+* Logistics Regression
+* Support Vector Machine
+* Decision Tree
+* Neural Network
+  * Convolutional Neural Network
+  * Recurrent Neural Network
+* Probabilistic Model
+  * Bayesian network
+  * Markov random field<!---  * Restricted Boltzmann machine -->
+
+## 3. Reinforcement Learning
+
