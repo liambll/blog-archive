@@ -90,7 +90,7 @@ L_q = \lambda ^2/[\mu (\mu - \lambda)]
 W = 1 /(\mu - \lambda)
 \\]
 \\[
-W_q = = \lambda /[\mu (\mu - \lambda)]
+W_q = \lambda /[\mu (\mu - \lambda)]
 \\]
 Probability of having exactly n customers in the system:
 \\[
@@ -100,3 +100,11 @@ Probability of waiting time in the system exceeding t:
 \\[
 P(W > t) = e^-\mu(1-ρ)t
 \\]
+
+__* M/D/1 Model:__
+
+
+__* M/G/1 Model:__
+
+
+__* M/M/s Model:__
