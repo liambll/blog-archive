@@ -79,7 +79,7 @@ W = W_q + 1/\mu
 \\[
 L = L_q + \lambda /\mu
 \\]
-That means we just need to estimate one of these four variables and caculate the remaining.
+Below are mathematical solution to several simple queuing models.
 
 __* M/M/1 Model:__
 \\[
@@ -123,7 +123,5 @@ L_q = ρ^2/(2(1-ρ))
 We can clearly see the impact of service variability on the system performance: Changing from the exponential service time to the one
 that has no variability has a dramatic impact on reducing waiting time and queue length.
 
-
-__* M/M/s Model:__
 
 
