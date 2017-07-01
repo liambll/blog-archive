@@ -8,7 +8,7 @@ permalink: /inventory-model/
 mathjax: true
 tags: Operations-Research Inventory-Model
 categories: Operations-Research
-img: /blog/assets/inventory-model/inventory-model.png
+img: /blog/assets/inventory-model/inventory-model.jpg
 summary: Inventory model is a mathematical model that helps business in determining the optimum level of inventories that should be maintained, purchased...
 ---
 
