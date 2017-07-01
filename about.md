@@ -1,7 +1,6 @@
 ---
 layout: post
 title: About
-permalink: /blog/about/
 ---
 
 Thanks for visiting my blog!
