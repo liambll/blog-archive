@@ -4,7 +4,7 @@ comments: true
 title:  "Statistics Overview"
 title2:  "Statistics Overview"
 date:   2017-06-28 15:22:00
-permalink: 2017/06/28/overview-statistics/
+permalink: /overview-statistics/
 mathjax: true
 tags: Overview Statistics
 categories: Overview Statistics
