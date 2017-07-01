@@ -13,7 +13,8 @@ summary: Machine Learning is a subfield of computer science that give computers 
 ---
 
 
-"Machine Learning is a subfield of computer science that give computers the ability to learn from data without being explicitly programmed." Characteristics of machine learning techniques:
+"Machine Learning is a subfield of computer science that give computers the ability to learn from data without being explicitly programmed."
+Characteristics of machine learning techniques:
 * Machine Learning techniques generally do not make any assumption of underlying data. A machine learning engineer might apply linear regression model on a data that follow Poisson distribution, but a statistician would not be happy about it.
 * Machine Learning techniques focus on prediction rather than explanation or interpretation of data
 * Machine Learning techniques usually formulate problem in terms of minimizing a cost function, and in doing so, we hope to achieve the best prediction.
