@@ -98,7 +98,11 @@ P(L=n) = ρ(1-ρ)
 \\]
 Probability of waiting time in the system exceeding t:
 \\[
-P(W > t) = e^(-\mu(1-ρ)t)
+P(W > t) = exp(-\mu(1-ρ)t)
+\\]
+Probability of waiting time in the queue exceeding t:
+\\[
+P(W_q > t) = ρexp(-\mu(1-ρ)t)
 \\]
 
 __* M/D/1 Model:__
