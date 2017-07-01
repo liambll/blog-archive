@@ -33,7 +33,9 @@ Most queueing models assume that the form of the probability distribution of int
   * The queue capacity is the maximum number of customers that can be held in the queue.
   * The queue discipline refers to the order in which members of the queue are selected to begin service. Examples include First-In-First Out (FIFO), random selection, priority procedure, and even Last-In-First-Out (LIFO)
 * Service:
-  * 
-
+  * Service time is the elapsed time from the begining to the end of service.
+  * Mean service rate \mu is expected number of service completions per unit time for a single busy server
+\[ Expected service time = 1/\mu \]
+Most queueing models assume that the service time has a particular probability distribution, such as exponential distribution, constant-time service time, etc.
 
 
