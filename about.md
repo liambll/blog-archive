@@ -10,7 +10,7 @@ My name is Liam. I graduated with double degree in Business Analytics & Computer
 Although the blog mainly focuses on technical aspect of analytics, it should be emphasized that end-to-end analytics process is important for the success of analytics projects. I recently attain Certified Analytics Professional credential awarded by the Institute for Operations Research and Management Sciences (INFORMS), and I would like to summarize its best practice analytics process here:
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/overview/Analytics-Process.png" width = "500">
+    <img src="/blog/assets/overview/Analytics-Process.png" width = "700">
 </div>
 </div>
 
@@ -21,11 +21,13 @@ Although the blog mainly focuses on technical aspect of analytics, it should be 
 ## 2. Analytics Problem Framing
 * reformulate business problem into an analytics problem with initial set of drivers (inputs, outputs)
 * specify assumptions and success metrics
+
 This step is the last chance to correct any mistakes or misunderstanding while it is still cheap to do so.
 
 ## 3. Data
 * identify data sources and acquisition 
 * perform data wraggling and exploration
+
 This is probably the most boring and time consuming step, but it is crucial to have quality data before proceeding to model building.
 
 ## 4. Model
