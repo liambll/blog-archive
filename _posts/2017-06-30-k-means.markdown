@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "K-Means Clustering"
 title2:  K-Means Clustering"
-date:   2017-06-29 20:22:00
+date:   2017-06-30 20:22:00
 permalink: /k-means/
 mathjax: true
 tags: Statistics Machine-Learning K-Means Unsupervised-Learning
