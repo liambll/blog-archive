@@ -81,10 +81,10 @@ L = L_q + \lambda /\mu
 
 __* M/M/1 Model:__
 \\[
-L = \lambda /(\mu - \lambda)
+L = ρ(1-ρ) = \lambda /(\mu - \lambda)
 \\]
 \\[
-L_q = \lambda ^2/[\mu (\mu - \lambda)]
+L_q = ρ^2(1-ρ) = \lambda ^2/[\mu (\mu - \lambda)]
 \\]
 \\[
 W = 1 /(\mu - \lambda)
@@ -105,10 +105,17 @@ Probability of waiting time in the queue exceeding t:
 P(W_q > t) = ρexp(-\mu(1-ρ)t)
 \\]
 
-__* M/D/1 Model:__
-
-
 __* M/G/1 Model:__
+\\[
+L_q = (\lambda^2 \sigma^2 + ρ^2)/(2(1-ρ))
+\\]
 
+__* M/D/1 Model:__
+This is a special case of M/G/1 model with \\(\sigma\\) = 0.
+\\[
+L_q = ρ^2/(2(1-ρ))
+\\]
+We can clearly see the impact of service variability on the system performance: Changing from the exponential service time to the one
+that has no variability has a dramatic impact on reducing waiting time and queue length.
 
 __* M/M/s Model:__
