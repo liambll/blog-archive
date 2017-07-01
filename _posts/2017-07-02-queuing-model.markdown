@@ -43,11 +43,11 @@ __* Service:__
 \\]
   * Most queueing models assume that the service time has a particular probability distribution, such as exponential distribution, constant-time service time, etc.
 
-Queuing models are usually labeled in the form of {\text{Interarrival time distribution / Service time distribution / No. Servers}}.
-  * M: Exponential distribution (Markovian)
-  * D: Degenerate distribution (constant times)
-  * GI: General independent interarrival‐time distribution (any distribution)
-  * G: General service‐time distribution (any distribution)
+Queuing models are usually labeled in the form of \\({\text{Interarrival time distribution / Service time distribution / No. Servers}}\\).
+  * \\(\M\\): Exponential distribution (Markovian)
+  * \\(\D\\): Degenerate distribution (constant times)
+  * \\(\GI\\): General independent interarrival‐time distribution (any distribution)
+  * \\(\G\\): General service‐time distribution (any distribution)
 
 For example, M/M/s denotes a queuing model with multiple services and exponential distribution for interarrival time and service time.
 
