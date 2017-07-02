@@ -65,7 +65,7 @@ Maximizing likelihood is equipvalent to minimizing negative log-likelihood:
 \\]
 Therefore, maximizing likelihood ends up being equivalent to minimizing sum of square errors over all observations.
 
-
+__Solution:__
 Using derivative, minimizing sum of square errors over all observations has a closed form solution:
 \\[
 \mathbf{w} = (\mathbf{\bar{X}}^T\mathbf{\bar{X}})^{-1} \mathbf{\bar{X}}^T\mathbf{y}
@@ -74,4 +74,4 @@ in which:
 * \\(\mathbf{y} = [y_1; y_2; \dots; y_N]\\)
 * \\(\mathbf{\bar{X}} = [\mathbf{\bar{x}}_1; \mathbf{\bar{x}}_2; \dots; \mathbf{\bar{x}}_N ] \\)
 
-To avoid huge matrix computation, we can use gradient descent to approximate \\(w\\) instead. I will not go into details on these topics here.
+To avoid huge matrix computation, we can use gradient descent to approximate \\(\mathbf{w}\\) instead. I will not go into details on these topics here.
