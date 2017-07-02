@@ -58,6 +58,6 @@ The likelihood function for data would be:
 \\]
 Maximizing likelihood is equipvalent to minimizing negative log-likelihood:
 \\[
-\-log~mathcal{l}(\mathbf{w}) = frac{N}{2}log{2\pi} + nlog{\sigma} + frac{1}{2\sigma^2}\sum_{i=1}^N (y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2
+\-log~\mathcal{l}(\mathbf{w}) = \frac{N}{2}log{2\pi} + nlog{\sigma} + \frac{1}{2\sigma^2}\sum_{i=1}^N (y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2
 \\]
 Therefore, maximizing likelihood ends up being equivalent to minimizing sum of square errors over all observations.
