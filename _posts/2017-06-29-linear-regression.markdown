@@ -45,7 +45,7 @@ __Machine Learning__
 
 We achieve this objective by minimize a lost function representing the difference between the predicted value f(\mathbf{x}) and observed value \\(y\\). There is no defined rule on what is the correct loss function. The most common technique is ordinary least squares in which we try to minimize sum of square errors over all observations:
 \\[
-\mathcal{L}(\mathbf{w}) = \frac{1}{2}\sum_{i=1}^N (y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2
+\mathcal{E}(\mathbf{w}) = \frac{1}{2}\sum_{i=1}^N (y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2
 \\]
 We can try to minimize the sum of absolute error over all observations, and in this case, we penalize wrong prediction less. We can slo minimize a penalized version of the least squares loss function. As you can see, machine learning techniques try to formulate problem in terms of minimizing a loss function based on certain intuition, and in doing so, we hope to achieve the best prediction.
 
@@ -57,16 +57,20 @@ p(y_i|\mathbf{x}=x_i;\mathbf{w};\sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp{-\
 
 The likelihood function for data would be:
 \\[
-\mathcal{l}(\mathbf{w}) = \prod_{i=1}^N \frac{1}{\sqrt{2\pi\sigma^2}}\exp{-\frac{(y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2}{2\sigma^2}}
+\mathcal{L}(\mathbf{w}) = \prod_{i=1}^N \frac{1}{\sqrt{2\pi\sigma^2}}\exp{-\frac{(y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2}{2\sigma^2}}
 \\]
 Maximizing likelihood is equipvalent to minimizing negative log-likelihood:
 \\[
-\-log~\mathcal{l}(\mathbf{w}) = \frac{N}{2}log{2\pi} + Nlog{\sigma} + \frac{1}{2\sigma^2}\sum_{i=1}^N (y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2
+\-log~\mathcal{L}(\mathbf{w}) = \frac{N}{2}log{2\pi} + Nlog{\sigma} + \frac{1}{2\sigma^2}\sum_{i=1}^N (y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2
 \\]
 Therefore, maximizing likelihood ends up being equivalent to minimizing sum of square errors over all observations.
 
 __Solution:__
-Using derivative, minimizing sum of square errors over all observations has a closed form solution:
+We estimate coefficients by taking first-order deriative of the log-likelihood:
+\\[
+\frac{\partial log~mathcal{L}(\mathbf{w})}{\partial \mathbf{w}}
+\\]
+It has a closed form solution:
 \\[
 \mathbf{w} = (\mathbf{\bar{X}}^T\mathbf{\bar{X}})^{-1} \mathbf{\bar{X}}^T\mathbf{y}
 \\]
@@ -74,4 +78,4 @@ in which:
 * \\(\mathbf{y} = [y_1; y_2; \dots; y_N]\\)
 * \\(\mathbf{\bar{X}} = [\mathbf{\bar{x}}_1; \mathbf{\bar{x}}_2; \dots; \mathbf{\bar{x}}_N ] \\)
 
-To avoid huge matrix computation, we can use gradient descent to approximate \\(\mathbf{w}\\) instead. I will not go into details on these topics here.
+However, we can use gradient descent to approximate \\(\mathbf{w}\\) instead to avoid large matrix computation. I will not go into details on these topics here.
