@@ -45,5 +45,6 @@ In machine learning, we achieve this objective by minimize a lost function repre
 \\[ \mathcal{L}(\mathbf{w}) = \frac{1}{2}\sum_{i=1}^N (y\_i - f(\mathbf{x_i}))^2 \\]
 We can try to minimize the sum of absolute error over all observations, and in this case, we penalize wrong prediction less. We can slo minimize a penalized version of the least squares loss function. As you can see, machine learning techniques try to formulate problem in terms of minimizing a loss function based on certain intuition, and in doing so, we hope to achieve the best prediction.
 
-In statistics, we approach the problem using a technique call Maximum Likelihood Estimation (MLE): what is the set of coeeficients \\(\mathbf{w}\\) that maximize the likelihood for N observations. Since linear model assume the error term to be normally distributed, the solution to this problem ends up being equivalent to minimizing sum of square errors over all observations.
+In statistics, we approach the problem using a technique call Maximum Likelihood Estimation (MLE): what is the set of coeeficients \\(\mathbf{w}\\) that maximize the likelihood that N observations would happen. Since linear model assume the error term to be normally distributed, the solution to this problem ends up being equivalent to minimizing sum of square errors over all observations.
+
 
