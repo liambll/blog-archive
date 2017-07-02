@@ -33,10 +33,11 @@ y = f(\mathbf{x}) + \epsilon = w_0 + w_1 x_1 + w_2 x_2 + ... + w_k x_k + \epsilo
 __Assumptions__
 
 In statistics, strict linear regression model makes several assumptions about the dependent variables, the explanatory variables and their relationship:
-* Linearity: The expected value of the dependent variable is a linear combination of the parameters and the explantory variables.
-* Independence: The error term is independent across observations and independent of explantory variables. That means there is little or no multicollinearity among explanatory variables, and there is no auto-correltion among observations.
-* Homoscedasticity: The error between observed and predicted values (i.e. the residuals of the regression) should have constant variance.
-* Normality: The error term should be normally distributed
+* Linearity: The expected value of the dependent variable is a linear combination of the parameters and the explantory variables. Residual plot is commonly used to visualize any non-linearity relationship.
+* Independence: The error term is independent across observations and independent of explantory variables. That means there is little or no multicollinearity among explanatory variables, and there is no auto-correltion among observations. Correlation matrix, Variance Inflation Factor (VIF), Durbin-Watson test are useful to check if indenpendence assumption is violated.
+* Homoscedasticity: The error between observed and predicted values (i.e. the residuals of the regression) should have constant variance. Goldfeld-Quandt test can be used to detect Heteroskedasticity.
+* Normality: The error term should be normally distributed. Kolmogorov–Smirnov (KS) test is used to detect non-normality.
+If any assumption is severly violated, they need to be handled by performing variable transformation (non-linear transformation, Box-Cox transformation, etc) before any meaningful conclusion can be drawn based on the model.
 
 ## 2. Estimation
 Given a dataset of \\(N\\) observations, we want to find a set of coefficients \\(\mathbf{w}\\) so that the predicted value \\(f(\mathbf{x})\\) can accurately represent observed value \\(y\\) the most.
@@ -80,8 +81,8 @@ in which:
 
 However, we can use gradient descent to approximate \\(\mathbf{w}\\) instead to avoid large matrix computation.
 
-In machine learning, estimated \\(\mathbf{w}\\) is all we need in order to perform prediction. In statistics, we usually want to know the variance of coefficients in order to test whether a coefficient is significant in the model. To caculate variance for coefficients, we need to obtain Hessian matrix, i.e. second-order deriative of the log-likelihood:
+In machine learning, estimated \\(\mathbf{w}\\) is all we need in order to perform prediction. In statistics, we usually want to get the variance matrix of coefficients in order to caculate confidence intervals for coefficients and prediction. For that, we need to obtain Hessian matrix, i.e. second-order deriative of the log-likelihood:
 \\[
 \frac{\partial^2 log~\mathcal{L}(\mathbf{w})}{\partial^2 \mathbf{w}}
 \\]
-The estimated asymptotic variance for coefficients is the inverse of Hessian matrix.
+The estimated variance matrix is the inverse of Hessian matrix.
