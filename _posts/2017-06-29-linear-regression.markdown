@@ -51,6 +51,7 @@ We achieve this objective by minimize a lost function representing the differenc
 We can try to minimize the sum of absolute error over all observations, and in this case, we penalize wrong prediction less. We can slo minimize a penalized version of the least squares loss function. As you can see, machine learning techniques try to formulate problem in terms of minimizing a loss function based on certain intuition, and in doing so, we hope to achieve the best prediction.
 
 __Statistics__
+
 We approach the problem using a technique call Maximum Likelihood Estimation (MLE): what is the set of coeeficients \\(\mathbf{w}\\) that maximize the likelihood that N observations would happen. Since linear model assume the error term to be normally distributed with constant variance \\(\sigma^2\\), the probability density function of \\(y\\) given \\(\mathbf{x}\\) and \\(\mathbf{w}\\) is:
 \\[
 p(y_i|\mathbf{x}=x_i;\mathbf{w};\sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp{-\frac{(y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2}{2\sigma^2}}
@@ -67,6 +68,7 @@ Maximizing likelihood is equipvalent to minimizing negative log-likelihood:
 Therefore, maximizing likelihood ends up being equivalent to minimizing sum of square errors over all observations.
 
 __Solution:__
+
 We estimate coefficients by taking first-order deriative of the log-likelihood:
 \\[
 \frac{\partial log~\mathcal{L}(\mathbf{w})}{\partial \mathbf{w}}
