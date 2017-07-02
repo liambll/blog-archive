@@ -31,6 +31,7 @@ y = f(\mathbf{x}) + \epsilon = w_0 + w_1 x_1 + w_2 x_2 + ... + w_k x_k + \epsilo
 * \\(epsilon\\) is error term (or noise) which captures all other factors which influence the dependent variable \\(y\\) other than \\(f(\mathbf{x})\\)
 
 __Assumptions__
+
 In statistics, strict linear regression model makes several assumptions about the dependent variables, the explanatory variables and their relationship:
 * Linearity: The expected value of the dependent variable is a linear combination of the parameters and the explantory variables.
 * Independence: There is little or no multicollinearity among explanatory variables, and there is no auto-correltion among observations.
