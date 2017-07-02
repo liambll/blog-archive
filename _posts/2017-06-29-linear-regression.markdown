@@ -37,6 +37,7 @@ In statistics, strict linear regression model makes several assumptions about th
 * Independence: The error term is independent across observations and independent of explantory variables. That means there is little or no multicollinearity among explanatory variables, and there is no auto-correltion among observations. Correlation matrix, Variance Inflation Factor (VIF), Durbin-Watson test are useful to check if indenpendence assumption is violated.
 * Homoscedasticity: The error between observed and predicted values (i.e. the residuals of the regression) should have constant variance. Goldfeld-Quandt test can be used to detect Heteroskedasticity.
 * Normality: The error term should be normally distributed. Kolmogorov–Smirnov (KS) test is used to detect non-normality.
+
 If any assumption is severly violated, they need to be handled by performing variable transformation (non-linear transformation, Box-Cox transformation, etc) before any meaningful conclusion can be drawn based on the model.
 
 ## 2. Estimation
