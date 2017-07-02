@@ -68,7 +68,7 @@ Therefore, maximizing likelihood ends up being equivalent to minimizing sum of s
 
 Using derivative, minimizing sum of square errors over all observations has a closed form solution:
 \\[
-\mathbf{w} = (\mathbf{\bar{X}}^T\mathbf{\bar{X}})^{\dagger} \mathbf{\bar{X}}^T\mathbf{y}
+\mathbf{w} = (\mathbf{\bar{X}}^T\mathbf{\bar{X}})^{-1} \mathbf{\bar{X}}^T\mathbf{y}
 \\]
 in which:
 * \\(\mathbf{y} = [y_1; y_2; \dots; y_N]\\)
