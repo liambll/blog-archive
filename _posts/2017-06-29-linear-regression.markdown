@@ -49,8 +49,9 @@ We can try to minimize the sum of absolute error over all observations, and in t
 
 In statistics, we approach the problem using a technique call Maximum Likelihood Estimation (MLE): what is the set of coeeficients \\(\mathbf{w}\\) that maximize the likelihood that N observations would happen. Since linear model assume the error term to be normally distributed with constant variance \\(\epsilon^2\\), the probability density function of \\(y\\) given \\(\mathbf{x}\\) and \\(\mathbf{w}\\) is:
 \\[
-p(y|\mathbf{x};\mathbf{w};\sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}
+p(y|\mathbf{x};\mathbf{w};\sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp{-\frac{(y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2}{2\sigma^2}
+
 \\]
 
-\\[ \mathcal{l}(\mathbf{w}) = \product_{i=1}^N (y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2 \\] 
+\\[ \mathcal{l}(\mathbf{w}) = \prod_{i=1}^N (y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2 \\] 
 The solution to this problem ends up being equivalent to minimizing sum of square errors over all observations
