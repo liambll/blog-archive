@@ -34,9 +34,9 @@ __Assumptions__
 
 In statistics, strict linear regression model makes several assumptions about the dependent variables, the explanatory variables and their relationship:
 * Linearity: The expected value of the dependent variable is a linear combination of the parameters and the explantory variables.
-* Independence: There is little or no multicollinearity among explanatory variables, and there is no auto-correltion among observations.
+* Independence: The error term is independent across observations and independent of explantory variables. That means there is little or no multicollinearity among explanatory variables, and there is no auto-correltion among observations.
 * Homoscedasticity: The error between observed and predicted values (i.e. the residuals of the regression) should have constant variance.
-* Normality: The error between observed and predicted values (i.e. the residuals of the regression) should be normally distributed
+* Normality: The error term should be normally distributed
 
 ## 2. Estimation
 Given a dataset of \\(N\\) observations, we want to find a set of coefficients \\(\mathbf{w}\\) so that the predicted value \\(f(\mathbf{x})\\) can represent observed value \\(y\\) the most.
