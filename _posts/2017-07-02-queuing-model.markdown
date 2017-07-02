@@ -59,13 +59,13 @@ Queuing models are usually labeled in the form:
 
 For example, M/M/s denotes a queuing model with multiple servers and exponential distribution for interarrival time and service time.
 
+## 2. Estimation
 Queuing models can provide estimations for:
   * \\(L\\) = Expected number of customers in the system, including those being served (Line Length).
   * \\(L_q\\) = Expected number of customers in the queue, which excludes customers being served.
   * \\(W\\) = Expected waiting time in the system (including service time) for an individual customer
   * \\(W_q\\) = Expected waiting time in the queue (excludes service time) for an individual customer.
 
-## 2. Estimation
 __Little's Formula:__
 \\[
 L = \lambda W
