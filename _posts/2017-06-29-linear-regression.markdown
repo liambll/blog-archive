@@ -56,4 +56,8 @@ The likelihood function for data would be:
 \\[
 \mathcal{l}(\mathbf{w}) = \prod_{i=1}^N \frac{1}{\sqrt{2\pi\sigma^2}}\exp{-\frac{(y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2}{2\sigma^2}}
 \\]
-The solution to this problem ends up being equivalent to minimizing sum of square errors over all observations
+Maximizing likelihood is equipvalent to minimizing negative log-likelihood:
+\\[
+\-log{mathcal{l}(\mathbf{w})} = frac{N}{2}log{2\pi} + nlog{\sigma} \sum_{i=1}^N (y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2
+\\]
+Therefore, maximizing likelihood ends up being equivalent to minimizing sum of square errors over all observations.
