@@ -72,4 +72,4 @@ Using derivatives, minimizing sum of square errors over all observations has a c
 in which:
 * \\(\mathbf{y} = [y_1; y_2; \dots; y_N]\\)
 * \\(\mathbf{\bar{X}} = [\mathbf{\bar{x}}_1; \mathbf{\bar{x}}_2; \dots; \mathbf{\bar{x}}_N ] \\)
-To avoid huge matrix computation, we can use gradient descent to approximate \\(w\\) instead.
+To avoid huge matrix computation, we can use gradient descent to approximate \\(w\\) instead. I will not go into details on these topics here.
