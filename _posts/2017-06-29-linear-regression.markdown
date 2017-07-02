@@ -68,7 +68,7 @@ Therefore, maximizing likelihood ends up being equivalent to minimizing sum of s
 __Solution:__
 We estimate coefficients by taking first-order deriative of the log-likelihood:
 \\[
-\frac{\partial log~mathcal{L}(\mathbf{w})}{\partial \mathbf{w}}
+\frac{\partial log~\mathcal{L}(\mathbf{w})}{\partial \mathbf{w}}
 \\]
 It has a closed form solution:
 \\[
@@ -78,4 +78,10 @@ in which:
 * \\(\mathbf{y} = [y_1; y_2; \dots; y_N]\\)
 * \\(\mathbf{\bar{X}} = [\mathbf{\bar{x}}_1; \mathbf{\bar{x}}_2; \dots; \mathbf{\bar{x}}_N ] \\)
 
-However, we can use gradient descent to approximate \\(\mathbf{w}\\) instead to avoid large matrix computation. I will not go into details on these topics here.
+However, we can use gradient descent to approximate \\(\mathbf{w}\\) instead to avoid large matrix computation.
+
+In machine learning, estimated \\(\mathbf{w}\\) is all we need in order to perform prediction. In statistics, we usually want to know the variance of coefficients in order to test whether a coefficient is significant in the model. To caculate variance for coefficients, we need to obtain Hessian matrix, i.e. second-order deriative of the log-likelihood:
+\\[
+\frac{\partial^2 log~\mathcal{L}(\mathbf{w})}{\partial^2 \mathbf{w}}
+\\]
+The estimated asymptotic variance for coefficients is the inverse of Hessian matrix.
