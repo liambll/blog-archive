@@ -28,7 +28,7 @@ y = f(\mathbf{x}) + \epsilon = w_0 + w_1 x_1 + w_2 x_2 + ... + w_k x_k + \epsilo
 * \\(y\\) is dependent variable (or output)
 * \\(\mathbf{x} = [x_1, x_2, ..., x_k] \\) is a vector of explainatory variables (or inputs) 
 * \\(\mathbf{w} = [w_0, x_1, x_2, ..., x_k] \\) is a vector of coefficients (or parameters, weights), in which \\(w_0\\) is bias term and \\(w_i\\) represents strength of linear relationship between y and \\(x_i\\) in the model
-* \\(\epsilon\\) is error term (or noise) which captures all other factors which influence the dependent variable \\(y\\) other than \\(f(\mathbf{x})\\)
+* \\(\epsilon\\) is error term (or noise) which captures all other factors which influence the dependent variable \\(y\\) other than \\(f(\mathbf{x}) = \mathbf{\bar{x}}\mathbf{w}\\)
 
 __Assumptions__
 
@@ -64,3 +64,12 @@ Maximizing likelihood is equipvalent to minimizing negative log-likelihood:
 \-log~\mathcal{l}(\mathbf{w}) = \frac{N}{2}log{2\pi} + Nlog{\sigma} + \frac{1}{2\sigma^2}\sum_{i=1}^N (y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2
 \\]
 Therefore, maximizing likelihood ends up being equivalent to minimizing sum of square errors over all observations.
+
+Using derivatives, minimizing sum of square errors over all observations has a closed form solution:
+\\[
+\mathbf{w} = (\mathbf{\bar{X}}^T\mathbf{\bar{X}})^{\dagger} \mathbf{\bar{X}}^T\mathbf{y}
+\\]
+in which:
+* \\(\mathbf{y} = [y_1; y_2; \dots; y_N]\\)
+* \\(\mathbf{\bar{X}} = [\mathbf{\bar{x}}_1; \mathbf{\bar{x}}_2; \dots; \mathbf{\bar{x}}_N ] \\)
+To avoid huge matrix computation, we can use gradient descent to approximate \\(w\\) instead.
