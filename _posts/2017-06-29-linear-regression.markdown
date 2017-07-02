@@ -33,27 +33,23 @@ y = f(\mathbf{x}) + \epsilon = w_0 + w_1 x_1 + w_2 x_2 + ... + w_k x_k + \epsilo
 __Assumptions__
 
 In statistics, strict linear regression model makes several assumptions about the dependent variables, the explanatory variables and their relationship:
-__* Linearity:__ The expected value of the dependent variable is a linear combination of the parameters and the explantory variables. Residual plot is commonly used to visualize any non-linearity relationship.
-__* Independence:__ The error term is independent across observations and independent of explantory variables. That means there is little or no multicollinearity among explanatory variables, and there is no auto-correltion among observations. Correlation matrix, Variance Inflation Factor (VIF), Durbin-Watson test are useful to check if indenpendence assumption is violated.
-__* Homoscedasticity:__ The error between observed and predicted values (i.e. the residuals of the regression) should have constant variance. Goldfeld-Quandt test can be used to detect Heteroskedasticity.
-__* Normality:__ The error term should be normally distributed. Kolmogorov–Smirnov (KS) test is used to detect non-normality.
+* __Linearity:__ The expected value of the dependent variable is a linear combination of the parameters and the explantory variables. Residual plot is commonly used to visualize any non-linearity relationship.
+* __Independence:__ The error term is independent across observations and independent of explantory variables. That means there is little or no multicollinearity among explanatory variables, and there is no auto-correltion among observations. Correlation matrix, Variance Inflation Factor (VIF), Durbin-Watson test are useful to check if indenpendence assumption is violated.
+* __Homoscedasticity:__ The error between observed and predicted values (i.e. the residuals of the regression) should have constant variance. Goldfeld-Quandt test can be used to detect Heteroskedasticity.
+* __Normality:__ The error term should be normally distributed. Kolmogorov–Smirnov (KS) test is used to detect non-normality.
 
 If any assumption is severly violated, they need to be handled by performing variable transformation (non-linear transformation, Box-Cox transformation, etc) before any meaningful conclusion can be drawn based on the model.
 
 ## 2. Estimation
 Given a dataset of \\(N\\) observations, we want to find a set of coefficients \\(\mathbf{w}\\) so that the predicted value \\(f(\mathbf{x})\\) can accurately represent observed value \\(y\\) the most.
 
-__Machine Learning__
-
-We achieve this objective by minimize a lost function representing the difference between the predicted value f(\mathbf{x}) and observed value \\(y\\). There is no defined rule on what is the correct loss function. The most common technique is ordinary least squares in which we try to minimize sum of square errors over all observations:
+In machine learning, we achieve this objective by minimize a lost function representing the difference between the predicted value f(\mathbf{x}) and observed value \\(y\\). There is no defined rule on what is the correct loss function. The most common technique is ordinary least squares in which we try to minimize sum of square errors over all observations:
 \\[
 E(\mathbf{w}) = \frac{1}{2}\sum_{i=1}^N (y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2
 \\]
 We can try to minimize the sum of absolute error over all observations, and in this case, we penalize wrong prediction less. We can slo minimize a penalized version of the least squares loss function. As you can see, machine learning techniques try to formulate problem in terms of minimizing a loss function based on certain intuition, and in doing so, we hope to achieve the best prediction.
 
-__Statistics__
-
-We approach the problem using a technique call Maximum Likelihood Estimation (MLE): what is the set of coeeficients \\(\mathbf{w}\\) that maximize the likelihood that N observations would happen. Since linear model assume the error term to be normally distributed with constant variance \\(\sigma^2\\), the probability density function of \\(y\\) given \\(\mathbf{x}\\) and \\(\mathbf{w}\\) is:
+In statistics, we approach the problem using a technique call Maximum Likelihood Estimation (MLE): what is the set of coeeficients \\(\mathbf{w}\\) that maximize the likelihood that N observations would happen. Since linear model assume the error term to be normally distributed with constant variance \\(\sigma^2\\), the probability density function of \\(y\\) given \\(\mathbf{x}\\) and \\(\mathbf{w}\\) is:
 \\[
 p(y_i|X=\mathbf{\bar{x}\_i};\mathbf{w};\sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp{-\frac{(y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2}{2\sigma^2}}
 \\]
@@ -68,7 +64,7 @@ Maximizing likelihood is equipvalent to minimizing negative log-likelihood:
 \\]
 Therefore, maximizing likelihood ends up being equivalent to minimizing sum of square errors over all observations.
 
-__Solution:__
+__Estimate coefficients__
 
 We estimate coefficients by taking first-order deriative of the log-likelihood:
 \\[
@@ -84,7 +80,9 @@ in which:
 
 However, we can use gradient descent to approximate \\(\mathbf{w}\\) instead to avoid large matrix computation.
 
-In machine learning, estimated \\(\mathbf{w}\\) is all we need in order to perform prediction. In statistics, we usually want to get the variance matrix of coefficients in order to caculate confidence intervals at a specific significant level for coefficients and prediction. For that, we need to obtain Hessian matrix, i.e. second-order deriative of the log-likelihood:
+__Estimate variance matrix for coefficients__
+
+In machine learning, estimated \\(\mathbf{w}\\) is all we need in order to perform prediction. In statistics, we usually want to get the variance matrix for coefficients in order to caculate confidence intervals at a specific significant level for coefficients and prediction. For that, we need to obtain Hessian matrix, i.e. second-order deriative of the log-likelihood:
 \\[
 \frac{\partial^2 log~\mathcal{L}(\mathbf{w})}{\partial^2 \mathbf{w}}
 \\]
