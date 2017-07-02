@@ -65,7 +65,8 @@ Maximizing likelihood is equipvalent to minimizing negative log-likelihood:
 \\]
 Therefore, maximizing likelihood ends up being equivalent to minimizing sum of square errors over all observations.
 
-Using derivatives, minimizing sum of square errors over all observations has a closed form solution:
+
+Using derivative, minimizing sum of square errors over all observations has a closed form solution:
 \\[
 \mathbf{w} = (\mathbf{\bar{X}}^T\mathbf{\bar{X}})^{\dagger} \mathbf{\bar{X}}^T\mathbf{y}
 \\]
