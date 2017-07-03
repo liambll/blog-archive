@@ -46,4 +46,4 @@ Characteristics of statistics techniques:
 
 ## 7. Bayesian Statistics
 
-## 8. Stochastic Analysis
+## 8. Stochastic Model
