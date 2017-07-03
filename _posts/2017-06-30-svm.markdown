@@ -40,10 +40,10 @@ To find the hyperplane that represents the largest separation between the two cl
 Maximizing margin:
 \\[
 \arg\max_{\mathbf{w}, b} \left\\{
-    \min_{n} \frac{y\_n(\mathbf{w}^T\mathbf{x}\_n + b)}{\|\|\mathbf{w}\|\|\_2} 
+\min_{n} \frac{y\_n(\mathbf{w}^T\mathbf{x}\_n + b)}{\|\|\mathbf{w}\|\|\_2} 
 \right\\}
 = \arg\max_{\mathbf{w}, b}\left\\{
-    \frac{1}{\|\|\mathbf{w}\|\|\_2} \min_{n} y\_n(\mathbf{w}^T\mathbf{x}\_n + b)
+\frac{1}{\|\|\mathbf{w}\|\|\_2} \min_{n} y\_n(\mathbf{w}^T\mathbf{x}\_n + b)
 \right\\}
 \\]
 
