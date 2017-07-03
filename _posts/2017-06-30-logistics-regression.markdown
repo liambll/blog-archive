@@ -39,7 +39,7 @@ __Assumptions__
 In statistics, logistic regression model makes several assumptions such as linearity between log odd and explanatory variables, error term being independent across observations and independent of explantory variables.
 
 ## 2. Estimation
-Given a dataset of \\(N\\) observations, we want to find a set of coefficients \\(\mathbf{w}\\) so that the predicted value \\(f(sigmoid(\mathbf{x}))\\) can accurately represent observed value \\(P(y=1\|\mathbf{x}; \mathbf{w})\\) the most.
+Given a dataset of \\(N\\) observations, we want to find a set of coefficients \\(\mathbf{w}\\) so that the predicted value \\(f(\mathbf{w}^T\mathbf{x}))\\) can accurately represent observed value \\(P(y=1\|\mathbf{x}; \mathbf{w})\\) the most.
 
 Since \\(y\\) follows Bernoulli distribution (i.e. 0 or 1), the probability density function of \\(y\\) given \\(\mathbf{x}\\) and \\(\mathbf{w}\\) is:
 \\[
