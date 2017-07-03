@@ -51,7 +51,7 @@ We can try to minimize the sum of absolute error over all observations, and in t
 \\[
 E(\mathbf{w}) = \sum_{i=1}^N \|y\_i - \mathbf{\bar{x}\_i}\mathbf{w}\|
 \\]
-We can slo minimize a penalized version of the least squares loss function.
+We can also minimize a penalized version of the least squares loss function.
 \\[
 E(\mathbf{w}) = \frac{1}{2}\sum_{i=1}^N (y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2 + \sum \mathbf{w}^2
 \\]
