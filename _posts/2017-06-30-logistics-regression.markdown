@@ -25,7 +25,7 @@ P(y=1\|\mathbf{x}; \mathbf{w}) = sigmoid(\mathbf{w}^T\mathbf{x})
 \\]
 
 * \\(P(y=1\|\mathbf{x}; \mathbf{w})\\) is the probability of \\(y\\) being 1. The probability of \\(y\\) being 0 would then be 1 - \\(P(y=1\|\mathbf{x}; \mathbf{w})\\).
-* sigmoid is called an activation function. Output of sigmoid function is always between 0 and 1:
+* sigmoid is called a link function. Output of sigmoid function is always between 0 and 1:
 \\[
 sigmoid(t) = \frac{1}{1 + e^{-t}}
 \\]
@@ -34,3 +34,9 @@ sigmoid(t) = \frac{1}{1 + e^{-t}}
 \\[
 log~\frac{P(y = 1 \| \mathbf{x}; \mathbf{w})}{1 - P(y = 1 \| \mathbf{x}; \mathbf{w})} = \mathbf{w}^T\mathbf{x}
 \\]
+
+__Assumptions__
+In statistics, logistic regression model makes several assumptions such as linearity between log odd and explanatory variables, error term being independent across observations and independent of explantory variables.
+
+## 2. Estimation
+Given a dataset of \\(N\\) observations, we want to find a set of coefficients \\(\mathbf{w}\\) so that the predicted value \\(f(sigmoid(\mathbf{x}))\\) can accurately represent observed value \\(P(y=1\|\mathbf{x}; \mathbf{w})\\) the most.
