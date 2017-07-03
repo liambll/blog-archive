@@ -23,6 +23,7 @@ Relationship between the probability of \\(y\\) being 1 and and k explanatory va
 \\[
 P(y=1|\mathbf{x}; \mathbf{w}) = sigmoid(\mathbf{w}^T\mathbf{x})
 \\]
+
 * \\(P(y=1|\mathbf{x}; \mathbf{w})\\)
 * sigmoid is called an activation function. Output of sigmoid function is always between 0 and 1:
 \\[
