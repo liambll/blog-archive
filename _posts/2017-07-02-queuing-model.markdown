@@ -129,9 +129,13 @@ We can clearly see the impact of service variability on the system performance: 
 that has no variability has a dramatic impact on reducing waiting time and queue length.
 
 * __M/M/s Model:__
-Probability of having 0 customers in the system \\(\P_0\\):
+Probability of having 0 customers in the system \\(P\_0\\):
 \\[
 \P_0 = (\sum\_{i=0}^{s-1}(\frac{ρ^i}{i!} + \frac{ρ^s}{s!} \frac{s\mu}{s\mu - \lambda}) )^{-1}
+\\]
+Average queue length:
+\\[
+L_q = \frac{P\_0 ρ^{s+1}} {(s-1)!(s-ρ)^2} = \frac{P\_0 \lambda \mu ρ^{s+1}} {(s-1)!(s \mu-\lambda)^2}
 \\]
 
 When the queuing model becomes too compliated to caculate exact waiting time and queue length, __Simulation model__ is an alternative to estimate these figures.
