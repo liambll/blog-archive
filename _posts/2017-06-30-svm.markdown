@@ -17,7 +17,7 @@ summary: Support Vector Machine (SVM) is a discriminative classifier formally de
 
 ## 1. Model
 Suppose some given data points each belong to one of two classes, there would be many hyperplanes that might classify separate the data into two classes. One logical choice of hyperplane is the one that represents the largest separation between the two classes.
-* Distance from a data point \\(\mathbf{x}\\) to a hyperplane (\mathbf{w}^T\mathbf{x} + b = 0\\):
+* Distance from a data point \\(\mathbf{x}\\) to a hyperplane \\(\mathbf{w}^T\mathbf{x} + b = 0\\):
 \\[
 \frac{\|\mathbf{w}^T\mathbf{x}\_0 + b\|}{\|\|\mathbf{w}\|\|_2}
 \\]
