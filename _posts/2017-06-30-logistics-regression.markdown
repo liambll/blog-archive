@@ -57,7 +57,7 @@ On a side note, negative log-likelihood in this case is the same cross-entropy l
 
 There is no closed form solution for logistic regression due to the presence of link function \\(f\\). We can use gradient descent to estimate coefficients and then calculate variance matrix for coefficients.
 
-<!--
+
 ## 3. Multi-class classification
 We can extend logistic regression model to handle cases when the dependent variable is categorical with more than 2 values, i.e. multi-nomial distribution. Several common extensions are:
 - __One vs All model:__ Build C logistic regression models, each predicting odd of \\(y\\) being class \\(C\_i\\) vs not being class \\(C\_i\\). Then, choose class with the highest probability out of C predictions.
