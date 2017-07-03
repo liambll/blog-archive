@@ -114,11 +114,11 @@ For such feature space transformation, we usually apply a kernel function, which
 \\[
 k(\mathbf{x}, \mathbf{z}) = (r + \gamma \mathbf{x}^T\mathbf{z})^d
 \\]
-* Radial Basic Function:
+* Sigmoid:
 \\[
 k(\mathbf{x}, \mathbf{z}) = \exp(-\gamma \|\|\mathbf{x} - \mathbf{z}\|\|_2^2), ~~ \gamma > 0
 \\]
-* Sigmoid:
+* Radial Basic Function:
 \\[
 k(\mathbf{x}, \mathbf{z}) = \exp(-\gamma \|\|\mathbf{x} - \mathbf{z}\|\|_2^2), ~~ \gamma > 0
 \\]
