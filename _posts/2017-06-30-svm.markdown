@@ -87,17 +87,17 @@ Therefore, the problem becomes:
 \\[
 \arg \min_{\mathbf{w}, b} \left\\{ \frac{1}{2}{\|\|\mathbf{w}\|\|\_2^2} + C \sum_{n=1}^N \max(0, 1 - y_n(\mathbf{w}^T\mathbf{x}\_n + b)) \right\\}
 \\]
-\\(E(\mathbf{w}, b) = \max(0, 1 - y_n(\mathbf{w}^T\mathbf{x}\_n + b))\\) is called hinge loss, another common loss function used in classification besides cross entropy loss. Hinge loss does not care about the details of the individual loss as long as it is less than 0, i,e it only punishes misclassification. On the other hand, cross entropy loss is never fully happy with any individual loss and punish every point depending on how far the prediction from 0 or 1.
+\\(E_n(\mathbf{w}, b) = \max(0, 1 - y_n(\mathbf{w}^T\mathbf{x}\_n + b))\\) is called hinge loss, another common loss function used in classification besides cross entropy loss. Hinge loss does not care about the details of the individual loss as long as it is less than 0, i,e it only punishes misclassification. On the other hand, cross entropy loss is never fully happy with any individual loss and punish every point depending on how far the prediction from 0 or 1.
 
 We can use gradient descent to perform parameter estimation.
 
 ## 4. Multiclass SVM
 We can extend Support Vector Machine to handle multi-class cases by accumulating loss unless the score of the correct class y is larger than the incorrect class scores by at least by \\(\delta\\).
 \\[
-E(\mathbf{w}, b) = \sum_{j \neq y} \max(0, \Delta - \mathbf{w}\_y^T\mathbf{x} + \mathbf{w}\_j^T\mathbf{x})
+E_n(y,\mathbf{x},\mathbf{w}) = \sum_{j \neq y} \max(0, \Delta - \mathbf{w}\_y^T\mathbf{x} + \mathbf{w}\_j^T\mathbf{x})
 \\]
-
+The loss function over N data points would be:
 \\[
-\mathcal{L}(\mathbf{X}, \mathbf{y}, \mathbf{W}) = \frac{1}{N}\sum_{n=1}^N \sum\_{j \neq y_n} \max(0, \Delta - z_{y_n}^n + z_j^n)
+E(y,\mathbf{x},\mathbf{w}) = \frac{1}{N}\sum_{n=1}^N \sum\_{j \neq y_n} \max(0, \Delta - \mathbf{w}\_y^T\mathbf{x} + \mathbf{w}\_j^T\mathbf{x})
 \\]
 
