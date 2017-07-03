@@ -97,9 +97,9 @@ W_q = \lambda /[\mu (\mu - \lambda)]
 \\[
 W = 1 /(\mu - \lambda)
 \\]
-Probability of having exactly n customers in the system:
+Probability of having exactly n customers in the system P\_n:
 \\[
-P(L=n) = ρ(1-ρ)
+P\_n = ρ(1-ρ)
 \\]
 Probability of waiting time in the system exceeding t:
 \\[
@@ -131,7 +131,11 @@ that has no variability has a dramatic impact on reducing waiting time and queue
 * __M/M/s Model:__
 Probability of having 0 customers in the system \\(P\_0\\):
 \\[
-\P_0 = (\sum\_{i=0}^{s-1}(\frac{ρ^i}{i!} + \frac{ρ^s}{s!} \frac{s\mu}{s\mu - \lambda}) )^{-1}
+P_0 = (\sum\_{i=0}^{s-1}(\frac{ρ^i}{i!} + \frac{ρ^s}{s!} \frac{s\mu}{s\mu - \lambda}) )^{-1}
+\\]
+Probability of having exactly n customers in the system \\(P\_n\\):
+\\[
+P\_n = \frac{ρ^n P\_0}{n!} for n <= s and  \frac{ρ^n P\_0}{s!s^{n-s}} for n > s
 \\]
 Average queue length:
 \\[
