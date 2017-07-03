@@ -39,6 +39,7 @@ log~\frac{P(y = 1 \| \mathbf{x}; \mathbf{w})}{1 - P(y = 1 \| \mathbf{x}; \mathbf
 </div>
 </div>
 __Assumptions__
+
 In statistics, logistic regression model makes several assumptions such as linearity between log odd and explanatory variables, error term being independent across observations and independent of explantory variables.
 
 ## 2. Estimation
