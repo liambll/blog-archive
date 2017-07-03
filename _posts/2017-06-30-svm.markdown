@@ -48,7 +48,7 @@ Maximizing margin:
 \right\\}
 \\]
 
-Since changing both \\(\mathbf{w}\\) and \\(b\\) by a factor of k>0 result in the the same distance, we could choose a k so that points nearest to the hyperplane would have:
+Since changing both \\(\mathbf{w}\\) and \\(b\\) by a factor of k>0 result in the the same distance, we could choose a k so that points nearest to the hyperplane would have the below constraint:
 \\[
 y\_n(\mathbf{w}^T\mathbf{x}\_n + b) = 1
 \\]
@@ -57,4 +57,13 @@ The problem now becomes:
 \arg \max_{\mathbf{w}, b} \frac{1}{\|\|\mathbf{w}\|\|_2} \\\
 ~subject ~to ~y\_n(\mathbf{w}^T\mathbf{x}\_n + b) \geq 1, \forall n = 1, 2, \dots, N
 \\]
+Lagrange multiplier method can be used to solve this problem.
 
+## 3. Soft Margin SVM
+So far, we assume the data points are linearly seperatable and the technique described above is called Hard Margin SVM. In cases where data points are not linearly seperatable, we can relax the constraint by introducing a slack variable:
+\\[
+y\_n(\mathbf{w}^T\mathbf{x}\_n + b) \geq 1-\xi_n, \forall n = 1, 2, \dots, N
+\\]
+* \\(\xi_n\\) = 0: data point is on margin or correct side of margin
+* 0 < \\(\xi_n\\) < 1: data point is inside margin but is still considered correct classification
+* \\(\xi_n\\) = 0: data point is misclassified
