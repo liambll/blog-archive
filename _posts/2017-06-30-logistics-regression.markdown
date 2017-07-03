@@ -66,7 +66,7 @@ log~\frac{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_i)}{1 - P(y = C\_i \| \mathbf{x}
 \\]
 - One vs One model: Build C(C-1)/2 logistics regression models, each predicting odd of \\(y\\) being class \\(C\_i\\) vs being class \\(C\_j\\). Then, choose class with the most votes out of C(C-1)/2 predictions.
 \\[
-log~\frac{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_ij)}{P(y = C\_j \| \mathbf{x}; \mathbf{w}\_ij)} = \mathbf{w\_ij}^T\mathbf{x}
+log~\frac{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_{ij})}{P(y = C\_j \| \mathbf{x}; \mathbf{w}\_{ij})} = \mathbf{w\_{ij}}^T\mathbf{x}
 \\]
 - Baseline category logit model: similar to One vs All approach. Build (C-1) logistic regression models, each predicting odd of \\(y\\) being class \\(C\_i\\) vs being class \\(C\_1\\). Then, calculate probability for C classes and choose class with the highest probability.
 \\[
