@@ -56,3 +56,20 @@ Maximizing likelihood is equipvalent to minimizing negative log-likelihood:
 On a side note, negative log-likelihood in this case is the same cross-entropy loss, which measures the diffences between two probability distribution. Therefore, we can also think of the problem as minimizing the difference between true probability distribution \\(y\\) and estimated probability distribution \\(f(\mathbf{w}^T\mathbf{x})\\).
 
 There is no closed form solution for logistic regression due to the presence of link function \\(f\\). We can use gradient descent to estimate coefficients and then calculate variance matrix for coefficients.
+
+<!--
+## 3. Multi-class classification
+We can extend logistic regression model to handle cases when the dependent variable is categorical with more than 2 values, i.e. multi-nomial distribution. Several common extensions are:
+- One vs All model: build C logistic regression models, each predicting odd of \\(y\\) being class \\(C\_i\\) vs not being class \\(C\_i\\). Then, choose class with the highest probability out of C predictions.
+\\[
+log~\frac{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_i)}{1 - P(y = C\_i \| \mathbf{x}; \mathbf{w}\_i)} = \mathbf{w\_i}^T\mathbf{x}
+\\]
+- One vs One model: builg C(C-1) logistics regression models, each predicting odd of \\(y\\) being class \\(C\_i\\) vs being class \\(C\_j\\). Then, choose class with the most votes out of C(C-1) predictions.
+\\[
+log~\frac{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_ij)}{P(y = C\_j \| \mathbf{x}; \mathbf{w}\_ij)} = \mathbf{w\_ij}^T\mathbf{x}
+\\]
+- Baseline category logit model
+- Cumulative logit model
+- Adjacent category logit model
+
+Multi-class classification can also be handled with Softmax regression which is a neural network model. 
