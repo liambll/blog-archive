@@ -15,21 +15,23 @@ summary: Big data is a term for datasets that are so large or complex that it wo
 
 "Big data is a term for datasets that are so large or complex that it would be challenging to ingest, store, analyze, query and visualize such datasets." There is a huge number of big data technologies. Below are commonly used big data tools:
 
-## 1. Ingestion - Data Streaming
+## 1. Ingestion and Streaming
 * Kafka
+* Storm
 
-## 2. Storage - Database
-* Key-value store
-* Document store
-* Wide Column Store
-* Graph
+## 2. Storage
+* Key-value store: Redis
+* Document store: MongoDB
+* Wide Column Store: Cassandra, HBase
+* Graph: Neo4j
 
-## 3. Analysis - Data Processing and Computation
+## 3. Analysis and Processing
 * Hadoop Map-Reduce
 * Spark
 
-## 4. Querying - Data Warehousing and Data Lake
+## 4. Querying and ETL
 * Hive
-
-## 5. Visualization
+* Pig
+* Flume
+* Scoop
 
