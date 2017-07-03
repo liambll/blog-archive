@@ -23,7 +23,6 @@ Relationship between the probability of \\(y\\) being 1 and k explanatory variab
 \\[
 P(y=1\|\mathbf{x}; \mathbf{w}) = f(\mathbf{w}^T\mathbf{x})
 \\]
-
 * \\(P(y=1\|\mathbf{x}; \mathbf{w})\\) is the probability of \\(y\\) being 1. The probability of \\(y\\) being 0 would then be 1 - \\(P(y=1\|\mathbf{x}; \mathbf{w})\\).
 * \\(\mathbf{x} = [x_1, x_2, ..., x_k] \\) is a vector of explainatory variables
 * Link function \\(f\\) is logistic sigmoid in this case. Sigmoid function has S -shape with output always between 0 and 1:
@@ -34,7 +33,11 @@ sigmoid(t) = \frac{1}{1 + e^{-t}}
 \\[
 log~\frac{P(y = 1 \| \mathbf{x}; \mathbf{w})}{1 - P(y = 1 \| \mathbf{x}; \mathbf{w})} = \mathbf{w}^T\mathbf{x}
 \\]
-
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/logistic-regression/logistic-regression.png" width = "500">
+</div>
+</div>
 __Assumptions__
 In statistics, logistic regression model makes several assumptions such as linearity between log odd and explanatory variables, error term being independent across observations and independent of explantory variables.
 
