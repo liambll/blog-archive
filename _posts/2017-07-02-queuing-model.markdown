@@ -136,7 +136,7 @@ P_0 = (\sum\_{i=0}^{s-1}\frac{ρ^i}{i!} + \frac{ρ^s}{s!} \frac{s\mu}{s\mu - \la
 \\]
 Probability of having exactly n customers in the system \\(P\_n\\):
 \\[
-P\_n = \frac{ρ^n P\_0}{n!} ~for ~n \{<=} ~s ~and ~\frac{ρ^n P\_0}{s!s^{n-s}} ~for ~n ~> ~s
+P\_n = \frac{ρ^n P\_0}{n!} ~for ~n ~≤ ~s ~and ~\frac{ρ^n P\_0}{s!s^{n-s}} ~for ~n ~> ~s
 \\]
 Average queue length:
 \\[
