@@ -19,7 +19,7 @@ Some examples:
 * predict whether borrowers would default based on historical product holdings and account balances.
 
 ## 1. Model
-Relationship between the probability of \\(y\\) being 1 and and k explanatory variables \\(\mathbf{x} = [x_1, x_2, ..., x_k] \\):
+Relationship between the probability of \\(y\\) being 1 and k explanatory variables \\(\mathbf{x} = [x_1, x_2, ..., x_k] \\):
 \\[
 P(y=1\|\mathbf{x}; \mathbf{w}) = f(\mathbf{w}^T\mathbf{x})
 \\]
