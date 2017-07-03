@@ -68,7 +68,7 @@ __Estimate coefficients__
 
 We estimate coefficients by taking first-order deriative of the log-likelihood:
 \\[
-\frac{\partial log~\mathcal{L}(\mathbf{w})}{\partial \mathbf{w}}
+\frac{\partial log~\mathcal{L}(\mathbf{w})}{\partial \mathbf{w}} = 0
 \\]
 It has a closed form solution:
 \\[
@@ -84,6 +84,6 @@ __Estimate variance matrix for coefficients__
 
 In machine learning, estimated \\(\mathbf{w}\\) is all we need in order to perform prediction. In statistics, we usually want to get the variance matrix for coefficients in order to caculate confidence intervals at a specific significant level for coefficients and prediction. For that, we need to obtain Hessian matrix, i.e. second-order deriative of the log-likelihood:
 \\[
-\frac{\partial^2 log~\mathcal{L}(\mathbf{w})}{\partial^2 \mathbf{w}}
+\frac{\partial^2 log~\mathcal{L}(\mathbf{w})}{\partial^2 \mathbf{w}} = 0
 \\]
 The estimated variance matrix is the inverse of Hessian matrix.
