@@ -81,4 +81,4 @@ log~\frac{P(y \leq C\_i \| \mathbf{x}; \mathbf{w}\_i)}{P(y > C\_i \| \mathbf{x};
 log~\frac{P(y = C\_{i+1} \| \mathbf{x}; \mathbf{w}\_i)}{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_i)} = \mathbf{w\_i}^T\mathbf{x}
 \\]
 
-Multi-class classification can also be handled using __Softmax regression model__ which is a neural network model. This model will be discussed in Neural Network.
+Multi-class classification can also be handled using __Softmax regression model__ which is a __Neural Network__ model.
