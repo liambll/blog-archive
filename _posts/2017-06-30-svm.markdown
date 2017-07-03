@@ -54,7 +54,6 @@ y\_n(\mathbf{w}^T\mathbf{x}\_n + b) = 1
 \\]
 The problem now becomes:
 \\[
-\arg \max_{\mathbf{w}, b} \frac{1}{\|\|\mathbf{w}\|\|_2}
+\arg \max_{\mathbf{w}, b} \frac{1}{\|\|\mathbf{w}\|\|_2} ~subject ~to ~y\_n(\mathbf{w}^T\mathbf{x}\_n + b) \geq 1, \forall n = 1, 2, \dots, N
 \\]
-subject to \\(y\_n(\mathbf{w}^T\mathbf{x}\_n + b) \geq 1, \forall n = 1, 2, \dots, N \\)
 
