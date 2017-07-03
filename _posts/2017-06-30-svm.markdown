@@ -112,7 +112,7 @@ For such feature space transformation, we usually apply a kernel function, which
 \\[
 k(\mathbf{x}, \mathbf{z}) = (r + \gamma \mathbf{x}^T\mathbf{z})^d
 \\]
-* Sigmoid:
+* Hyperbolic Tangent:
 \\[
 k(\mathbf{x}, \mathbf{z}) = \text{tanh}(\gamma \mathbf{x}^T\mathbf{z} + r)
 \\]
