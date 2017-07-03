@@ -43,9 +43,9 @@ summary: Queuing model is a mathematical model that predict queue lengths and wa
 \\]
   * Most queueing models assume that the service time has a particular probability distribution, such as exponential distribution, constant-time service time, etc.
   * Number of servers \\(s\\)
-  * Utilization factor \\(ρ\\) is the average fraction of time that a server is busy serving customers
+  * Traffic intensity \\(ρ\\) is the average fraction of time that a server is busy serving customers
 \\[
-ρ = \lambda /s\mu
+ρ = \lambda \mu
 \\]
 
 Queuing models are usually labeled in the form:
@@ -129,7 +129,10 @@ We can clearly see the impact of service variability on the system performance: 
 that has no variability has a dramatic impact on reducing waiting time and queue length.
 
 * __M/M/s Model:__
-
+Probability of having 0 customers in the system \\(\P_0\\):
+\\[
+\P_0 = (\sum\_{i=0}^{s-1}(\frac{ρ^i}{i!} + \frac{ρ^s}{s!} \frac{s\mu}{s\mu - \lambda}) )^{-1}
+\\]
 
 When the queuing model becomes too compliated to caculate exact waiting time and queue length, __Simulation model__ is an alternative to estimate these figures.
 
