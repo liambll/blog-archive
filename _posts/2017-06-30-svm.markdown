@@ -114,7 +114,7 @@ k(\mathbf{x}, \mathbf{z}) = (r + \gamma \mathbf{x}^T\mathbf{z})^d
 \\]
 * Sigmoid:
 \\[
-k(\mathbf{x}, \mathbf{z}) = \exp(-\gamma \|\|\mathbf{x} - \mathbf{z}\|\|_2^2), ~~ \gamma > 0
+k(\mathbf{x}, \mathbf{z}) = \text{tanh}(\gamma \mathbf{x}^T\mathbf{z} + r)
 \\]
 * Radial Basic Function:
 \\[
