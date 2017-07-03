@@ -25,11 +25,11 @@ P(y=1\|\mathbf{x}; \mathbf{w}) = f(\mathbf{w}^T\mathbf{x})
 \\]
 
 * \\(P(y=1\|\mathbf{x}; \mathbf{w})\\) is the probability of \\(y\\) being 1. The probability of \\(y\\) being 0 would then be 1 - \\(P(y=1\|\mathbf{x}; \mathbf{w})\\).
+* \\(\mathbf{x} = [x_1, x_2, ..., x_k] \\) is a vector of explainatory variables
 * Link function \\(f\\) is logistic sigmoid in this case. Sigmoid function has S -shape with output always between 0 and 1:
 \\[
 sigmoid(t) = \frac{1}{1 + e^{-t}}
 \\]
-* \\(\mathbf{w}^T\mathbf{x}\\) is linear combination of explanatory variables \\([x_1, x_2, ..., x_k] \\)
 * \\(\mathbf{w} = [w_0, x_1, x_2, ..., x_k] \\) is a vector of coefficients (or parameters, weights), in which \\(w_0\\) is bias term and \\(w_i\\) represents strength of linear relationship between log odd, i.e. the probability of \\(y\\) being 1 vs the probability of \\(y\\) being 0, and \\(x_i\\) in the model. If we increase \\(x_i\\) by 1, we would expect the odd of \\(y\\) being 1 vs being 0 to change by \\(exp(w_i)\\).
 \\[
 log~\frac{P(y = 1 \| \mathbf{x}; \mathbf{w})}{1 - P(y = 1 \| \mathbf{x}; \mathbf{w})} = \mathbf{w}^T\mathbf{x}
