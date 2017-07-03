@@ -143,5 +143,5 @@ Average queue length:
 L_q = \frac{P\_0 ρ^{s+1}} {(s-1)!(s-ρ)^2} = \frac{P\_0 \lambda \mu ρ^{s+1}} {(s-1)!(s \mu-\lambda)^2}
 \\]
 
-When the queuing model becomes too compliated to caculate exact waiting time and queue length, __Simulation model__ is an alternative to estimate these figures.
+When a queuing model is too compliated to caculate exact waiting time and queue length, __Simulation model__ is an alternative to estimate these figures.
 
