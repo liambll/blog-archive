@@ -94,7 +94,7 @@ We can use gradient descent to perform parameter estimation.
 ## 4. Multiclass SVM
 We can extend Support Vector Machine to handle multi-class cases by accumulating loss unless the score of the correct class y is larger than the incorrect class scores by at least by \\(\delta\\).
 \\[
-E_n(y,\mathbf{x},\mathbf{w}) = \sum_{j \neq y} \max(0, \Delta - \mathbf{w}\_y^T\mathbf{x} + \mathbf{w}\_j^T\mathbf{x})
+E(y,\mathbf{x},\mathbf{w}) = \sum_{j \neq y} \max(0, \Delta - \mathbf{w}\_y^T\mathbf{x} + \mathbf{w}\_j^T\mathbf{x})
 \\]
 The loss function over N data points would be:
 \\[
