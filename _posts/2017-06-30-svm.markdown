@@ -120,3 +120,15 @@ k(\mathbf{x}, \mathbf{z}) = \text{tanh}(\gamma \mathbf{x}^T\mathbf{z} + r)
 \\[
 k(\mathbf{x}, \mathbf{z}) = \exp(-\gamma \|\|\mathbf{x} - \mathbf{z}\|\|_2^2), ~~ \gamma > 0
 \\]
+
+<!--
+## 6. Further thought
+Some interesting comparison of Neural Network and Support Vector Machine:
+|Characterestics |    Neural Networks     | Support Vector Machine |
+|----------------|------------------------|------------------------|
+|Classify linearly separatable data | Perceptron Learning Algorithm | Hard Margin SVM |
+|Classify almost linearly separatable data | Logistics Regression | Soft Margin SVM |
+|Classify non linearly separatable data | Multilayer perceptron  | Kernel SVM
+|Loss function | Cross Entropy loss | Hinge loss
+|Strength | Learn feature representation | Achieve global minimum
+-->
