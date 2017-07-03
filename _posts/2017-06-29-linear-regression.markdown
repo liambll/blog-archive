@@ -29,6 +29,11 @@ y = f(\mathbf{x}) + \epsilon = w_0 + w_1 x_1 + w_2 x_2 + ... + w_k x_k + \epsilo
 * \\(\mathbf{x} = [x_1, x_2, ..., x_k] \\) is a vector of explainatory variables (or inputs) 
 * \\(\mathbf{w} = [w_0, x_1, x_2, ..., x_k] \\) is a vector of coefficients (or parameters, weights), in which \\(w_0\\) is bias term and \\(w_i\\) represents strength of linear relationship between \\(y\\) and \\(x_i\\) in the model. If we increase \\(x_i\\) by 1, we would expect \\(y\\) to change by \\(w_i\\).
 * \\(\epsilon\\) is error term (or noise) which captures all other factors which influence the dependent variable \\(y\\) other than \\(f(\mathbf{x}) = \mathbf{\bar{x}}\mathbf{w}\\)
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/linear-regression/linear-regression.png" width = "500">
+</div>
+</div>
 
 __Assumptions__
 
