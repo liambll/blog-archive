@@ -72,4 +72,9 @@ We want to minimize non-zero slack variables while maximizing the margin. The ob
 \arg \min_{\mathbf{w}, b, \xi} \frac{1}{2}{\|\|\mathbf{w}\|\|\_2^2} + C \sum_{n=1}^N \xi\_n + \\\
 ~subject ~to ~y\_n(\mathbf{w}^T\mathbf{x}\_n + b) \geq 1-\xi_n, ~and ~\xi_n \geq 0 ~\forall n = 1, 2, \dots, N
 \\]
+or
+\\[
+\arg \min_{\mathbf{w}, b, \xi} \frac{1}{2}{\|\|\mathbf{w}\|\|\_2^2} + C \sum_{n=1}^N \xi\_n + \\\
+~subject ~to ~\xi_n \geq \max(0, 1 - y\_n(\mathbf{w}^T\mathbf{x}\_n + b)) ~\forall n = 1, 2, \dots, N
+\\]
 in which hyperparameter C > 0 controls importance of large margin versus incorrect classification (non-zero slack).
