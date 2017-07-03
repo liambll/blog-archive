@@ -72,3 +72,4 @@ We want to minimize non-zero slack variables while maximizing the margin. The ob
 \arg \min_{\mathbf{w}, b} \frac{1}{2}{\|\|\mathbf{w}\|\|\_2^2} + C \sum_{n=1}^N \xi\_n + \\\
 ~subject ~to ~y\_n(\mathbf{w}^T\mathbf{x}\_n + b) \geq 1-\xi_n, \forall n = 1, 2, \dots, N
 \\]
+in which hyperparameter C > 0 controls importance of large margin versus incorrect classification (non-zero slack).
