@@ -78,3 +78,12 @@ or
 ~subject ~to ~\xi_n \geq \max(0, 1 - y\_n(\mathbf{w}^T\mathbf{x}\_n + b)) ~\forall n = 1, 2, \dots, N
 \\]
 in which hyperparameter C > 0 controls importance of large margin versus incorrect classification (non-zero slack).
+
+Since \\(\xi_n > 0, \forall n = 1, 2, \dots, N\\), the solution must satisfy:
+\\[
+~\xi_n = \max(0, 1 - y\_n(\mathbf{w}^T\mathbf{x}\_n + b)) ~\forall n = 1, 2, \dots, N
+\\]
+Therefore, the problem becomes:
+\\[
+\arg \min_{\mathbf{w}, b} \frac{1}{2}{\|\|\mathbf{w}\|\|\_2^2} + C \sum_{n=1}^N \max(0, 1 - y_n(\mathbf{w}^T\mathbf{x}\_n + b))
+\\]
