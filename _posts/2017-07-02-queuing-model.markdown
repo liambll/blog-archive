@@ -21,7 +21,7 @@ summary: Queuing model is a mathematical model that predict queue lengths and wa
     <img src="/blog/assets/queuing-model/queuing-model.jpg" width = "500">
 </div>
 </div>
-__* Arrivals:__
+* __Arrivals:__
   * The time between consecutive arrivals to a queueing system is the interarrival time.
   * Mean arrival rate \\(\lambda\\) is the expected number of arrivals per unit time.
 \\[
@@ -29,13 +29,13 @@ __* Arrivals:__
 \\]
   * Most queueing models assume that the form of the probability distribution of inter‐arrival times is an exponential distribution. That means the probability of an arrival in the next time unit is completely uninfluenced by when the last arrival occurs (i.e. lack-of-memory property) and there is a high likelihood g of small interarrival times, and a small chance of a very large interarrival time.
 
-__* Queue:__
+* __Queue:__
   * The number of customers in the queue \\(L_q\\) is the number of customers waiting for service to begin.
   * The number of customers in the system \\(L\\) is the number in the queue plus the number currently being served.
   * The queue capacity is the maximum number of customers that can be held in the queue.
   * The queue discipline refers to the order in which members of the queue are selected to begin service. Examples include First-In-First Out (FIFO), random selection, priority procedure, and even Last-In-First-Out (LIFO)
 
-__* Service:__
+* __Service:__
   * Service time is the elapsed time from the begining to the end of service.
   * Mean service rate \\(\mu\\) is expected number of service completions per unit time for a single busy server
 \\[
@@ -66,7 +66,7 @@ Queuing models can provide estimations for:
   * \\(W\\) = Expected waiting time in the system (including service time) for an individual customer
   * \\(W_q\\) = Expected waiting time in the queue (excludes service time) for an individual customer.
 
-__Little's Formula:__
+__Little's Formula:__ The long-term average number of customers in a stable system \\(L\\) is equal to the long-term average effective arrival rate \\(\lambda\\), multiplied by the average time a customer spends in the system \\(W\\). Therefore, we have:
 \\[
 L = \lambda W
 \\]
@@ -79,7 +79,8 @@ W = W_q + 1/\mu
 \\[
 L = L_q + \lambda /\mu
 \\]
-Below are mathematical solution to several simple queuing models.
+
+Below are mathematical solution to several single server queuing models.
 
 __* M/M/1 Model:__
 
@@ -127,4 +128,5 @@ L_q = ρ^2/(2(1-ρ))
 We can clearly see the impact of service variability on the system performance: Changing from the exponential service time to the one
 that has no variability has a dramatic impact on reducing waiting time and queue length.
 
+When the queuing model becomes too compliated, __Simulation model__ is an alternative to estimate queue length and waiting time.
 
