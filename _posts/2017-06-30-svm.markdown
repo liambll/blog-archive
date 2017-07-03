@@ -67,8 +67,8 @@ y\_n(\mathbf{w}^T\mathbf{x}\_n + b) \geq 1-\xi_n, \forall n = 1, 2, \dots, N
 * \\(\xi_n\\) = 0: data point is on margin or correct side of margin
 * 0 < \\(\xi_n\\) < 1: data point is inside margin but is still considered correct classification
 * \\(\xi_n\\) > 1: data point is misclassified
-We want to minimize non-zero slack variables while maximizing the margin. The problem becomes:
+We want to minimize non-zero slack variables while maximizing the margin. The objective would now become:
 \\[
-\arg \min_{\mathbf{w}, b} \|\|\mathbf{w}\|\|_2 + \\\
-~subject ~to ~y\_n(\mathbf{w}^T\mathbf{x}\_n + b) \geq 1, \forall n = 1, 2, \dots, N
+\arg \min_{\mathbf{w}, b} \frac{1}{2}{\|\|\mathbf{w}\|\|\_2^2} + C \sum_{n=1}^N \xi\_n + \\\
+~subject ~to ~y\_n(\mathbf{w}^T\mathbf{x}\_n + b) \geq 1-\xi_n, \forall n = 1, 2, \dots, N
 \\]
