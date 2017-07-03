@@ -80,9 +80,9 @@ W = W_q + 1/\mu
 L = L_q + \lambda /\mu
 \\]
 
-Below are mathematical solution to several single server queuing models.
+Below are mathematical solution to several simple queuing models.
 
-__* M/M/1 Model:__
+* __M/M/1 Model:__
 
 M/M/1 denotes a queuing model with single server and exponential distribution for interarrival time and service time.
 \\[
@@ -111,7 +111,7 @@ P(W_q > t) = ρexp(-\mu(1-ρ)t)
 \\]
 
 
-__* M/G/1 Model:__
+* __M/G/1 Model:__
 
 M/G/1 denotes a queuing model with single server, exponential distribution for interarrival time and general distribution for service time, which has mean \\(1/\mu\\) and standard deviation \\(\sigma\\).
 \\[
@@ -119,7 +119,7 @@ L_q = (\lambda^2 \sigma^2 + ρ^2)/(2(1-ρ))
 \\]
 
 
-__* M/D/1 Model:__
+* __M/D/1 Model:__
 
 This is a special case of M/G/1 model with \\(\sigma\\) = 0.
 \\[
@@ -128,5 +128,8 @@ L_q = ρ^2/(2(1-ρ))
 We can clearly see the impact of service variability on the system performance: Changing from the exponential service time to the one
 that has no variability has a dramatic impact on reducing waiting time and queue length.
 
-When the queuing model becomes too compliated, __Simulation model__ is an alternative to estimate queue length and waiting time.
+* __M/M/s Model:__
+
+
+When the queuing model becomes too compliated to caculate exact waiting time and queue length, __Simulation model__ is an alternative to estimate these figures.
 
