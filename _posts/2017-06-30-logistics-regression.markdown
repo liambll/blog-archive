@@ -15,8 +15,11 @@ summary: Logistic regression is a regression model where the dependent variable 
 
 "Logistic regression is a regression model where the dependent variable is binary (0 or 1)."
 Some examples:
-- analyze association between s mortality rate and smoking habit
-- predict whether borrowers would default based on historical product holdings and account balances.
+* analyze association between s mortality rate and smoking habit
+* predict whether borrowers would default based on historical product holdings and account balances.
+
+## 1. Model
+Relationship between the probability of \\(y\\) being 1 and and k explanatory variables \\(\mathbf{x} = [x_1, x_2, ..., x_k] \\):
 \\[
 P(y\_i = 1 | \mathbf{x}\_i; \mathbf{w}) = sigmoid(\mathbf{w}^T\mathbf{x})
 \\]
