@@ -129,6 +129,7 @@ We can clearly see the impact of service variability on the system performance: 
 that has no variability has a dramatic impact on reducing waiting time and queue length.
 
 * __M/M/s Model:__
+
 Probability of having 0 customers in the system \\(P\_0\\):
 \\[
 P_0 = (\sum\_{i=0}^{s-1}\frac{ρ^i}{i!} + \frac{ρ^s}{s!} \frac{s\mu}{s\mu - \lambda} )^{-1}
