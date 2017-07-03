@@ -21,9 +21,9 @@ Some examples:
 ## 1. Model
 Relationship between the probability of \\(y\\) being 1 and and k explanatory variables \\(\mathbf{x} = [x_1, x_2, ..., x_k] \\):
 \\[
-P(y\_i = 1 | \mathbf{x}\_i; \mathbf{w}) = sigmoid(\mathbf{w}^T\mathbf{x})
+P(y=1|\mathbf{x}; \mathbf{w}) = sigmoid(\mathbf{w}^T\mathbf{x})
 \\]
-* \\(P(y\_i = 1 | \mathbf{x}\_i; \mathbf{w})\\)
+* \\(P(y=1|\mathbf{x}; \mathbf{w})\\)
 * sigmoid is called an activation function. Output of sigmoid function is always between 0 and 1:
 \\[
 sigmoid(t) = \frac{1}{1 + e^{-t}}
