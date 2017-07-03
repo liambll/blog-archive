@@ -25,7 +25,7 @@ P(y=1\|\mathbf{x}; \mathbf{w}) = f(\mathbf{w}^T\mathbf{x})
 \\]
 
 * \\(P(y=1\|\mathbf{x}; \mathbf{w})\\) is the probability of \\(y\\) being 1. The probability of \\(y\\) being 0 would then be 1 - \\(P(y=1\|\mathbf{x}; \mathbf{w})\\).
-* Link function \\(f\\ is logistic sigmoid in this case. Sigmoid function has S -shape with output always between 0 and 1:
+* Link function \\(f\\) is logistic sigmoid in this case. Sigmoid function has S -shape with output always between 0 and 1:
 \\[
 sigmoid(t) = \frac{1}{1 + e^{-t}}
 \\]
@@ -53,3 +53,6 @@ Maximizing likelihood is equipvalent to minimizing negative log-likelihood:
 \\[
 \-log~\mathcal{L}(\mathbf{w}) = = -\sum\_{i=1}^N(y\_i \log f(\mathbf{w}^T\mathbf{x}\_i) + (1-y\_i) \log (1 - f(\mathbf{w}^T\mathbf{x}\_i)))
 \\]
+On a side note, negative log-likelihood in this case is the same cross-entropy loss, which measures the diffences between two probability distribution. Therefore, we can also think of the problem as minimizing the difference between true probability distribution \\(y\\) and estimated probability distribution \\(f(\mathbf{w}^T\mathbf{x})\\).
+
+There is no closed form solution for logistic regression due to the presence of link function \\(f\\). We can use gradient descent to estimate coefficients and then calculate variance matrix for coefficients.
