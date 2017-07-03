@@ -21,11 +21,11 @@ Some examples:
 ## 1. Model
 Relationship between the probability of \\(y\\) being 1 and and k explanatory variables \\(\mathbf{x} = [x_1, x_2, ..., x_k] \\):
 \\[
-P(y=1\|\mathbf{x}; \mathbf{w}) = \f(\mathbf{w}^T\mathbf{x})
+P(y=1\|\mathbf{x}; \mathbf{w}) = f(\mathbf{w}^T\mathbf{x})
 \\]
 
 * \\(P(y=1\|\mathbf{x}; \mathbf{w})\\) is the probability of \\(y\\) being 1. The probability of \\(y\\) being 0 would then be 1 - \\(P(y=1\|\mathbf{x}; \mathbf{w})\\).
-* Link function \f is logistic sigmoid in this case. Sigmoid function has S -shape with output always between 0 and 1:
+* Link function \\(f\\ is logistic sigmoid in this case. Sigmoid function has S -shape with output always between 0 and 1:
 \\[
 sigmoid(t) = \frac{1}{1 + e^{-t}}
 \\]
@@ -43,9 +43,13 @@ Given a dataset of \\(N\\) observations, we want to find a set of coefficients \
 
 Since \\(y\\) follows Bernoulli distribution (i.e. 0 or 1), the probability density function of \\(y\\) given \\(\mathbf{x}\\) and \\(\mathbf{w}\\) is:
 \\[
-P(Y=y\_i| \ X = \mathbf{x}\_i; \mathbf{w}) = \f(\mathbf{w}^T\mathbf{x}\_i)^{y_i}\(1 - \f(\mathbf{w}^T\mathbf{x}\_i))^{1- y_i}
+P(Y=y\_i| \ X = \mathbf{x}\_i; \mathbf{w}) = f(\mathbf{w}^T\mathbf{x}\_i)^{y_i}\(1 - f(\mathbf{w}^T\mathbf{x}\_i))^{1- y_i}
 \\]
 The likelihood function for data would be:
 \\[
-\mathcal{L}(\mathbf{w}) = \prod_{i=1}^N \f(\mathbf{w}^T\mathbf{x}\_i)^{y_i}\(1 - \f(\mathbf{w}^T\mathbf{x}\_i))^{1- y_i}
+\mathcal{L}(\mathbf{w}) = \prod_{i=1}^N f(\mathbf{w}^T\mathbf{x}\_i)^{y_i}\(1 - f(\mathbf{w}^T\mathbf{x}\_i))^{1- y_i}
+\\]
+Maximizing likelihood is equipvalent to minimizing negative log-likelihood:
+\\[
+\-log~\mathcal{L}(\mathbf{w}) = = -\sum\_{i=1}^N(y\_i \log f(\mathbf{w}^T\mathbf{x}\_i) + (1-y\_i) \log (1 - f(\mathbf{w}^T\mathbf{x}\_i)))
 \\]
