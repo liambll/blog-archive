@@ -54,7 +54,7 @@ y\_n(\mathbf{w}^T\mathbf{x}\_n + b) = 1
 \\]
 The problem now becomes:
 \\[
-\arg \max_{\mathbf{w}, b} \frac{1}{\|\|\mathbf{w}\|\|_2} \\\
+\arg \max_{\mathbf{w}, b} \left\\{ \frac{1}{\|\|\mathbf{w}\|\|_2} \right\\} \\\
 ~subject ~to ~y\_n(\mathbf{w}^T\mathbf{x}\_n + b) \geq 1, \forall n = 1, 2, \dots, N
 \\]
 Lagrange multiplier method can be used to solve this problem.
@@ -69,12 +69,12 @@ y\_n(\mathbf{w}^T\mathbf{x}\_n + b) \geq 1-\xi_n, \forall n = 1, 2, \dots, N
 * \\(\xi_n\\) > 1: data point is misclassified
 We want to minimize non-zero slack variables while maximizing the margin. The objective would now be stated as:
 \\[
-\arg \min_{\mathbf{w}, b, \xi} \frac{1}{2}{\|\|\mathbf{w}\|\|\_2^2} + C \sum_{n=1}^N \xi\_n + \\\
+\arg \min_{\mathbf{w}, b, \xi} \left\\{ \frac{1}{2}{\|\|\mathbf{w}\|\|\_2^2} + C \sum_{n=1}^N \xi\_n \right\\} \\\
 ~subject ~to ~y\_n(\mathbf{w}^T\mathbf{x}\_n + b) \geq 1-\xi_n, ~and ~\xi_n \geq 0 ~\forall n = 1, 2, \dots, N
 \\]
 or
 \\[
-\arg \min_{\mathbf{w}, b, \xi} \frac{1}{2}{\|\|\mathbf{w}\|\|\_2^2} + C \sum_{n=1}^N \xi\_n + \\\
+\arg \min_{\mathbf{w}, b, \xi} \left\\{ \frac{1}{2}{\|\|\mathbf{w}\|\|\_2^2} + C \sum_{n=1}^N \xi\_n \right\\} \\\
 ~subject ~to ~\xi_n \geq \max(0, 1 - y\_n(\mathbf{w}^T\mathbf{x}\_n + b)) ~\forall n = 1, 2, \dots, N
 \\]
 in which hyperparameter C > 0 controls importance of large margin versus incorrect classification (non-zero slack).
@@ -85,7 +85,7 @@ Since \\(\xi_n > 0, \forall n = 1, 2, \dots, N\\), the solution must satisfy:
 \\]
 Therefore, the problem becomes:
 \\[
-\arg \min_{\mathbf{w}, b} \frac{1}{2}{\|\|\mathbf{w}\|\|\_2^2} + C \sum_{n=1}^N \max(0, 1 - y_n(\mathbf{w}^T\mathbf{x}\_n + b))
+\arg \min_{\mathbf{w}, b} \left\\{ \frac{1}{2}{\|\|\mathbf{w}\|\|\_2^2} + C \sum_{n=1}^N \max(0, 1 - y_n(\mathbf{w}^T\mathbf{x}\_n + b)) \right\\}
 \\]
 \\(E(\mathbf{w}, b) = \max(0, 1 - y_n(\mathbf{w}^T\mathbf{x}\_n + b))\\) is called hinge loss, another common loss function used in classification besides cross entropy loss. Hinge loss does not care about the details of the individual loss as long as it is less than 0, i,e it only punishes misclassification. On the other hand, cross entropy loss is never fully happy with any individual loss and punish every point depending on how far the prediction from 0 or 1.
 
