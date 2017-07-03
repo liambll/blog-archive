@@ -49,7 +49,7 @@ E(\mathbf{w}) = \frac{1}{2}\sum_{i=1}^N (y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2
 \\]
 We can try to minimize the sum of absolute error over all observations, and in this case, we penalize wrong prediction less.
 \\[
-E(\mathbf{w}) = \frac{1}{2}\sum_{i=1}^N \|y\_i - \mathbf{\bar{x}\_i}\mathbf{w}\|
+E(\mathbf{w}) = \sum_{i=1}^N \|y\_i - \mathbf{\bar{x}\_i}\mathbf{w}\|
 \\]
 We can slo minimize a penalized version of the least squares loss function.
 \\[
