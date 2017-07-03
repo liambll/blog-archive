@@ -13,4 +13,11 @@ summary: Support Vector Machine (SVM) is a discriminative classifier formally de
 ---
 
 
-"Support Vector Machine (SVM) is a discriminative classifier formally defined by a separating hyperplane."
+"Support Vector Machine (SVM) is a discriminative classifier formally defined by a separating hyperplane." Suppose some given data points each belong to one of two classes, there would be many hyperplanes that might classify separate the data into two classes. One logical choice of hyperplane is the one that represents the largest separation between the two classes.
+* 
+
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/svm/svm.png" width = "500">
+</div>
+</div>
