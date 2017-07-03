@@ -60,16 +60,25 @@ There is no closed form solution for logistic regression due to the presence of 
 <!--
 ## 3. Multi-class classification
 We can extend logistic regression model to handle cases when the dependent variable is categorical with more than 2 values, i.e. multi-nomial distribution. Several common extensions are:
-- One vs All model: build C logistic regression models, each predicting odd of \\(y\\) being class \\(C\_i\\) vs not being class \\(C\_i\\). Then, choose class with the highest probability out of C predictions.
+- One vs All model: Build C logistic regression models, each predicting odd of \\(y\\) being class \\(C\_i\\) vs not being class \\(C\_i\\). Then, choose class with the highest probability out of C predictions.
 \\[
 log~\frac{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_i)}{1 - P(y = C\_i \| \mathbf{x}; \mathbf{w}\_i)} = \mathbf{w\_i}^T\mathbf{x}
 \\]
-- One vs One model: builg C(C-1) logistics regression models, each predicting odd of \\(y\\) being class \\(C\_i\\) vs being class \\(C\_j\\). Then, choose class with the most votes out of C(C-1) predictions.
+- One vs One model: Build C(C-1)/2 logistics regression models, each predicting odd of \\(y\\) being class \\(C\_i\\) vs being class \\(C\_j\\). Then, choose class with the most votes out of C(C-1)/2 predictions.
 \\[
 log~\frac{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_ij)}{P(y = C\_j \| \mathbf{x}; \mathbf{w}\_ij)} = \mathbf{w\_ij}^T\mathbf{x}
 \\]
-- Baseline category logit model
-- Cumulative logit model
-- Adjacent category logit model
+- Baseline category logit model: similar to One vs All approach. Build (C-1) logistic regression models, each predicting odd of \\(y\\) being class \\(C\_i\\) vs being class \\(C\_1\\). Then, calculate probability for C classes and choose class with the highest probability.
+\\[
+log~\frac{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_i)}{P(y = C\_1 \| \mathbf{x}; \mathbf{w}\_ij)} = \mathbf{w\_i}^T\mathbf{x}
+\\]
+- Cumulative logit model: usually apply for ordinal categorical dependent variable. Build (C-1) logistic regression models, each predicting odd of \\(y\\) being not greater than \\(C\_i\\) vs being greater \\(C\_1\\). Then, calculate probability for C classes and choose class with the highest probability.
+\\[
+log~\frac{P(y <= C\_i \| \mathbf{x}; \mathbf{w}\_i)}{P(y > C\_i \| \mathbf{x}; \mathbf{w}\_ij)} = \mathbf{w\_i}^T\mathbf{x}
+\\]
+- Adjacent category logit model: usually apply for ordinal categorical dependent variable. Build (C-1) logistic regression models, each predicting odd of \\(y\\) being class \\(C\_{i+1}\\) vs being greater \\(C\_i}\\). Then, calculate probability for C classes and choose class with the highest probability.
+\\[
+log~\frac{P(y = C\_{i+1} \| \mathbf{x}; \mathbf{w}\_i)}{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_ij)} = \mathbf{w\_i}^T\mathbf{x}
+\\]
 
-Multi-class classification can also be handled with Softmax regression which is a neural network model. 
+Multi-class classification can also be handled using Softmax regression which is a neural network model. This model will be discussed in Neural Network.
