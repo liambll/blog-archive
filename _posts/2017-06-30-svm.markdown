@@ -103,9 +103,10 @@ E(y,\mathbf{x},\mathbf{w}) = \frac{1}{N}\sum_{n=1}^N \sum\_{j \neq y_n} \max(0, 
 
 ## 5. Kernel SVM
 In cases where data points are totally linearly seperatable, we need to transform the feature space into a higher dimensional space in order to find linearly seperatable hyperplane, as illustrated below:
-<div style="text-align:center;">
-<iframe width="600" height = "400" src="https://www.youtube.com/watch?v=3liCbRZPrZA" frameborder="0" allowfullscreen></iframe>
-<div class="thecap">Kernel SVM example</div>
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/svm/kernel.png" width = "700">
+</div>
 </div>
 
 For such feature space transformation, we usually apply a kernel function, which can make use of kernel trick (i.e. simply computing the inner products between the all pairs of data in the feature space without ever computing the coordinates of the data in that space) in order to avoid expensive computation. Below are commonly used kernel functions:
