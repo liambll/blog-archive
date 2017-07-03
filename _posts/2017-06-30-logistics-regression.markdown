@@ -64,14 +64,6 @@ There is no closed form solution for logistic regression due to the presence of 
 
 ## 3. Multi-class classification
 We can extend logistic regression model to handle cases when the dependent variable is categorical with more than 2 values, i.e. multi-nomial distribution. Several common extensions are:
-- __One vs All model:__ Build C logistic regression models, each predicting odd of \\(y\\) being class \\(C\_i\\) vs not being class \\(C\_i\\). Then, choose class with the highest probability out of C predictions.
-\\[
-log~\frac{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_i)}{1 - P(y = C\_i \| \mathbf{x}; \mathbf{w}\_i)} = \mathbf{w\_i}^T\mathbf{x}
-\\]
-- __One vs One model:__ Build C(C-1)/2 logistics regression models, each predicting odd of \\(y\\) being class \\(C\_i\\) vs being class \\(C\_j\\). Then, choose class with the most votes out of C(C-1)/2 predictions.
-\\[
-log~\frac{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_{ij})}{P(y = C\_j \| \mathbf{x}; \mathbf{w}\_{ij})} = \mathbf{w\_{ij}}^T\mathbf{x}
-\\]
 - __Baseline category logit model:__ Build (C-1) logistic regression models, each predicting odd of \\(y\\) being class \\(C\_i\\) vs being class \\(C\_1\\). Then, calculate probability for C classes and choose class with the highest probability.
 \\[
 log~\frac{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_i)}{P(y = C\_1 \| \mathbf{x}; \mathbf{w}\_ij)} = \mathbf{w\_i}^T\mathbf{x}
@@ -84,5 +76,15 @@ log~\frac{P(y \leq C\_i \| \mathbf{x}; \mathbf{w}\_i)}{P(y > C\_i \| \mathbf{x};
 \\[
 log~\frac{P(y = C\_{i+1} \| \mathbf{x}; \mathbf{w}\_i)}{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_i)} = \mathbf{w\_i}^T\mathbf{x}
 \\]
-
-Multi-class classification can also be handled using __Softmax regression model__ which is a __Neural Network__ model.
+- __One vs All model:__ Build C logistic regression models, each predicting odd of \\(y\\) being class \\(C\_i\\) vs not being class \\(C\_i\\). Then, choose class with the highest probability out of C predictions.
+\\[
+log~\frac{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_i)}{1 - P(y = C\_i \| \mathbf{x}; \mathbf{w}\_i)} = \mathbf{w\_i}^T\mathbf{x}
+\\]
+- __One vs One model:__ Build C(C-1)/2 logistics regression models, each predicting odd of \\(y\\) being class \\(C\_i\\) vs being class \\(C\_j\\). Then, choose class with the most votes out of C(C-1)/2 predictions.
+\\[
+log~\frac{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_{ij})}{P(y = C\_j \| \mathbf{x}; \mathbf{w}\_{ij})} = \mathbf{w\_{ij}}^T\mathbf{x}
+\\]
+- __Softmax regression model:__ also known as Multinomial logistic regression. Instead of applying logistic sigmoid function, we apply softmax function and "normalize" the output to get the probability for all C classes.
+\\[
+P(y = C\_i \| \mathbf{x}; \mathbf{w}\_{ij}) = frac{\exp {\mathbf{w\_{i}}^T\mathbf{x}} } {\sum_{j=1}^C \mathbf{w\_{j}}^T\mathbf{x}}
+\\]
