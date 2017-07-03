@@ -76,7 +76,7 @@ log~\frac{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_i)}{P(y = C\_1 \| \mathbf{x}; \m
 \\[
 log~\frac{P(y <= C\_i \| \mathbf{x}; \mathbf{w}\_i)}{P(y > C\_i \| \mathbf{x}; \mathbf{w}\_i)} = \mathbf{w\_i}^T\mathbf{x}
 \\]
-- Adjacent category logit model: usually apply for ordinal categorical dependent variable. Build (C-1) logistic regression models, each predicting odd of \\(y\\) being class \\(C\_{i+1}\\) vs being class \\(C\_i}\\). Then, calculate probability for C classes and choose class with the highest probability.
+- Adjacent category logit model: usually apply for ordinal categorical dependent variable. Build (C-1) logistic regression models, each predicting odd of \\(y\\) being class \\(C\_{i+1}\\) vs being class \\(C\_i\\). Then, calculate probability for C classes and choose class with the highest probability.
 \\[
 log~\frac{P(y = C\_{i+1} \| \mathbf{x}; \mathbf{w}\_i)}{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_i)} = \mathbf{w\_i}^T\mathbf{x}
 \\]
