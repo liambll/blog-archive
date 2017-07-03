@@ -45,4 +45,7 @@ Since \\(y\\) follows Bernoulli distribution (i.e. 0 or 1), the probability dens
 \\[
 P(Y=y\_i| \ X = \mathbf{x}\_i; \mathbf{w}) = \f(\mathbf{w}^T\mathbf{x}\_i)^{y_i}\(1 - \f(\mathbf{w}^T\mathbf{x}\_i))^{1- y_i}
 \\]
-
+The likelihood function for data would be:
+\\[
+\mathcal{L}(\mathbf{w}) = \prod_{i=1}^N \f(\mathbf{w}^T\mathbf{x}\_i)^{y_i}\(1 - \f(\mathbf{w}^T\mathbf{x}\_i))^{1- y_i}
+\\]
