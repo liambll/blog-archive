@@ -26,19 +26,19 @@ It is important to obtain a clear objective at this initial stage. For example, 
 
 This step is the "last chance to correct any mistakes or misunderstanding while it is still cheap to do so".
 
-## 3. Data
+## 3. Data Collection
 * identify data sources and acquisition 
 * perform data wraggling and exploration
 
 This is probably the most boring and time consuming step, but it is crucial to have quality data before proceeding to model building.
 
-## 4. Model
+## 4. Model Building
 * identify available quantitative methods for the analytics problem
 * perform model building, evaluation and selection
 
 Depending on the nature of the analytics problem, it might be neccesary to compromise model accuracy to gain model intepretability.
 
-## 5. Deployment
+## 5. Model Deployment
 * perform business validation of the selected model
 * integrate model in existing process in production environment
 * monitor business performance and recalibrate the model
