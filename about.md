@@ -18,7 +18,7 @@ Although the blog only focuses on technical aspect of analytics, it should be em
 * understand business problem, its benefits and constraints
 * determine if the business problem can potentially be solved with an analytics solution
 
-It is important to obtain a clear objective at this initial stage. For example, "sales performance" can refer to total sales, sales margin, sales per customer, etc. The key is to be specific.
+It is important to obtain a clear objective at this initial stage. For example, "sales performance" can refer to total sales, sales margin, sales per customer, etc. The key is to be specific (5W is useful here).
 
 ## 2. Analytics Problem Framing
 * reformulate business problem into an analytics problem with initial set of drivers (inputs, outputs)
