@@ -53,9 +53,9 @@ z_i^{(L)} = \max_j (w_{ij}^{(L-1)} z_j^{(L-1)})
 \\]
   
 ## 2. Estimation
-We need to minimize the difference between the true output and the predicted output. Depend on the nature of depdendent variable, we should use suitable loss function to represent the difference \\(E_n\\) . For example:
-* Square loss: for continious dependent variable
-* Cross-entropy loss: for categorical depdendent variable
+We need to minimize the difference between the true output and the predicted output. Depend on the nature of depdendent variable, we should use suitable loss function to represent the difference \\(E_n\\):
+* For continious dependent variable: square error or absolute error
+* Forcategorical depdendent variable: hinge loss or cross-entropy loss
 
 There is usually no closed form solution to minimize the loss function in neural network. We rely on gradient descent to estimate parameters. The gradient is caculated from the output layer and back-propagated to previous layers using chain rule:
 \\[
