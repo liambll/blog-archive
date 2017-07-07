@@ -24,6 +24,7 @@ Feedforward neural network contains an input layer, an output layer, and one or 
     <img src="/blog/assets/neural-network/neural-network.png" width = "500">
 </div>
 </div>
-* Output layer:
-* Input layer:
-* Hidden layers:
+* Output layer contain output units: \\(\mathbf{y} = [y_1, y_2, ..., y_k] \\) is a vector of k output units representing the dependent variable. For example, if we want to perform 10-class prediction, we can perform one-hot encoding with k = 10. That means if an output is class 7, it would have \\(y_7\\) = 1 and the remaining \\(y_i\\) are all 0.
+* Input layer contains input units: \\(\mathbf{x} = [x_1, x_2, ..., x_D] \\) is a vector of D input units representing the explanatory variables. For example, in fraud detection, each input unit can represent one characteristics of a transaction. In image processing, each input unit can represent one pixel of an image. 
+* Hidden layers contains hidden units: In each hidden unit, a non-linear transformation is usually applied on linear combination of units from previous layer:
+
