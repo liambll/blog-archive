@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "Support Vector Machine"
 title2:  "Support Vector Machine"
-date:   2017-07-02 17:22:00
+date:   2017-07-05 17:22:00
 permalink: /svm/
 mathjax: true
 tags: Machine-Learning SVM Supervised-Learning
