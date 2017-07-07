@@ -21,7 +21,7 @@ Neural Network model can be used in both supervised learning, unsupervised, and 
 Feedforward neural network contains an input layer, an output layer, and one or more hidden layers in between:
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/neural-network/jpg.png" width = "500">
+    <img src="/blog/assets/neural-network/mlp.jpg" width = "500">
 </div>
 </div>
 * Output layer contain output units: \\(\mathbf{y} = [y_1, y_2, ..., y_k] \\) is a vector of k output units representing the dependent variable. For example, if we want to perform 10-class prediction, we can perform one-hot encoding with k = 10. That means if an output is class 7, it would have \\(y_7\\) = 1 and the remaining \\(y_i\\) are all 0.
