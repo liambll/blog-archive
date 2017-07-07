@@ -55,7 +55,7 @@ z_i^{(L)} = \max_j (w_{ij}^{(L-1)} z_j^{(L-1)})
 ## 2. Estimation
 We need to minimize the difference between the true output and the predicted output. Depend on the nature of depdendent variable, we should use suitable loss function to represent the difference \\(E_n\\):
 * For continious dependent variable: square error or absolute error
-* Forcategorical depdendent variable: hinge loss or cross-entropy loss
+* For categorical depdendent variable: hinge loss or cross-entropy loss
 
 There is usually no closed form solution to minimize the loss function in neural network. Unlike loss function in regression and logistics regression where there is no local minima, neural network's loss function usually has local minima. Therefore, it is possible that if we train neural network mutltiple times, we would obtain different parameter estimates.
 
