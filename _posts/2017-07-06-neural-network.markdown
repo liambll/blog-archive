@@ -56,6 +56,11 @@ We need to minimize the difference between the true output and the predicted out
 
 There is usually no closed form solution to minimize the loss function in neural network. We rely on gradient descent to estimate parameters. The gradient is caculated from the output layer and back-propagated to previous layers:
 \\[
-\frac{\partial E_n}{\partial w_{ij}^{(L-1)}} = \frac{\partial E_n}{\partial a_i^{(L)}} \frac{\partial a_i^{(L)}}{\partial w_{ij}^{(L-1)}}
+\frac{\partial E_n}{\partial w_{ij}^{(L-1)}} = \frac{\partial E_n}{\partial a_i^{(L)}} \frac{\partial a_i^{(L)}}{\partial w_{ij}^{(L-1)}} \\\
+\frac{\partial a_i^{(L)}}{\partial w_{ij}^{(L-1)}} = z_j^{(L-1)}
+\\]
+
+\\[
+\delta_i^{(L)} \equiv \frac{\partial E_n}{\partial a_i^{(L)}} = h'(a_i^{(L)) \sum_k w_{ik}^{(L)} \delta_k^{(L+1)}
 \\]
 
