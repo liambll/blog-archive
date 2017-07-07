@@ -61,7 +61,7 @@ There is usually no closed form solution to minimize the loss function in neural
 \\]
 
 \\[
-\delta_i^{(L)} \equiv \frac{\partial E_n}{\partial a_i^{(L)}} = h'(a_i^{(L)}) \sum_k w_{ik}^{(L)} \delta_k^{(L+1)}
+\delta_i^{(L)} \equiv \frac{\partial E_n}{\partial a_i^{(L)}} = h'(a_i^{(L)}) \sum_k w_{ik}^{(L+1)} \delta_k^{(L+1)}
 \\]
 
-Unlike loss function in regression and logistics regression where there is no local minima, neural network's loss function usually has local minima. Therefore, it is possible that neural network's parameter estimates are different for different training runs.
+Unlike loss function in regression and logistics regression where there is no local minima, neural network's loss function usually has local minima. Therefore, it is possible that if we train neural network mutltiple times, we would obtain different parameter estimates.
