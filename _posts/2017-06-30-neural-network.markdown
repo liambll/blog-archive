@@ -21,7 +21,7 @@ Neural Network model can be used in both supervised learning, unsupervised, and 
 * Recurrent neural network
 
 ## 1. Model:
-Feedforward neural network contains an input layer, an output layer, and one or more hidden layers in between:
+Multilayer perceptron contains an input layer, an output layer, and one or more hidden layers in between:
 <div class="imgcap">
 <div >
     <img src="/blog/assets/neural-network/mlp.jpg" width = "500">
