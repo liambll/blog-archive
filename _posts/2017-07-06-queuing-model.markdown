@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "Queuing Model"
 title2:  "Queuing Model"
-date:   2017-07-02 16:22:00
+date:   2017-07-06 16:22:00
 permalink: /queuing-model/
 mathjax: true
 tags: Operations-Research Queuing-Model
