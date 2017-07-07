@@ -47,7 +47,7 @@ h(t) = tanh(t)
 \\[
 h(t) = max(0, t)
 \\]
-  * Maxout
+  * Maxout:
 \\[
 z_i^{(L)} = \max_j (w_{ij}^{(L-1)} z_j^{(L-1)})
 \\]
@@ -57,7 +57,9 @@ We need to minimize the difference between the true output and the predicted out
 * For continious dependent variable: square error or absolute error
 * Forcategorical depdendent variable: hinge loss or cross-entropy loss
 
-There is usually no closed form solution to minimize the loss function in neural network. We rely on gradient descent to estimate parameters. The gradient is caculated from the output layer and back-propagated to previous layers using chain rule:
+There is usually no closed form solution to minimize the loss function in neural network. Unlike loss function in regression and logistics regression where there is no local minima, neural network's loss function usually has local minima. Therefore, it is possible that if we train neural network mutltiple times, we would obtain different parameter estimates.
+
+We rely on gradient descent to estimate parameters. The gradient is caculated from the output layer and back-propagated to previous layers using chain rule:
 \\[
 \frac{\partial E_n}{\partial w_{ij}^{(L-1)}} = \frac{\partial E_n}{\partial a_i^{(L)}} \frac{\partial a_i^{(L)}}{\partial w_{ij}^{(L-1)}} \\\
 \frac{\partial a_i^{(L)}}{\partial w_{ij}^{(L-1)}} = z_j^{(L-1)}
@@ -67,4 +69,3 @@ There is usually no closed form solution to minimize the loss function in neural
 \delta_i^{(L)} \equiv \frac{\partial E_n}{\partial a_i^{(L)}} = h'(a_i^{(L)}) \sum_k w_{ik}^{(L+1)} \delta_k^{(L+1)}
 \\]
 
-Unlike loss function in regression and logistics regression where there is no local minima, neural network's loss function usually has local minima. Therefore, it is possible that if we train neural network mutltiple times, we would obtain different parameter estimates.
