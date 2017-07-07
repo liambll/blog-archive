@@ -32,7 +32,31 @@ z_i^{(L)} = h(a_i^{(L)} \\\
 a_i^{(L)} = \sum_j w_{ij}^{(L-1)} z_j^{(L-1)}
 \\]
 Activation functions are usually non-linear. Some common activation functions are:
-  * Sigmoid
-  * Hyperbolic Tangent
-  * Rectified Linear Unit (ReLU)
+  * Sigmoid: computation intensive due to exponential component, prone to vanishing gradient problem in deep network.
+  \\[
+h(t) = \frac{1}{1 + e^{-t}}
+\\]
+  * Hyperbolic Tangent: still prone to vanishing gradient problem in deep network.
+\\[
+h(t) = tanh(t)
+\\]
+  * Rectified Linear Unit (ReLU): quicker convergence in training, less to vanishing gradient problem in deep network.
+\\[
+h(t) = max(0, t)
+\\]
+* Maxout
+\\[
+z_i^{(L)} = m\ax_j (w_{ij}^{(L-1)} z_j^{(L-1)})
+\\]
+  
+## 2. Estimation
+We need to minimize the difference between the true output and the predicted output. Depend on the nature of depdendent variable, we should use suitable loss function to represent the difference \\(E_n\\) . For example:
+* Square loss: for continious dependent variable
+* Cross-entropy loss: for categorical depdendent variable
+
+There is usually no closed form solution to minimize the loss function in neural network. We rely on gradient descent to estimate parameters. The gradient is caculated from the output layer and back-propagated to previous layers:
+\\[
+\delta_j \equiv \frac{\partial E_n}{\partial a_j} \\\
+\delta_j = 
+\\]
 
