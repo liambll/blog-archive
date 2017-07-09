@@ -100,28 +100,28 @@ dw_{ij} \equiv \frac{\partial E_n}{\partial w_{ij}^{(L-1)}} = \frac{\partial E_n
 We can update parameter \\(w\\) using direct gradient \\(dw\\), momentum version, or per-parameter version:
 * Direct gradient:
 \\[
-w = w - learning_rate * dw
+w = w - learningRate * dw
 \\]
 * Momentum: the parameters will build up velocity in any direction that has consistent gradient
 \\[
-v = v * \mu - learning_rate * dw \\\
+v = v * \mu - learningRate * dw \\\
 w = w + v
 \\]
 * Adagrad: the parameters that receive high gradients will have their effective learning rate reduced, while parameters that receive small or infrequent updates will have their effective learning rate increased
 \\[
-cache = cache + dw^2
-w = w - learning_rate * dw / (\sqrt(cache) + \epsilon)
+cache = cache + dw^2 \\\
+w = w - learningRate * dw / (\sqrt{cache} + \epsilon)
 \\]
 * RMSprop: similar with Adagrad with an attempt to reduce its aggressive, monotonically decreasing learning rate by making cache variable "leaky"
 \\[
-cache = decay_rate * cache + (1 - decay_rate) * dw^2
-w = w - learning_rate * dw / (\sqrt(cache) + \epsilon)
+cache = decay_rate * cache + (1 - decay_rate) * dw^2 \\\
+w = w - learningRate * dw / (\sqrt{cache} + \epsilon)
 \\]
 * Adam: RMSprop with momentum
 \\[
-m = \beta1 * m + (1-\beta1) * dw
-v = \beta2* v + (1-\beta2) * (dw^2)
-x = x - learning_rate * m / (\sqrt(v) + \epsilon)
+m = \beta1 * m + (1-\beta1) * dw \\\
+v = \beta2* v + (1-\beta2) * (dw^2) \\\
+x = x - learningRate * m / (\sqrt{v} + \epsilon)
 \\]
 * Newton’s method: requires second order derivatives computation. This approach leads to very fast convergence compared to first-order gradient, but it is too computational expensive for deep network.
 
