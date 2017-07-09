@@ -29,7 +29,7 @@ Characteristics of statistics techniques:
 * Poisson Regression
 
 ## 3. Multivariate Analysis
-* ANOVA, ANCOVA
+* Analysis of Variance
 * Multivariate Multiple Linear Regression
 * Principle Component Analysis
 * Factor Analysis
