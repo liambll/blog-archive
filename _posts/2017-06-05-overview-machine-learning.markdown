@@ -36,15 +36,17 @@ Characteristics of machine learning techniques:
 ## 2. Supervised Learning
 * [Linear Regression](/blog/linear-regression/)
 * [Logistics Regression](/blog/logistic-regression/)
-* [Support Vector Machine](/blog/svm/)
-* Decision Tree
-* Neural Network
+* [Neural Network](/blog/neural-network/)
+  * Multilayer Perceptron
   * Convolutional Neural Network
   * Recurrent Neural Network
+* [Support Vector Machine](/blog/svm/)
+* [Decision Tree](/blog/decision-tree/)
+  * Random Forest
+  * Boosted Tree
 * Probabilistic Model
   * Bayesian network
   * Markov random field<!---  * Restricted Boltzmann machine -->
-* Ensemble
 
 ## 3. Reinforcement Learning
 
