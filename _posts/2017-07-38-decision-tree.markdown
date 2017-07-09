@@ -89,15 +89,15 @@ To reduce overfitting, we usually stop branching a node in decision tree when:
 
 __Post-prune__
 An alternative approach is to grow a decision tree to its entirely and perform bottom-up pruning: At each node, compute generalization error  for keeping the subtree, and pruning the subtree by replacing it with a leaf node. If the generalization error is reduced by pruning, prune the subtree at the node.
-Suppose E examples are classified incorrectly out of N training examples at a node, \\(\hat{p} = \frac{E}{N}\\) is observed error rate. True error rate is estimated by the upper bound of confidence interval for a given sigificant level \\(\alpha\\), denoted by: 
+Suppose E examples are classified incorrectly out of N training examples at a node, \\(\hat{p} = \frac{E}{N}\\) is observed error rate. True error rate is estimated by the upper bound of confidence interval at a given sigificant level \\(\alpha\\), denoted by: 
 \\[
 U_{1-\alpha}(E, N)
 \\]
 
-If depdendent variable is binary, the upper bound of confidence interval for a given sigificant level follows the distribution of error for binomial distribution and can be approximated by:
+If depdendent variable is binary, the upper bound of confidence interval of a binomial distribution variable at a given sigificant level can be approximated by:
 
 \\[
-\hat{p} + z_{1-\frac{\alpha}{2}\sqrt{\frac{1}{N} \hat{p} (1-\hat{p})}
+\hat{p} + z_{1-\frac{\alpha}{2}} \sqrt{\frac{1}{N} \hat{p} (1-\hat{p})}
 \\]
 
 Generalization error at the node would be:
