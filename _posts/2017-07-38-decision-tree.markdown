@@ -115,5 +115,5 @@ Random forest is a decision tree-based [ensemble technique](https://en.wikipedia
 - Feature Bagging: At each candidate split in the training process, only a random subset of explanatory variables is selected for branching.
 - Ensemble: combine predictions from these decision trees by simple voting.
 
-## 4. Gradient Boosting
-Gradient boosting is another ensemble technique that produces a prediction model by combining weak prediction models, typically decision trees. Unlike random forest in which decision trees are trained independently, decision trees in gradient boosting are trained in a way that subsequent tree pays more attenton to mistakes made by previous tree in order to correct these mistakes.
+## 4. Boosted Tree
+Boosted Tree is another ensemble technique that produces a prediction model by combining decision trees. Unlike random forest in which decision trees are trained independently, decision trees in gradient boosting are trained in a way that subsequent tree pays more attenton to mistakes made by previous tree in order to correct these mistakes.
