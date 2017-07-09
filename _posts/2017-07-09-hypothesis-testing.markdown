@@ -39,10 +39,8 @@ The significance level is usually to 0.05 (5%), implying that there is 5% probab
 Power ~of ~test = 1 - \beta
 \\]
 
-* Sample size
-* Significant Level
-* p-value
-* Power of test
+__P-value approach__
+The P-value approach involves determining "likely" or "unlikely" by evaluating the probability — assuming the null hypothesis is true — of observing a more extreme test statistic in the direction of the alternative hypothesis than the one observed. If the P-value is small, say less than or equal to \\(\alpha\\), then it is "unlikely" and we reject the null hypothesis. If the P-value is large, say more than α, then it is "likely" and we fail to reject the null hypotehsis
 
 
 ## 2. Common Hypothesis test
