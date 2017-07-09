@@ -41,8 +41,10 @@ The significance level is usually set to 0.05 (5%), implying that there is 5% pr
 Power ~of ~test = 1 - \beta
 \\]
 
-__P-value approach__
-After observing data (by collecting evidence), we can calculate certain test statistics __T__. P-value is the probability, under the null hypothesis, of the test statistic __T__ at least as extreme in the direction of the alternative hypothesis as what was observed. If the P-value is small, say less than or equal to \\(\alpha\\), then it is "unlikely" and we reject the null hypothesis. If the P-value is large, say more than α, then it is "likely" and we fail to reject the null hypotehsis
+__P-value__
+After observing data (by collecting evidence), we can calculate certain test statistics __T__. P-value is the probability, given the null hypothesis, of the test statistic __T__ at least as extreme in the direction of the alternative hypothesis as what was observed.
+* If the P-value is small, say less than or equal to \\(\alpha\\), we did not observe the test statistic __T__ at least as extreme in the direction of the alternative hypothesis. Therefore, null hypothesis is "unlikely" and we reject the null hypothesis.
+* If the P-value is large, say more than α, we in deed observed the test statistic __T__ at least as extreme in the direction of the alternative hypothesis. Therefore, null hypotehsis is "likely" and we fail to reject the null hypotehsis.
 
 
 ## 2. Common Hypothesis test
