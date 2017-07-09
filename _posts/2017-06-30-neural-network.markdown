@@ -81,10 +81,11 @@ Regularization is important to reduce overfitting. Common regularization techniq
 * L1: \\(L(W) = \lambda * \sum\|W\|\\)
 * L2: \\(L(W) = \lambda * \sum W^2 \\)
 * Elastic net:  \\(L(W) = \lambda * \sum(βW2 + W) \\)
-* Max norm: force \\(||w||\_2 < c \\)
+* Max norm: force \\(\|\|w\|\|\_2 < c \\)
 * Dropout: drop random units in previous layers before feeding to the next layer. This technique is specific for neural network.
 
 __Parameter Estimates__
+
 There is usually no closed form solution to minimize the loss function in neural network. Unlike loss function in regression and logistics regression where there is no local minima, neural network's loss function usually has local minima. Therefore, it is possible that if we train neural network mutltiple times, we would obtain different parameter estimates.
 
 We rely on gradient descent to estimate parameters. The gradient is caculated from the output layer and back-propagated to previous layers using chain rule:
