@@ -59,4 +59,4 @@ __Test of association__
 ## 3. Simpson's Paradox
 
 ## 4. Exact Inference
-Most of the test statistics shown above are approximated using large sample size assumtion. It should be emphasized that when sample size is small (eg. due to limited data available), approximation is not appropriate and [extact test](https://en.wikipedia.org/wiki/Exact_test) should be used instead.
+Many test statistics shown above are approximately normally distributed for large samples (central limit theorem). It should be emphasized that when sample size is small (eg. due to limited data available), such approximation is no longer appropriate and [extact test](https://en.wikipedia.org/wiki/Exact_test) should be used instead.
