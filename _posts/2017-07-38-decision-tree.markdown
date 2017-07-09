@@ -80,6 +80,7 @@ For binary classification, it does not matter which impurity measure is chosen s
 </div>
 
 __Pre-prune__
+
 To reduce overfitting, we usually stop branching a node in decision tree when:
 * all the records at the node belong to the same class
 * all records at the node have the same explanatory variables' value
@@ -88,8 +89,10 @@ To reduce overfitting, we usually stop branching a node in decision tree when:
 * branching the node does not improve impurity measures
 
 __Post-prune__
+
 An alternative approach is to grow a decision tree to its entirely and perform bottom-up pruning: At each node, compute generalization error  for keeping the subtree, and pruning the subtree by replacing it with a leaf node. If the generalization error is reduced by pruning, prune the subtree at the node.
-Suppose E examples are classified incorrectly out of N training examples at a node, \\(\hat{p} = \frac{E}{N}\\) is observed error rate. True error rate is estimated by the upper bound of confidence interval at a given sigificant level \\(\alpha\\), denoted by: 
+
+There are many way to determine generalization error. Suppose E examples are classified incorrectly out of N training examples at a node, \\(\hat{p} = \frac{E}{N}\\) is observed error rate. True error rate can be estimated by the upper bound of confidence interval at a given sigificant level \\(\alpha\\), denoted by: 
 \\[
 U_{1-\alpha}(E, N)
 \\]
@@ -104,3 +107,13 @@ Generalization error at the node would be:
 \\[
 N*U_{1-\alpha}(E, N)
 \\]
+
+
+## 3. Random Forest
+Random forest is a decision tree-based [ensemble technique](https://en.wikipedia.org/wiki/Ensemble_learning) that trains multiple indenpendent decision trees and combine their predictions to reducing the variance. Random forest starts with bagging to generate multiple training sets, then train decision trees on these training sets using subset of explanatory variables, then combine their predictions.
+- Data Bagging: Given a standard training set D of size n, random forest generates m new training sets \\(D_i\\), each of size n', by sampling from D uniformly and with replacement. Each of these training sets will be used to train a decision tree.
+- Feature Bagging: At each candidate split in the training process, only a random subset of explanatory variables is selected for branching.
+- Ensemble: combine predictions from these decision trees by simple voting.
+
+## 4. Gradient Boosting
+Gradient boosting is another ensemble technique that produces a prediction model by combining weak prediction models, typically decision trees. Unlike random forest in which decision trees are trained independently, decision trees in gradient boosting are trained in a way that subsequent tree pays more attenton to mistakes made by previous tree in order to correct these mistakes.
