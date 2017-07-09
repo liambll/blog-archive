@@ -28,12 +28,12 @@ Decision tree can provide a set of rules to predict depdendent variable based on
 </div>
 
 ## 2. Estimation
-We want to have a decision tree that best predict the depdent variable, by deciding:
+We want to grow a decision tree that best predict the depdent variable, by deciding:
 * Which explanatory variable should be branched first?
 * What is the best split to branch that explanatory variable?
 
 We can answer these questions by measuring impurity before and after branching. Common impurity measures are:
-* _GINI Index:_ represent purity at a node.
+* __GINI Index:__ represent purity at a node.
 \\[
 GINI(t) = 1 - \sum_j P(j|t)^2 \\\
 where ~P(j|t) ~is ~the ~relative ~frequency ~of ~class ~j ~at ~node ~t
@@ -45,7 +45,7 @@ where ~n ~is ~the ~number ~of ~records ~before ~spliting \\\
 and ~n_i ~is ~the ~number ~of ~records ~at ~child ~i
 \\]
 
-* _Entropy:_ represent impurity at a node.
+* __Entropy:__ represent impurity at a node.
 \\[
 Entropy(t) = - \sum_j P(j|t) log(P(j|t)) \\\
 where ~P(j|t) ~is ~the ~relative ~frequency ~of ~class ~j ~at ~node ~t
@@ -65,9 +65,41 @@ GainRATIO_{split = \frac{Gain_{split}}{splitINFO} \\\
 splitINFO = -\sum_{i=1}^k \frac{n_i}{n} log(\frac{n_i}{n})
 \\]
 
-* _Misclassification Error:_
+* __Misclassification Error:__
 \\[
 Error(t) = 1 - \max_j P(j|t) \\\
 where ~P(j|t) ~is ~the ~relative ~frequency ~of ~class ~j ~at ~node ~t
 \\]
-Error at a node would have minimum value of 0 when the node only contains one class, and maximum value of \\(1-\frac{1}{C}\\) when the node contains equal number of records for each of C classes. We need to choose the split that result in the highest reduction in Entropy, such reduction also known as _Information Gain_. The Information Gain of splitting at node t into k branches would be:
+Error at a node would have minimum value of 0 when the node only contains one class, and maximum value of \\(1-\frac{1}{C}\\) when the node contains equal number of records for each of C classes. We need to choose the split that result in the lowest error.
+
+For binary classification, it does not matter which impurity measure is chosen since all three impurity measures result in the same splitting choice.
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/decision-tree/decision-tree.png" width = "500">
+</div>
+</div>
+
+__Pre-prune__
+To reduce overfitting, we usually stop branching a node in decision tree when:
+* all the records at the node belong to the same class
+* all records at the node have the same explanatory variables' value
+* the number of records at the node is less than a certain threshold
+* class distribution at the node are independent of the available features (e.g. using \\(\chi^2\\) test)
+* branching the node does not improve impurity measures
+
+__Post-prune__
+An alternative approach is to grow a decision tree to its entirely and perform bottom-up pruning: At each node, compute generalization error  for keeping the subtree, and pruning the subtree by replacing it with a leaf node. If the generalization error is reduced by pruning, prune the subtree at the node.
+Suppose E examples are classified incorrectly out of N training examples at a node, \\(\frac{E}{N}\\) is observed error rate. True error rate is estimated by the upper bound of confidence interval for a given sigificant level \\(\alpha\\), denoted by: 
+\\[
+U_{1-\alpha}(E, N)
+\\]
+If depdendent variable is binary, the upper bound of confidence interval for a given sigificant level follows the distribution of error for binomial distribution and can be approximated by:
+\\[
+\hat{p} + z_{1-\frac{\alpha}{2}\sqrt{\frac{1}{N} \hat{p} (1-\hat{p})} \\\
+where ~\hat{p}=\frac{E}{N}
+\\]
+
+Generalization error at the node would be:
+\\[
+N*U_{1-\alpha}(E, N)
+\\]
