@@ -33,7 +33,7 @@ We want to grow a decision tree that best predicts the dependent variable, by de
 * What is the best split to branch that explanatory variable?
 
 We can answer these questions by measuring impurity before and after branching. Common impurity measures are:
-* __GINI Index:__ represent purity at a node.
+* __GINI Index:__ represents purity at a node.
 \\[
 GINI(t) = 1 - \sum_j P(j|t)^2 \\\
 where ~P(j|t) ~is ~the ~relative ~frequency ~of ~class ~j ~at ~node ~t
@@ -45,21 +45,18 @@ where ~n ~is ~the ~number ~of ~records ~before ~spliting \\\
 and ~n_i ~is ~the ~number ~of ~records ~at ~child ~i
 \\]
 
-* __Entropy:__ represent impurity at a node.
+* __Entropy:__ represents impurity at a node.
 \\[
 Entropy(t) = - \sum_j P(j|t) log(P(j|t)) \\\
 where ~P(j|t) ~is ~the ~relative ~frequency ~of ~class ~j ~at ~node ~t
 \\]
 Entropy at a node would have minimum value of 0 when the node only contains one class, and maximum value of \\(log(C)\\) when the node contains equal number of records for each of C classes. We need to choose the split that result in the highest reduction in impurity, such reduction also known as _Information Gain_. The Information Gain of splitting at node t into k branches would be:
-
 \\[
 Gain_{split} = Entropy(t) - (\sum_{i=1}^k frac{n_i}{n} Entropy(i) \\\
 where ~n ~is ~the ~number ~of ~records ~before ~spliting \\\
 ~n_i ~is ~the ~number ~of ~records ~at ~child ~i
 \\]
-
 Choosing split using Information Gain tends to result in large number of small partition. We usually use a penalized version of Information Gain called Gain Ratio, which is used in [C4.5 algorithm](https://en.wikipedia.org/wiki/C4.5_algorithm): 
-
 \\[
 GainRATIO_{split} = \frac{Gain_{split}}{splitINFO} \\\
 splitINFO = -\sum_{i=1}^k \frac{n_i}{n} log(\frac{n_i}{n})
