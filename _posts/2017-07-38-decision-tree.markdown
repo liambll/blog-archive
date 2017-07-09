@@ -28,7 +28,7 @@ Decision tree can provide a set of rules to predict depdendent variable based on
 </div>
 
 ## 2. Estimation
-We want to grow a decision tree that best predict the depdent variable, by deciding:
+We want to grow a decision tree that best predicts the dependent variable, by deciding:
 * Which explanatory variable should be branched first?
 * What is the best split to branch that explanatory variable?
 
