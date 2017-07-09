@@ -51,9 +51,12 @@ After observing data (by collecting evidence), we can calculate certain test sta
 
 ## 2. Common Hypothesis test
 There is no way to list out all Hypothesis tests used by statisticians. Below are some common tests:
+
 __Test of equality of two means__
 
+
 __Test of equality of two variances__
+
 
 __Test of association__
 
