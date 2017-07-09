@@ -78,10 +78,10 @@ E(\mathbf{w}) = \sum_{n=1}^N \sum\_{j \neq y_n} \max(0, \Delta - \mathbf{w}\_y^T
 __Regularization__
 
 Regularization is important to reduce overfitting. Common regularization techniques are:
-* L1: \\(L(W) = \sum\|W\|\\)
-* L2: \\(L(W) = \sum W^2 \\)
-* Elastic net:  \\(L(W) = \sum(βW2 + W) \\)
-* Max norm: \\(L(W) = \max |\W|\ \\)
+* L1: \\(L(W) = \lamda * \sum\|W\|\\)
+* L2: \\(L(W) = \lambda * \sum W^2 \\)
+* Elastic net:  \\(L(W) = \lambda * \sum(βW2 + W) \\)
+* Max norm: force \|\|w\|\|_2 < c
 * Dropout: drop random units in previous layers before feeding to the next layer. This technique is specific for neural network.
 
 __Parameter Estimates__
