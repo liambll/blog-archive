@@ -64,13 +64,13 @@ E(\mathbf{w}) = \frac{1}{2}\sum_{i=1}^N (y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2
 E(\mathbf{w}) = \sum_{i=1}^N \|y\_i - \mathbf{\bar{x}\_i}\mathbf{w}\|
 \\]
 
-* Cross-entropy loss: for categorical dependent variable \\(y\\)
+* Cross-entropy loss: for categorical dependent variable \\(y\\) one-hot encoded as \\([y_1, y_2, ... y_J]\\)
 \\[
 E(\mathbf{w}) = -\sum_{i=1}^N \sum\_{j} y_j \log(P(y_j \| \mathbf{x}; \mathbf{w})) \\\
 where ~ P(y_j \| \mathbf{x}; \mathbf{w}) = \frac{\exp (\mathbf{w\_{j}}^T\mathbf{x}) } {\sum_k \exp(\mathbf{w\_{k}}^T\mathbf{x}) }
 \\]
 
-* Hinge loss: for categorical dependent variable \\(y\\)
+* Hinge loss: for categorical dependent variable \\(y\\) one-hot encoded as \\([y_1, y_2, ... y_J]\\)
 \\[
 E(\mathbf{w}) = \sum_{n=1}^N \sum\_{j \neq y_n} \max(0, \Delta - \mathbf{w}\_y^T\mathbf{x} + \mathbf{w}\_j^T\mathbf{x})
 \\]
