@@ -55,7 +55,7 @@ After observing data (by collecting evidence), we can calculate certain test sta
 
 
 ## 2. Common Hypothesis tests
-Many test statistics are caculated based on its normal distribution approximation for large samples ([central limit theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)). It should be emphasized that when sample size is small (eg. due to limited data available), such approximation is no longer appropriate and [extact test](https://en.wikipedia.org/wiki/Exact_test) should be used. Below are common tests:
+Many test statistics are caculated based on its asymptotically normal distribution approximation for large samples ([central limit theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)). It should be emphasized that when sample size is small (eg. due to limited data available), such approximation is no longer appropriate and [extact test](https://en.wikipedia.org/wiki/Exact_test) should be used. Below are common tests:
 
 __Test of equality of two means__
 
