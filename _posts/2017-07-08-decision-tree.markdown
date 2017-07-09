@@ -113,7 +113,7 @@ Random forest is a decision tree-based [ensemble technique](https://en.wikipedia
 - Ensemble: combine predictions from these decision trees by simple voting.
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/decision-tree/random-foprest.png" width = "400">
+    <img src="/blog/assets/decision-tree/random-forest.png" width = "400">
 </div>
 </div>
 
