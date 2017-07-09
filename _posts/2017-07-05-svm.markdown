@@ -62,7 +62,7 @@ The problem now becomes:
 ~subject ~to ~y\_n(\mathbf{w}^T\mathbf{x}\_n + b) \geq 1, \forall n = 1, 2, \dots, N
 \\]
 
-__ Parameter Estimates__
+__Parameter Estimates__
 
 Lagrange multiplier method can be used to solve this problem.
 
