@@ -36,6 +36,7 @@ where \\(\|\|\mathbf{w}\|\|\_2 = \sqrt{\sum_{i=1}^k w_i^2}\\) and \\(k\\) is num
 To find the hyperplane that represents the largest separation between the two classes, we can formulate the problem as finding a hyperplane that maximizes the margin, i.e. the nearest distance from data points to the hyperplane. 
 
 __Loss function__
+
 Suppose the labels for two classes are \\((y = 1)\\) for points above the hyperplane and \\((y = -1)\\) for points below the hyperlane, the distance from a data point \\((\mathbf{x}\_n, y_n)\\) to the hyperplane \\(\mathbf{w}^T\mathbf{x} + b = 0\\) would be:
 \\[
 \frac{y_n(\mathbf{w}^T\mathbf{x}\_n + b)}{\|\|\mathbf{w}\|\|_2}
@@ -62,6 +63,7 @@ The problem now becomes:
 \\]
 
 __ Parameter Estimates__
+
 Lagrange multiplier method can be used to solve this problem.
 
 ## 3. Soft Margin SVM
