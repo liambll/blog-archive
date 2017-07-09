@@ -46,6 +46,7 @@ In statistics, logistic regression model makes several assumptions such as linea
 Given a dataset of \\(N\\) observations, we want to find a set of coefficients \\(\mathbf{w}\\) so that the predicted value \\(f(\mathbf{w}^T\mathbf{x}))\\) can accurately represent observed value \\(P(y=1\|\mathbf{x}; \mathbf{w})\\) the most.
 
 __Loss function__
+
 Since \\(y\\) follows Bernoulli distribution (i.e. 0 or 1), the probability density function of \\(y\\) given \\(\mathbf{x}\\) and \\(\mathbf{w}\\) is:
 \\[
 P(Y=y\_i| \ X = \mathbf{x}\_i; \mathbf{w}) = f(\mathbf{w}^T\mathbf{x}\_i)^{y_i}\(1 - f(\mathbf{w}^T\mathbf{x}\_i))^{1- y_i}
@@ -61,6 +62,7 @@ Maximizing likelihood is equipvalent to minimizing negative log-likelihood:
 On a side note, negative log-likelihood in this case is the same cross-entropy loss, which measures the diffences between two probability distribution. Therefore, we can also think of the problem as minimizing the difference between true probability distribution \\(y\\) and estimated probability distribution \\(f(\mathbf{w}^T\mathbf{x})\\).
 
 __Parameter Estimate__
+
 There is no closed form solution for logistic regression due to the presence of link function \\(f\\). We can use gradient descent to estimate coefficients and then calculate variance matrix for coefficients.
 
 
