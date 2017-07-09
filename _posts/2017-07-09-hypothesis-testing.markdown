@@ -43,6 +43,7 @@ Power ~of ~test = 1 - \beta
 If the sample size is fixed, decreasing Type I error rate \\(\alpha\\) will increase Type II error rate \\(\beta\\). If we want both error rates to decrease, we need to increase the sample size.
 
 __P-value__
+
 After observing data (by collecting evidence), we can calculate certain test statistics __T__. P-value is the probability, given the null hypothesis, of the test statistic __T__ at least as extreme in the direction of the alternative hypothesis as what was observed.
 * If the P-value is small, say less than or equal to \\(\alpha\\), it is "unlikely" that we would observe the test statistic __T__ at least as extreme in the direction of the alternative hypothesis. Therefore, we reject the null hypothesis.
 * If the P-value is large, say more than \\(\alpha\\), it is "likely" that we would observe the test statistic __T__ at least as extreme in the direction of the alternative hypothesis. Therefore, we fail to reject the null hypotehsis.
