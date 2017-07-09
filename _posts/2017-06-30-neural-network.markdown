@@ -89,7 +89,7 @@ There is usually no closed form solution to minimize the loss function in neural
 
 We rely on gradient descent to estimate parameters. The gradient is caculated from the output layer and back-propagated to previous layers using chain rule:
 \\[
-d_x \equiv \frac{\partial E_n}{\partial w_{ij}^{(L-1)}} = \frac{\partial E_n}{\partial a_i^{(L)}} \frac{\partial a_i^{(L)}}{\partial w_{ij}^{(L-1)}} \\\
+d_w_{ij} \equiv \frac{\partial E_n}{\partial w_{ij}^{(L-1)}} = \frac{\partial E_n}{\partial a_i^{(L)}} \frac{\partial a_i^{(L)}}{\partial w_{ij}^{(L-1)}} \\\
 \frac{\partial a_i^{(L)}}{\partial w_{ij}^{(L-1)}} = z_j^{(L-1)}
 \\]
 
@@ -97,5 +97,32 @@ d_x \equiv \frac{\partial E_n}{\partial w_{ij}^{(L-1)}} = \frac{\partial E_n}{\p
 \delta_i^{(L)} \equiv \frac{\partial E_n}{\partial a_i^{(L)}} = h'(a_i^{(L)}) \sum_k w_{ik}^{(L+1)} \delta_k^{(L+1)}
 \\]
 
-We can update parameter using gradient directly or momentum versions of gradient.
+We can update parameter \\(w\\) using direct gradient \\(dw\\), momentum version, or per-parameter version:
+* Direct gradient:
+\\[
+w = w - learning_rate * dw
+\\]
+* Momentum: the parameters will build up velocity in any direction that has consistent gradient
+\\[
+v = v * \mu - learning_rate * dw \\\
+w = w + v
+\\]
+* Adagrad: the parameters that receive high gradients will have their effective learning rate reduced, while parameters that receive small or infrequent updates will have their effective learning rate increased
+\\[
+cache = cache + dw^2
+w = w - learning_rate * dw / (\sqrt(cache) + \epsilon)
+\\]
+* RMSprop: similar with Adagrad with an attempt to reduce its aggressive, monotonically decreasing learning rate by making cache variable "leaky"
+\\[
+cache = decay_rate * cache + (1 - decay_rate) * dw^2
+w = w - learning_rate * dw / (\sqrt(cache) + \epsilon)
+\\]
+* Adam: RMSprop with momentum
+\\[
+m = \beta1 * m + (1-\beta1) * dw
+v = \beta2* v + (1-\beta2) * (dw^2)
+x = x - learning_rate * m / (\sqrt(v) + \epsilon)
+\\]
+* Newton’s method: requires second order derivatives computation. This approach leads to very fast convergence compared to first-order gradient, but it is too computational expensive for deep network.
+
 
