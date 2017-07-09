@@ -61,7 +61,7 @@ where ~n ~is ~the ~number ~of ~records ~before ~spliting \\\
 Choosing split using Information Gain tends to result in large number of small partition. We usually use a penalized version of Information Gain called Gain Ratio, which is used in [C4.5 algorithm](https://en.wikipedia.org/wiki/C4.5_algorithm): 
 
 \\[
-GainRATIO_{split = \frac{Gain_{split}}{splitINFO} \\\
+GainRATIO_{split} = \frac{Gain_{split}}{splitINFO} \\\
 splitINFO = -\sum_{i=1}^k \frac{n_i}{n} log(\frac{n_i}{n})
 \\]
 
