@@ -111,7 +111,7 @@ N*U_{1-\alpha}(E, N)
 
 ## 3. Random Forest
 Random forest is a decision tree-based [ensemble technique](https://en.wikipedia.org/wiki/Ensemble_learning) that trains multiple indenpendent decision trees and combine their predictions to reducing the variance. Random forest starts with bagging to generate multiple training sets, then train decision trees on these training sets using subset of explanatory variables, then combine their predictions.
-- Data Bagging: Given a standard training set D of size n, random forest generates m new training sets \\(D_i\\), each of size n', by sampling from D uniformly and with replacement. Each of these training sets will be used to train a decision tree.
+- Data Bagging: Given a standard training set \\(D\\) of size \\(n\\), random forest generates m new training sets \\(D_i\\), each of size \\(n'\\), by sampling from \\(D\\) uniformly and with replacement. Each of these training sets will be used to train a decision tree.
 - Feature Bagging: At each candidate split in the training process, only a random subset of explanatory variables is selected for branching.
 - Ensemble: combine predictions from these decision trees by simple voting.
 
