@@ -115,7 +115,7 @@ w = w - learningRate * dw / (\sqrt{cache} + \epsilon)
 \\]
 * __RMSprop:__ similar with Adagrad with an attempt to reduce its aggressive, monotonically decreasing learning rate by making cache variable "leaky"
 \\[
-cache = decay_rate * cache + (1 - decay_rate) * dw^2 \\\
+cache = decayrate * cache + (1 - decayrate) * dw^2 \\\
 w = w - learningRate * dw / (\sqrt{cache} + \epsilon)
 \\]
 * __Adam:__ RMSprop with momentum
