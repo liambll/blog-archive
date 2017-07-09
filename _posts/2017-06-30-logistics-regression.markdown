@@ -90,5 +90,5 @@ log~\frac{P(y = C\_i \| \mathbf{x}; \mathbf{w}\_{ij})}{P(y = C\_j \| \mathbf{x};
 \\]
 - __Softmax regression model:__ also known as Multinomial logistic regression. Instead of applying logistic sigmoid function, we apply softmax function and "normalize" the output to get the probability for all C classes. The down side of Softmax regression is the predicted probabilities become relative and considered as not suitable for statistical intepretability.
 \\[
-P(y = C\_i \| \mathbf{x}; \mathbf{w}\_{ij}) = \frac{\exp (\mathbf{w\_{i}}^T\mathbf{x}) } {\sum_{j=1}^C \exp(\mathbf{w\_{j}}^T\mathbf{x}) }
+P(y = C\_i \| \mathbf{x}; \mathbf{w}) = \frac{\exp (\mathbf{w\_{i}}^T\mathbf{x}) } {\sum_{j=1}^C \exp(\mathbf{w\_{j}}^T\mathbf{x}) }
 \\]
