@@ -195,6 +195,6 @@ LSTM and GRU both have three similar sigmoid gates to control what information t
 While a convolutional neural network specializes in handling spatial feature, a recurrent neural network can use its internal memory in recurrent hidden units to process temporal feature. It is not uncommon to combine convolutional neural network and recurrent neural network to handle inputs involving both image data and sequential data such as video.
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/neural-network/video_captioning.png" width = "300">
+    <img src="/blog/assets/neural-network/video_captioning.png" width = "400">
 </div>
 </div>
