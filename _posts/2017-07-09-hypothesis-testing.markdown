@@ -26,25 +26,34 @@ In hypothesis testing, we first define two hypothesis:
 We always assume the null hypothesis is true and then collect evidence (sample data) to draw conclusion about that assumption __at a certain level of confidence__. Please note that we can never be 100% confidence and accept a hypothesis. Therefore, we usually say __reject__ or __fail to reject__ a hypothesis. There are two types of error in hypothesis testing:
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/hypothesis-testing/error-type.png" width = "400">
+    <img src="/blog/assets/hypothesis-testing/error-type.png" width = "600">
 </div>
 </div>
+
 * __Type I error:__ also known as false positive, happens when we reject the null hypothesis when in fact it is true. The type I error rate or __significance level \\(\alpha\\)__ is the probability of rejecting the null hypothesis given that it is true. __Confidence level__ is the probability of correctly not rejecting the null hypothesis given that it is true.
 \\[
 Confidence ~level = 1 - \alpha
 \\]
-The significance level is usually to 0.05 (5%), implying that there is 5% probability of incorrectly rejecting the null hypothesis.
+The significance level is usually set to 0.05 (5%), implying that there is 5% probability of incorrectly rejecting the null hypothesis.
+
 * __Type II error:__ also known as false negative, happens when we fail to reject the null hypothesis when in fact it is false. The type II error rate or __\\(\beta\\)__ is the probability of incorrectly rejecting the null hypothesis given that it is false. __Power of test__ is the probability of correctly rejecting the null hypothesis given that it is false.
 \\[
 Power ~of ~test = 1 - \beta
 \\]
 
 __P-value approach__
-The P-value approach involves determining "likely" or "unlikely" by evaluating the probability — assuming the null hypothesis is true — of observing a more extreme test statistic in the direction of the alternative hypothesis than the one observed. If the P-value is small, say less than or equal to \\(\alpha\\), then it is "unlikely" and we reject the null hypothesis. If the P-value is large, say more than α, then it is "likely" and we fail to reject the null hypotehsis
+After observing data (by collecting evidence), we can calculate certain test statistics __T__. P-value is the probability, under the null hypothesis, of the test statistic __T__ at least as extreme in the direction of the alternative hypothesis as what was observed. If the P-value is small, say less than or equal to \\(\alpha\\), then it is "unlikely" and we reject the null hypothesis. If the P-value is large, say more than α, then it is "likely" and we fail to reject the null hypotehsis
 
 
 ## 2. Common Hypothesis test
+There is no way to list out all Hypothesis tests used by statisticians. Below are some common tests:
+__Test of equality of two means__
+
+__Test of equality of two variances__
+
+__Test of association__
 
 
+## 3. Simpson's Paradox
 
-## 3. Hypothesis testing with small smaple size
+## 4. Exact Inference
