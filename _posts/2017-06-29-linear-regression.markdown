@@ -78,7 +78,7 @@ Maximizing likelihood is equipvalent to minimizing negative log-likelihood:
 \\]
 Therefore, maximizing likelihood ends up being equivalent to minimizing sum of square errors over all observations.
 
-__Estimate coefficients__
+__Parameter Estimates__
 
 We estimate coefficients by taking first-order deriative of the log-likelihood:
 \\[
@@ -94,7 +94,7 @@ in which:
 
 However, we can use gradient descent to approximate \\(\mathbf{w}\\) instead to avoid large matrix computation.
 
-__Estimate variance matrix for coefficients__
+__Variance matrix estimates__
 
 In machine learning, estimated \\(\mathbf{w}\\) is all we need in order to perform prediction. In statistics, we usually want to get the variance matrix for coefficients in order to caculate confidence intervals at a specific significant level for coefficients and prediction. For that, we need to obtain Hessian matrix by taking second-order deriative of the log-likelihood:
 \\[
