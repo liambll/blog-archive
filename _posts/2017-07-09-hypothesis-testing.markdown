@@ -40,7 +40,6 @@ The significance level is usually set to 0.05 (5%), implying that there is 5% pr
 \\[
 Power ~of ~test = 1 - \beta
 \\]
-
 If the sample size is fixed, decreasing Type I error rate \\(\alpha\\) will increase Type II error rate \\(\beta\\). If we want both error rates to decrease, we need to increase the sample size.
 
 __P-value__
