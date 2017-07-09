@@ -129,7 +129,7 @@ x = x - learningRate * m / (\sqrt{v} + \epsilon)
 Setting a good LearningRate is important for neural network training to converge to a good minimum.
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/neural-network/learning_rate.png" width = "500">
+    <img src="/blog/assets/neural-network/learning_rate.png" width = "300">
 </div>
 </div>
 
@@ -139,7 +139,7 @@ A convolutional Neural Network (ConvNet) has special network architecture that h
 * Convolution layer (Conv): compute result of performing convolution operation of kernel filter [FxF] on previous layer's [MxM] matrix
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/neural-network/conv.jpg" width = "300">
+    <img src="/blog/assets/neural-network/conv.jpg" width = "350">
 </div>
 </div>
 * __Rectified Linear Unit layer (ReLU):__ applies ReLU activation function on each element of result from Convolution layer
@@ -147,7 +147,7 @@ A convolutional Neural Network (ConvNet) has special network architecture that h
 Setting a good LearningRate is important for neural network training to converge to a good minimum.
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/neural-network/pool.png" width = "200">
+    <img src="/blog/assets/neural-network/pool.png" width = "250">
 </div>
 </div>
 * __Fully-connected layer:__ computes the prediction scores. This is a normal hidden layers like those in multi-layer perceptron.
@@ -158,6 +158,7 @@ Setting a good LearningRate is important for neural network training to converge
     <img src="/blog/assets/neural-network/ConvNet.jpg" width = "600">
 </div>
 </div>
+
 
 Conv-ReLU-Pool layers are able to extract features from input matrix with increasing complexity. For example, the first Conv layer can extract curves, the second Conv layer can extract shape, the third layer can extract simple objects, etc. Thanks to max-pooling operation, Convolution is translation invariance, i.e. it can detect feature even when such feature is shifed or rotated.
 
@@ -192,9 +193,10 @@ Basic RNN only comprises of simple units with sigmoid or tanh activation functio
 </div>
 LSTM and GRU both have three similar sigmoid gates to control what information to forget, what new information to retain and what information to output.
 
+
 While a convolutional neural network specializes in handling spatial feature, a recurrent neural network can use its internal memory in recurrent hidden units to process temporal feature. It is not uncommon to combine convolutional neural network and recurrent neural network to handle inputs involving both image data and sequential data such as video.
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/neural-network/video_captioning.png" width = "400">
+    <img src="/blog/assets/neural-network/video_captioning.png" width = "450">
 </div>
 </div>
