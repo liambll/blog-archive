@@ -134,7 +134,7 @@ Setting a good LearningRate is important for neural network training to converge
 </div>
 
 ## 3. Convolutuional Neural Network
-A Convolutional Neural Network (ConvNet) has special network architecture that handle matrix inputs such as images. Hidden layers in convolutional architecture usually include a series of Conv-ReLU-Pool layers followed by a number of Fuly-connected layers.
+A convolutional Neural Network (ConvNet) has special network architecture that handle matrix inputs such as images. Hidden layers in convolutional architecture usually include a series of Conv-ReLU-Pool layers followed by a number of Fuly-connected layers.
 * Input layer: hold the raw pixel values of each input in [MxM] matrix
 * Convolution layer (Conv): compute result of performing convolution operation of kernel filter [FxF] on previous layer's [MxM] matrix
 <div class="imgcap">
@@ -161,3 +161,25 @@ Setting a good LearningRate is important for neural network training to converge
 
 Conv-ReLU-Pool layers is able to extract features from input matrix with increasing complexity. For example, the first Conv layer can extract curves, the second Conv layer can extract shape, the third layer can extract simple objects, etc. Thanks to max-pooling operation, Convolution is translation invariance, i.e. it can detect feature even when such feature is shifed or rotated.
 
+## 4. Recurrent Neural Network
+A recurrent neural network (RNN) is a special neural network where connections between units form a directed cycle, enabling the network to handle inputs with temporal behavior such as word sequence in a sentence. Although RNN has many variant such as recursive neural network, Hopfield network, bi-directional recurrent network, etc, the most commonly used architecture is fully-recurrent network:
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/neural-network/rnn.png" width = "600">
+</div>
+</div>
+
+Basic RNN only comprises of simple units with sigmoid or tanh activation function and usually handles long-term dependency poorly. In practice, more complicated unit is used:
+* Long-Short Term Memory (LSTM):
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/neural-network/lstm.png" width = "600">
+</div>
+</div>
+* Gated Recurrent Unit (GRU):
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/neural-network/gru.png" width = "600">
+</div>
+</div>
+Unlike feedforward neural networks, RNNs can use their internal memory to process arbitrary sequences of inputs.
