@@ -169,7 +169,7 @@ A recurrent neural network (RNN) is a special neural network where connections b
 </div>
 </div>
 
-Basic RNN only comprises of simple units with sigmoid or tanh activation function and usually handles long-term dependency poorly. In practice, more complicated unit is used:
+Basic RNN only comprises of simple units with sigmoid or tanh activation function and usually handles long-term dependency poorly. In practice, more complicated units are used:
 * __Long-Short Term Memory (LSTM):__
 <div class="imgcap">
 <div >
