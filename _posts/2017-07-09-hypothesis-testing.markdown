@@ -62,6 +62,7 @@ __Test of association__
 
 
 ## 3. Simpson's Paradox
+While making statistical inference using hypothesis testing, we should be aware of Simpson's paradox, which is a phenomenon in which a trend appears in different groups of data but disappears or reverses when these groups are combined. Simpson's paradox is usually caused by a [confounder](https://en.wikipedia.org/wiki/Confounding), i.e. a variable that has strong influence on other variables in the hypothesis test.
 
 ## 4. Exact Inference
 Many test statistics shown above are approximately normally distributed for large samples (central limit theorem). It should be emphasized that when sample size is small (eg. due to limited data available), such approximation is no longer appropriate and [extact test](https://en.wikipedia.org/wiki/Exact_test) should be used instead.
