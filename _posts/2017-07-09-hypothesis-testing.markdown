@@ -43,8 +43,9 @@ Power ~of ~test = 1 - \beta
 
 __P-value__
 After observing data (by collecting evidence), we can calculate certain test statistics __T__. P-value is the probability, given the null hypothesis, of the test statistic __T__ at least as extreme in the direction of the alternative hypothesis as what was observed.
+
 * If the P-value is small, say less than or equal to \\(\alpha\\), we did not observe the test statistic __T__ at least as extreme in the direction of the alternative hypothesis. Therefore, null hypothesis is "unlikely" and we reject the null hypothesis.
-* If the P-value is large, say more than α, we in deed observed the test statistic __T__ at least as extreme in the direction of the alternative hypothesis. Therefore, null hypotehsis is "likely" and we fail to reject the null hypotehsis.
+* If the P-value is large, say more than \\(\alpha\\), we in deed observed the test statistic __T__ at least as extreme in the direction of the alternative hypothesis. Therefore, null hypotehsis is "likely" and we fail to reject the null hypotehsis.
 
 
 ## 2. Common Hypothesis test
