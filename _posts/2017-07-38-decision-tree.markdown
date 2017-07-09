@@ -38,14 +38,24 @@ We can answer these questions by measuring impurity before and after branching. 
 GINI(t) = 1 - \sum_j P(j|t)^2 \\\
 where ~P(j|t) ~is ~the ~relative ~frequency ~of ~class ~j ~at ~node ~t
 \\]
-GINI of a node would have minimum value of 0 when the node only contains one class, and maximum value of \\(1-\frac{1}{C} when the node contains equal number of records for each of C classes. The GINI of splitting at node t into k branches would be:
+GINI of a node would have minimum value of 0 when the node only contains one class, and maximum value of \\(1-\frac{1}{C} when the node contains equal number of records for each of C classes. We need to choose the split that results in the lowest GINI. The GINI of splitting at node t into k branches would be:
 
 \\[
 GINI_{split} = \sum_{i=1}^k \frac{n_i}{n} GINI(i) \\\
 where ~n ~is ~the ~number ~of ~records ~before ~spliting, and ~n_i ~is ~the ~number ~of ~records ~at ~child ~i
 \\]
 
-* Entropy
+* _Entropy:_
+\\[
+Entropy(t) = - \sum_j P(j|t) log(P(j|t)) \\\
+where ~P(j|t) ~is ~the ~relative ~frequency ~of ~class ~j ~at ~node ~t
+\\]
+GINI of a node would have minimum value of 0 when the node only contains one class, and maximum value of log(C) when the node contains equal number of records for each of C classes. We need to choose the split that result in the highest reduction in Entropy, such reduction also known as _Information Gain_. The Information Gain of splitting at node t into k branches would be:
+
+\\[
+Gain_{split} = Entropy(t) - (\sum_{i=1}^k frac{n_i}{n} Entropy(i) \\\
+where ~n ~is ~the ~number ~of ~records ~before ~spliting, and ~n_i ~is ~the ~number ~of ~records ~at ~child ~i
+\\]
 
 * Misclassification Rate
 
