@@ -40,8 +40,7 @@ where ~P(j|t) ~is ~the ~relative ~frequency ~of ~class ~j ~at ~node ~t
 \\]
 GINI of a node would have minimum value of 0 when the node only contains one class, and maximum value of \\(1-\frac{1}{C} when the node contains equal number of records for each of C classes. The GINI of splitting at node t into k branches would be:
 \\[
-GINI(t) = 1 - \sum_j P(j|t)^2 \\\
-where ~n ~is ~the ~number ~of ~records ~before ~spliting, and ~n_i ~is ~the ~number ~of ~records ~at ~child ~i
+GINI(t) = 1 - \sum_j P(j|t)^2
 \\]
 
 * Entropy
