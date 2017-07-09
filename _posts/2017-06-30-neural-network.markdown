@@ -75,6 +75,15 @@ where ~ P(y_j \| \mathbf{x}; \mathbf{w}) = \frac{\exp (\mathbf{w\_{j}}^T\mathbf{
 E(\mathbf{w}) = \sum_{n=1}^N \sum\_{j \neq y_n} \max(0, \Delta - \mathbf{w}\_y^T\mathbf{x} + \mathbf{w}\_j^T\mathbf{x})
 \\]
 
+__Regularization__
+
+Regularization is important to reduce overfitting. Common regularization techniques are:
+* L1: \\(L(W) = \sum\|W\|\\)
+* L2: \\(L(W) = \sum W^2 \\)
+* Elastic net:  \\(L(W) = \sum(βW2 + W) \\)
+* Max norm: \\(L(W) = \max |\W|\ \\)
+* Dropout: drop random units in previous layers before feeding to the next layer. This technique is specific for neural network.
+
 __Parameter Estimates__
 There is usually no closed form solution to minimize the loss function in neural network. Unlike loss function in regression and logistics regression where there is no local minima, neural network's loss function usually has local minima. Therefore, it is possible that if we train neural network mutltiple times, we would obtain different parameter estimates.
 
@@ -87,4 +96,6 @@ d_x \equiv \frac{\partial E_n}{\partial w_{ij}^{(L-1)}} = \frac{\partial E_n}{\p
 \\[
 \delta_i^{(L)} \equiv \frac{\partial E_n}{\partial a_i^{(L)}} = h'(a_i^{(L)}) \sum_k w_{ik}^{(L+1)} \delta_k^{(L+1)}
 \\]
+
+We can update parameter using gradient directly or momentum versions of gradient.
 
