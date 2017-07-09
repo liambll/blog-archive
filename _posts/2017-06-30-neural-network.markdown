@@ -159,7 +159,7 @@ Setting a good LearningRate is important for neural network training to converge
 </div>
 </div>
 
-Conv-ReLU-Pool layers is able to extract features from input matrix with increasing complexity. For example, the first Conv layer can extract curves, the second Conv layer can extract shape, the third layer can extract simple objects, etc. Thanks to max-pooling operation, Convolution is translation invariance, i.e. it can detect feature even when such feature is shifed or rotated.
+Conv-ReLU-Pool layers are able to extract features from input matrix with increasing complexity. For example, the first Conv layer can extract curves, the second Conv layer can extract shape, the third layer can extract simple objects, etc. Thanks to max-pooling operation, Convolution is translation invariance, i.e. it can detect feature even when such feature is shifed or rotated.
 
 ## 4. Recurrent Neural Network
 A recurrent neural network (RNN) is a special neural network where connections between units form a directed cycle, enabling the network to handle inputs with temporal behavior such as word sequence in a sentence. Although RNN has many variant such as recursive neural network, Hopfield network, bi-directional recurrent network, etc, the most commonly used architecture is fully-recurrent network:
