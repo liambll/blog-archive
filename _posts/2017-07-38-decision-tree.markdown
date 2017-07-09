@@ -42,7 +42,8 @@ GINI of a node would have minimum value of 0 when the node only contains one cla
 
 \\[
 GINI_{split} = \sum_{i=1}^k \frac{n_i}{n} GINI(i) \\\
-where ~n ~is ~the ~number ~of ~records ~before ~spliting, and ~n_i ~is ~the ~number ~of ~records ~at ~child ~i
+where ~n ~is ~the ~number ~of ~records ~before ~spliting \\\
+and ~n_i ~is ~the ~number ~of ~records ~at ~child ~i
 \\]
 
 * _Entropy:_
@@ -54,8 +55,17 @@ GINI of a node would have minimum value of 0 when the node only contains one cla
 
 \\[
 Gain_{split} = Entropy(t) - (\sum_{i=1}^k frac{n_i}{n} Entropy(i) \\\
-where ~n ~is ~the ~number ~of ~records ~before ~spliting, and ~n_i ~is ~the ~number ~of ~records ~at ~child ~i
+where ~n ~is ~the ~number ~of ~records ~before ~spliting \\\
+~n_i ~is ~the ~number ~of ~records ~at ~child ~i
 \\]
+
+Choosing split using Information Gain tends to result in large number of small partition. We usually use a penalized version of Information Gain called Gain Ratio:
+
+\\[
+GainRATIO_{split = \frac{Gain_{split}}{splitINFO} \\\
+splitINFO = -\sum_{i=1}^k \frac{n_i}{n} log(\frac{n_i}{n})
+\\]
+
 
 * Misclassification Rate
 
