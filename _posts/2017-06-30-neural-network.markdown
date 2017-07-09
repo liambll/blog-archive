@@ -166,7 +166,7 @@ A recurrent neural network (RNN) is a special neural network where connections b
 * __Recursive Neural Network:__ tree-like structure, useful in representing nested realtionship (eg. a sentence comprises of sequence of phrases, which are made of sequence of words).
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/neural-network/recursive.png" width = "600">
+    <img src="/blog/assets/neural-network/recursive.png" width = "400">
 </div>
 </div>
 
