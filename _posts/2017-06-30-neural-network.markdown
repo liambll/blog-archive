@@ -135,11 +135,11 @@ Setting a good LearningRate is important for neural network training to converge
 
 ## 3. Convolutuional Neural Network
 A Convolutional Neural Network (ConvNet) has special network architecture that handle matrix inputs such as images. Hidden layers in convolutional architecture usually include a series of Conv-ReLU-Pool layers followed by a number of Fuly-connected layers.
-* Input layer: hold the raw pixel values of each input in [XxX] matrix
+* Input layer: hold the raw pixel values of each input in [MxM] matrix
 * Convolution layer (Conv): compute result of performing convolution operation of kernel filter [FxF] on previous layer's [MxM] matrix
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/neural-network/conv.jpg" width = "600">
+    <img src="/blog/assets/neural-network/conv.jpg" width = "300">
 </div>
 </div>
 * Rectified Linear Unit layer  (ReLU): apply ReLU activation function on each element of result from Convolution layer
@@ -147,7 +147,7 @@ A Convolutional Neural Network (ConvNet) has special network architecture that h
 Setting a good LearningRate is important for neural network training to converge to a good minimum.
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/neural-network/pool.png" width = "600">
+    <img src="/blog/assets/neural-network/pool.png" width = "200">
 </div>
 </div>
 * Fully-connected layer: compute the scores. This is a normal hidden layers described above.
