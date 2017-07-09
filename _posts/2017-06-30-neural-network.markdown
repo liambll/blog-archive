@@ -13,23 +13,19 @@ summary: Artificial neural networks (ANNs) are computing systems inspired by the
 ---
 
 
-"Artificial neural networks (ANNs) are computing systems inspired by the biological neural networks that constitute animal brains." While regression and its generalized linear model such as logistics regression aims to capture lienar relationship, Neural Network is well-known for learning non-linear relationships without exlicitly specifying such relationships. A neural network model usually has better accuracy compared to linear models, but it lacks intepretability.
-
-Neural Network model can be used in both supervised learning, unsupervised, and reinforcement learning. There are various neural network architectures. Some commonly used architectures are:
-* Multilayer perceptron: the simpliest form of neural network, which will be desribed in this post.
-* Convolution neural network
-* Recurrent neural network
+"Artificial neural networks (ANNs) are computing systems inspired by the biological neural networks that constitute animal brains." While regression and its generalized linear model such as logistics regression aims to capture lienar relationship, Neural Network is well-known for learning non-linear relationships without exlicitly specifying such relationships. A neural network model usually has better accuracy compared to linear models, but it lacks intepretability. Neural Network model can be used in both supervised learning, unsupervised, and reinforcement learning.
 
 ## 1. Model Description
-Multilayer perceptron contains an input layer, an output layer, and one or more hidden layers in between:
+Multilayer perceptron contains an input layer, an output layer, and one or more hidden layers:
+* Output layer contains output units: \\(\mathbf{y} = [y_1, y_2, ..., y_k] \\) is a vector of k output units representing the dependent variable. For example, if we want to perform 10-class prediction, we can perform one-hot encoding with k = 10. That means if an output is class 7, it would have \\(y_7\\) = 1 and the remaining \\(y_i\\) are all 0.
+* Input layer contains input units: \\(\mathbf{x} = [x_1, x_2, ..., x_D] \\) is a vector of D input units representing the explanatory variables. For example, in fraud detection, each input unit can represent one characteristics of a transaction. In image processing, each input unit can represent one pixel of an image. In natural language processing, each input unit can represent a word in a sentence.
+* Hidden layers contains hidden units: The way hidden layers are organized represent network architecture, the simplest being multi-layer perceptron:
 <div class="imgcap">
 <div >
     <img src="/blog/assets/neural-network/mlp.jpg" width = "500">
 </div>
 </div>
-* Output layer contains output units: \\(\mathbf{y} = [y_1, y_2, ..., y_k] \\) is a vector of k output units representing the dependent variable. For example, if we want to perform 10-class prediction, we can perform one-hot encoding with k = 10. That means if an output is class 7, it would have \\(y_7\\) = 1 and the remaining \\(y_i\\) are all 0.
-* Input layer contains input units: \\(\mathbf{x} = [x_1, x_2, ..., x_D] \\) is a vector of D input units representing the explanatory variables. For example, in fraud detection, each input unit can represent one characteristics of a transaction. In image processing, each input unit can represent one pixel of an image. 
-* Hidden layers contains hidden units: In each hidden unit \\(z_i\\) at layer L, an activation function \\(h\\) is applied on linear combination \\(a_i\\) of units from previous layer (L-1):
+In each hidden unit \\(z_i\\) at layer L of a multi-layer perceptron, an activation function \\(h\\) is applied on linear combination \\(a_i\\) of units from previous layer (L-1). If all hidden units at layer L are connected to all units at layer (L-1), layer L is called a fully-conencted layer. If the network has a huge number of hidden layers, it is called a deep network.
 \\[
 z_i^{(L)} = h(a_i^{(L)} \\\
 a_i^{(L)} = \sum_j w_{ij}^{(L-1)} z_j^{(L-1)}
@@ -43,20 +39,43 @@ h(t) = \frac{1}{1 + e^{-t}}
 \\[
 h(t) = tanh(t)
 \\]
-  * Rectified Linear Unit (ReLU): quicker convergence in training, less to vanishing gradient problem in deep network.
+  * Rectified Linear Unit (ReLU): quicker convergence in training, less prone to vanishing gradient problem but prone to dead ReLU problem in deep network.
 \\[
 h(t) = max(0, t)
 \\]
-  * Maxout:
+  * Maxout: less prone to vanishing gradient problem and no dead ReLU problem in deep network, but double the number of parameters.
 \\[
 z_i^{(L)} = \max_j (w_{ij}^{(L-1)} z_j^{(L-1)})
 \\]
   
 ## 2. Model Training
-We need to minimize the difference between the true output and the predicted output. Depend on the nature of depdendent variable, we should use suitable loss function to represent the difference \\(E_n\\):
-* For continious dependent variable: square error or absolute error
-* For categorical depdendent variable: hinge loss or cross-entropy loss
+We need to minimize the difference between the true output \\(y\\) and the predicted output \\(y*\\).
 
+__Loss function__
+
+Depend on the nature of depdendent variable, we should use suitable loss function to represent the difference \\(E_n\\):
+* Square loss: for continious dependent variable \\(y\\)
+\\[
+E(\mathbf{w}) = \frac{1}{2}\sum_{i=1}^N (y\_i - \mathbf{\bar{x}\_i}\mathbf{w})^2
+\\]
+
+* Absolute loss: for continious dependent variable \\(y\\)
+\\[
+E(\mathbf{w}) = \sum_{i=1}^N \|y\_i - \mathbf{\bar{x}\_i}\mathbf{w}\|
+\\]
+
+* Cross-entropy loss: for categorical dependent variable \\(y\\)
+\\[
+E(\mathbf{w}) = -\sum_{i=1}^N \sum\_{j} y_j \log(P(y_j \| \mathbf{x}; \mathbf{w})) \\\
+where ~ P(y_j \| \mathbf{x}; \mathbf{w}) = \frac{\exp (\mathbf{w\_{j}}^T\mathbf{x}) } {\sum_k \exp(\mathbf{w\_{k}}^T\mathbf{x}) }
+\\]
+
+* Hinge loss: for categorical dependent variable \\(y\\)
+\\[
+E(\mathbf{w}) = \sum_{n=1}^N \sum\_{j \neq y_n} \max(0, \Delta - \mathbf{w}\_y^T\mathbf{x} + \mathbf{w}\_j^T\mathbf{x})
+\\]
+
+__Parameter Estimates__
 There is usually no closed form solution to minimize the loss function in neural network. Unlike loss function in regression and logistics regression where there is no local minima, neural network's loss function usually has local minima. Therefore, it is possible that if we train neural network mutltiple times, we would obtain different parameter estimates.
 
 We rely on gradient descent to estimate parameters. The gradient is caculated from the output layer and back-propagated to previous layers using chain rule:
