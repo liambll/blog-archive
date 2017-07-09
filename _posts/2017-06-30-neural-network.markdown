@@ -19,7 +19,7 @@ summary: Artificial neural networks (ANNs) are computing systems inspired by the
 Multilayer perceptron contains an input layer, an output layer, and one or more hidden layers:
 * Output layer contains output units: \\(\mathbf{y} = [y_1, y_2, ..., y_k] \\) is a vector of k output units representing the dependent variable. For example, if we want to perform 10-class prediction, we can perform one-hot encoding with k = 10. That means if an output is class 7, it would have \\(y_7\\) = 1 and the remaining \\(y_i\\) are all 0.
 * Input layer contains input units: \\(\mathbf{x} = [x_1, x_2, ..., x_D] \\) is a vector of D input units representing the explanatory variables. For example, in fraud detection, each input unit can represent one characteristics of a transaction. In image processing, each input unit can represent one pixel of an image. In natural language processing, each input unit can represent a word in a sentence.
-* Hidden layers contains hidden units: The way hidden layers are organized represent network architecture, the simplest being multi-layer perceptron:
+* Hidden layers contains hidden units: The way hidden layers are organized represent network architecture, the simplest being __multi-layer perceptron__ (MLP):
 <div class="imgcap">
 <div >
     <img src="/blog/assets/neural-network/mlp.jpg" width = "500">
@@ -126,7 +126,38 @@ x = x - learningRate * m / (\sqrt{v} + \epsilon)
 \\]
 * __Newton’s method:__ requires second order derivatives computation. This approach leads to very fast convergence compared to first-order gradient, but it is too computational expensive for deep network.
 
+Setting a good LearningRate is important for neural network training to converge to a good minimum.
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/neural-network/learning_rate.jpg" width = "500">
+</div>
+</div>
+
 ## 3. Convolutuional Neural Network
+A Convolutional Neural Network (ConvNet) has special network architecture that handle matrix inputs such as images. Hidden layers in convolutional architecture usually include a series of Conv-ReLU-Pool layers followed by a number of Fuly-connected layers.
+* Input layer: hold the raw pixel values of each input in [XxX] matrix
+* Convolution layer (Conv): compute result of performing convolution operation of kernel filter [FxF] on previous layer's [MxM] matrix
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/neural-network/conv.jpg" width = "600">
+</div>
+</div>
+* Rectified Linear Unit layer  (ReLU): apply ReLU activation function on each element of result from Convolution layer
+* Pool layer: perform a downsampling operation using pooling filter [PxP] along the spatial dimensions. The most commonly used pooling technique is Max-pooling.
+Setting a good LearningRate is important for neural network training to converge to a good minimum.
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/neural-network/pool.png" width = "600">
+</div>
+</div>
+* Fully-connected layer: compute the scores. This is a normal hidden layers described above.
+* Output layer: hold value for dependent variable
 
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/neural-network/ConvNet.jpg" width = "600">
+</div>
+</div>
 
+Conv-ReLU-Pool layers is able to extract features from input matrix with increasing complexity. For example, the first Conv layer can extract curves, the second Conv layer can extract shape, the third layer can extract simple objects, etc. Thanks to max-pooling operation, Convolution is translation invariance, i.e. it can detect feature even when such feature is shifed or rotated.
 
