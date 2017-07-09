@@ -193,3 +193,8 @@ Basic RNN only comprises of simple units with sigmoid or tanh activation functio
 LSTM and GRU both have three similar sigmoid gates to control what information to forget, what new information to retain and what information to output.
 
 While a convolutional neural network specializes in handling spatial feature, a recurrent neural network can use its internal memory in recurrent hidden units to process temporal feature. It is not uncommon to combine convolutional neural network and recurrent neural network to handle inputs involving both image data and sequential data such as video.
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/neural-network/video_captioning.png" width = "300">
+</div>
+</div>
