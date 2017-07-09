@@ -17,9 +17,9 @@ summary: Artificial neural networks (ANNs) are computing systems inspired by the
 
 ## 1. Model Description
 Multilayer perceptron contains an input layer, an output layer, and one or more hidden layers:
-* Output layer contains output units: \\(\mathbf{y} = [y_1, y_2, ..., y_k] \\) is a vector of k output units representing the dependent variable. For example, if we want to perform 10-class prediction, we can perform one-hot encoding with k = 10. That means if an output is class 7, it would have \\(y_7\\) = 1 and the remaining \\(y_i\\) are all 0.
-* Input layer contains input units: \\(\mathbf{x} = [x_1, x_2, ..., x_D] \\) is a vector of D input units representing the explanatory variables. For example, in fraud detection, each input unit can represent one characteristics of a transaction. In image processing, each input unit can represent one pixel of an image. In natural language processing, each input unit can represent a word in a sentence.
-* Hidden layers contains hidden units: The way hidden layers are organized represent network architecture, the simplest being __multi-layer perceptron__ (MLP):
+* __Output layer:__ contains output units \\(\mathbf{y} = [y_1, y_2, ..., y_k] \\), a vector of k output units representing the dependent variable. For example, if we want to perform 10-class prediction, we can perform one-hot encoding with k = 10. That means if an output is class 7, it would have \\(y_7\\) = 1 and the remaining \\(y_i\\) are all 0.
+* __Input layer:__ contains input units \\(\mathbf{x} = [x_1, x_2, ..., x_D] \\), a vector of D input units representing the explanatory variables. For example, in fraud detection, each input unit can represent one characteristics of a transaction. In image processing, each input unit can represent one pixel of an image. In natural language processing, each input unit can represent a word in a sentence.
+* __Hidden layers:__ contain hidden units. The way hidden layers are organized represent network architecture, the simplest being __multi-layer perceptron__ (MLP):
 <div class="imgcap">
 <div >
     <img src="/blog/assets/neural-network/mlp.jpg" width = "500">
@@ -135,23 +135,23 @@ Setting a good LearningRate is important for neural network training to converge
 
 ## 3. Convolutuional Neural Network
 A convolutional Neural Network (ConvNet) has special network architecture that handle matrix inputs such as images. Hidden layers in convolutional architecture usually include a series of Conv-ReLU-Pool layers followed by a number of Fuly-connected layers.
-* Input layer: hold the raw pixel values of each input in [MxM] matrix
+* __Input layer:__ holds the raw pixel values of each input in [MxM] matrix
 * Convolution layer (Conv): compute result of performing convolution operation of kernel filter [FxF] on previous layer's [MxM] matrix
 <div class="imgcap">
 <div >
     <img src="/blog/assets/neural-network/conv.jpg" width = "300">
 </div>
 </div>
-* Rectified Linear Unit layer  (ReLU): apply ReLU activation function on each element of result from Convolution layer
-* Pool layer: perform a downsampling operation using pooling filter [PxP] along the spatial dimensions. The most commonly used pooling technique is Max-pooling.
+* __Rectified Linear Unit layer (ReLU):__ applies ReLU activation function on each element of result from Convolution layer
+* __Pool layer:__ performs a downsampling operation using pooling filter [PxP] along the spatial dimensions. The most commonly used pooling technique is Max-pooling.
 Setting a good LearningRate is important for neural network training to converge to a good minimum.
 <div class="imgcap">
 <div >
     <img src="/blog/assets/neural-network/pool.png" width = "200">
 </div>
 </div>
-* Fully-connected layer: compute the scores. This is a normal hidden layers described above.
-* Output layer: hold value for dependent variable
+* __Fully-connected layer:__ computes the prediction scores. This is a normal hidden layers like those in multi-layer perceptron.
+* __Output layer:__ holds value for dependent variable.
 
 <div class="imgcap">
 <div >
@@ -170,16 +170,18 @@ A recurrent neural network (RNN) is a special neural network where connections b
 </div>
 
 Basic RNN only comprises of simple units with sigmoid or tanh activation function and usually handles long-term dependency poorly. In practice, more complicated unit is used:
-* Long-Short Term Memory (LSTM):
+* __Long-Short Term Memory (LSTM):__
 <div class="imgcap">
 <div >
     <img src="/blog/assets/neural-network/lstm.png" width = "600">
 </div>
 </div>
-* Gated Recurrent Unit (GRU):
+* __Gated Recurrent Unit (GRU):__
 <div class="imgcap">
 <div >
     <img src="/blog/assets/neural-network/gru.png" width = "600">
 </div>
 </div>
-Unlike feedforward neural networks, RNNs can use their internal memory to process arbitrary sequences of inputs.
+LSTM and GRU both have three similar sigmoid gates to control what information to forget, what new information to retain and what information to output.
+
+While a convolutional neural network specializes in handling spatial feature, a recurrent neural network can use its internal memory in recurrent hidden units to process temporal feature. It is not uncommon to combine convolutional neural network and recurrent neural network to handle inputs involving both image data and sequential data such as video.
