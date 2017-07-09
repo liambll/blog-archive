@@ -23,7 +23,7 @@ In a decision tree model:
 Decision tree can provide a set of rules to predict depdendent variable based on explanatory variables.
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/decision-tree/decision-tree.png" width = "500">
+    <img src="/blog/assets/decision-tree/decision-tree.png" width = "400">
 </div>
 </div>
 
@@ -75,7 +75,7 @@ Error at a node would have minimum value of 0 when the node only contains one cl
 For binary classification, it does not matter which impurity measure is chosen since all three impurity measures result in the same splitting choice.
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/decision-tree/decision-tree.png" width = "500">
+    <img src="/blog/assets/decision-tree/impurity.png" width = "400">
 </div>
 </div>
 
@@ -89,14 +89,13 @@ To reduce overfitting, we usually stop branching a node in decision tree when:
 
 __Post-prune__
 An alternative approach is to grow a decision tree to its entirely and perform bottom-up pruning: At each node, compute generalization error  for keeping the subtree, and pruning the subtree by replacing it with a leaf node. If the generalization error is reduced by pruning, prune the subtree at the node.
-Suppose E examples are classified incorrectly out of N training examples at a node, \\(\frac{E}{N}\\) is observed error rate. True error rate is estimated by the upper bound of confidence interval for a given sigificant level \\(\alpha\\), denoted by: 
+Suppose E examples are classified incorrectly out of N training examples at a node, \\(\hat{p} = \frac{E}{N}\\) is observed error rate. True error rate is estimated by the upper bound of confidence interval for a given sigificant level \\(\alpha\\), denoted by: 
 \\[
 U_{1-\alpha}(E, N)
 \\]
 If depdendent variable is binary, the upper bound of confidence interval for a given sigificant level follows the distribution of error for binomial distribution and can be approximated by:
 \\[
-\hat{p} + z_{1-\frac{\alpha}{2}\sqrt{\frac{1}{N} \hat{p} (1-\hat{p})} \\\
-where ~\hat{p}=\frac{E}{N}
+\hat{p} + z_{1-\frac{\alpha}{2}\sqrt{\frac{1}{N} \hat{p} (1-\hat{p})}
 \\]
 
 Generalization error at the node would be:
