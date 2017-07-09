@@ -41,6 +41,11 @@ The significance level is usually set to 0.05 (5%), implying that there is 5% pr
 Power ~of ~test = 1 - \beta
 \\]
 If the sample size is fixed, decreasing Type I error rate \\(\alpha\\) will increase Type II error rate \\(\beta\\). If we want both error rates to decrease, we need to increase the sample size.
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/hypothesis-testing/power.jpg" width = "500">
+</div>
+</div>
 
 __P-value__
 
@@ -49,8 +54,8 @@ After observing data (by collecting evidence), we can calculate certain test sta
 * If the P-value is large, say more than \\(\alpha\\), it is "likely" that we would observe the test statistic __T__ at least as extreme in the direction of the alternative hypothesis. Therefore, we fail to reject the null hypotehsis.
 
 
-## 2. Common Hypothesis test
-There is no way to list out all Hypothesis tests used by statisticians. Below are some common tests:
+## 2. Common Hypothesis tests
+Many test statistics are caculated based on its normal distribution approximation for large samples ([central limit theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)). It should be emphasized that when sample size is small (eg. due to limited data available), such approximation is no longer appropriate and [extact test](https://en.wikipedia.org/wiki/Exact_test) should be used. Below are common tests:
 
 __Test of equality of two means__
 
@@ -63,6 +68,3 @@ __Test of association__
 
 ## 3. Simpson's Paradox
 While making statistical inference using hypothesis testing, we should be aware of Simpson's paradox, which is a phenomenon in which a trend appears in different groups of data but disappears or reverses when these groups are combined. Simpson's paradox is usually caused by a [confounder](https://en.wikipedia.org/wiki/Confounding), i.e. a variable that has strong influence on other variables in the hypothesis test.
-
-## 4. Exact Test
-Many test statistics shown above are caculated based on its normal distribution approximation for large samples ([central limit theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)). It should be emphasized that when sample size is small (eg. due to limited data available), such approximation is no longer appropriate and [extact test](https://en.wikipedia.org/wiki/Exact_test) should be used instead.
