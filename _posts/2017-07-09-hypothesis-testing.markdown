@@ -44,7 +44,7 @@ If the sample size is fixed, decreasing Type I error rate \\(\alpha\\) will incr
 
 __P-value__
 
-After observing data (by collecting evidence), we can calculate certain test statistics __T__. P-value is the probability, given the null hypothesis, of the test statistic __T__ at least as extreme in the direction of the alternative hypothesis as what was observed.
+After observing data (by collecting evidence), we can calculate certain test statistics __T__. P-value is the probability, given the null hypothesis, of having the test statistic __T__ at least as extreme in the direction of the alternative hypothesis as what was observed.
 * If the P-value is small, say less than or equal to \\(\alpha\\), it is "unlikely" that we would observe the test statistic __T__ at least as extreme in the direction of the alternative hypothesis. Therefore, we reject the null hypothesis.
 * If the P-value is large, say more than \\(\alpha\\), it is "likely" that we would observe the test statistic __T__ at least as extreme in the direction of the alternative hypothesis. Therefore, we fail to reject the null hypotehsis.
 
