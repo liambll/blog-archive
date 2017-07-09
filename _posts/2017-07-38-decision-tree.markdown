@@ -15,7 +15,7 @@ summary: Decision tree is a prediction technique that uses a decision tree to go
 
 Decision tree is a prediction technique that uses a decision tree to go from explanatory variables (represented in the branches) to conclusions about the dependent variable (represented in the leaves).
 
-## 1. Model
+## 1. Model Description
 In a decision tree model:
 * Each branch node is an explanatory variable. Each branch from that node represents a value or a value range of the variable.
 * Each leaf node is a possible value of depdendent variable.
@@ -27,7 +27,7 @@ Decision tree can provide a set of rules to predict depdendent variable based on
 </div>
 </div>
 
-## 2. Estimation
+## 2. Model Training
 We want to grow a decision tree that best predicts the dependent variable, by deciding:
 * Which explanatory variable should be branched first?
 * What is the best split to branch that explanatory variable?
