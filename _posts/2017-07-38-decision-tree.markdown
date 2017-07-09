@@ -93,7 +93,9 @@ Suppose E examples are classified incorrectly out of N training examples at a no
 \\[
 U_{1-\alpha}(E, N)
 \\]
+
 If depdendent variable is binary, the upper bound of confidence interval for a given sigificant level follows the distribution of error for binomial distribution and can be approximated by:
+
 \\[
 \hat{p} + z_{1-\frac{\alpha}{2}\sqrt{\frac{1}{N} \hat{p} (1-\hat{p})}
 \\]
