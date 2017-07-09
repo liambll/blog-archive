@@ -129,7 +129,7 @@ x = x - learningRate * m / (\sqrt{v} + \epsilon)
 Setting a good LearningRate is important for neural network training to converge to a good minimum.
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/neural-network/learning_rate.jpg" width = "500">
+    <img src="/blog/assets/neural-network/learning_rate.png" width = "500">
 </div>
 </div>
 
@@ -173,13 +173,13 @@ Basic RNN only comprises of simple units with sigmoid or tanh activation functio
 * __Long-Short Term Memory (LSTM):__
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/neural-network/lstm.png" width = "600">
+    <img src="/blog/assets/neural-network/lstm.png" width = "200">
 </div>
 </div>
 * __Gated Recurrent Unit (GRU):__
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/neural-network/gru.png" width = "600">
+    <img src="/blog/assets/neural-network/gru.png" width = "200">
 </div>
 </div>
 LSTM and GRU both have three similar sigmoid gates to control what information to forget, what new information to retain and what information to output.
