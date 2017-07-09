@@ -20,7 +20,7 @@ Neural Network model can be used in both supervised learning, unsupervised, and 
 * Convolution neural network
 * Recurrent neural network
 
-## 1. Model:
+## 1. Model Description
 Multilayer perceptron contains an input layer, an output layer, and one or more hidden layers in between:
 <div class="imgcap">
 <div >
@@ -52,7 +52,7 @@ h(t) = max(0, t)
 z_i^{(L)} = \max_j (w_{ij}^{(L-1)} z_j^{(L-1)})
 \\]
   
-## 2. Estimation
+## 2. Model Training
 We need to minimize the difference between the true output and the predicted output. Depend on the nature of depdendent variable, we should use suitable loss function to represent the difference \\(E_n\\):
 * For continious dependent variable: square error or absolute error
 * For categorical depdendent variable: hinge loss or cross-entropy loss
