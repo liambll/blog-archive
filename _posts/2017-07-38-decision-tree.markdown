@@ -31,8 +31,9 @@ Decision tree can provide a set of rules to predict depdendent variable based on
 We want to have a decision tree that best predict the depdent variable, by deciding:
 * Which explanatory variable should be branched first?
 * What is the best split to branch that explanatory variable?
+
 We can answer these questions by measuring impurity before and after branching. Common impurity measures are:
-* Gini index
+* _GINI Index:_
 \\[
 GINI(t) = 1 - \sum_j P(j|t)^2 \\\
 where ~P(j|t) ~is ~the ~relative ~frequency ~of ~class ~j ~at ~node ~t
@@ -40,7 +41,6 @@ where ~P(j|t) ~is ~the ~relative ~frequency ~of ~class ~j ~at ~node ~t
 GINI of a node would have minimum value of 0 when the node only contains one class, and maximum value of \\(1-\frac{1}{C} when the node contains equal number of records for each of C classes. The GINI of splitting at node t into k branches would be:
 \\[
 GINI_{split} = \sum_{i=1}^k \frac{n_i}{n} GINI(i) \\\
-where ~n ~is ~the ~number ~of ~records ~before ~spliting, and ~n_i ~is ~the ~number ~of ~records ~at ~child ~i
 \\]
 
 * Entropy
