@@ -15,7 +15,7 @@ summary: Artificial neural networks (ANNs) are computing systems inspired by the
 
 "Artificial neural networks (ANNs) are computing systems inspired by the biological neural networks that constitute animal brains." While regression and its generalized linear model such as logistics regression aims to capture lienar relationship, Neural Network is well-known for learning non-linear relationships without exlicitly specifying such relationships. A neural network model usually has better accuracy compared to linear models, but it lacks intepretability. Neural Network model can be used in both supervised learning, unsupervised, and reinforcement learning.
 
-## 1. Model Description
+## 1. Description
 Multilayer perceptron contains an input layer, an output layer, and one or more hidden layers:
 * __Output layer:__ contains output units \\(\mathbf{y} = [y_1, y_2, ..., y_k] \\), a vector of k output units representing the dependent variable. For example, if we want to perform 10-class prediction, we can perform one-hot encoding with k = 10. That means if an output is class 7, it would have \\(y_7\\) = 1 and the remaining \\(y_i\\) are all 0.
 * __Input layer:__ contains input units \\(\mathbf{x} = [x_1, x_2, ..., x_D] \\), a vector of D input units representing the explanatory variables. For example, in fraud detection, each input unit can represent one characteristics of a transaction. In image processing, each input unit can represent one pixel of an image. In natural language processing, each input unit can represent a word in a sentence.
@@ -48,7 +48,7 @@ h(t) = max(0, t)
 z_i^{(L)} = \max_j (w_{ij}^{(L-1)} z_j^{(L-1)})
 \\]
   
-## 2. Model Training
+## 2. Math
 We need to minimize the difference between the true output \\(y\\) and the predicted output \\(y*\\).
 
 __Loss function__
