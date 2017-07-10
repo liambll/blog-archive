@@ -80,14 +80,18 @@ z = \frac{\bar(x)-\mu_0}{s/\sqrt{n}} \\\
 df = n - 1
 \\]
 
-* __Two sample t-test:__ test difference between two population means when population variances are unknown
+* __Two sample pooled t-test:__ test difference between two population means when population variances are equal but unknown
 \\[
 z = \frac{(\bar(x_1) - \bar(x_2)) - \d_0}{s_p \sqrt{1/n_1 + 1/n_2}} \\\
 s_p = fract{ (n_1-1)s_1^2 + (n_2-1)s_2^2 }{ n_1 + n_2 - 2 } \\\
 df = n_1 + n_2 - 2
 \\]
 
-__Test of association__
+* __Two sample unpooled t-test:__ test difference between two population means when population variances are unequal and unknown
+\\[
+z = \frac{(\bar(x_1) - \bar(x_2)) - \d_0}{\sqrt{s_1^2/n_1 + s_2^2/n_2}} \\\
+df = \frac{ (s_1^2/n_1 + s_2^2/n_2)^2 }{ (s_1^2/n_1)^2/(n_1-2) + (s_2^2/n_2)^2/(n_2-2)  }
+\\]
 
 It should be emphasized that when sample size is small (eg. due to limited data available), such approximation is no longer appropriate and [extact test](https://en.wikipedia.org/wiki/Exact_test) should be used. 
 
