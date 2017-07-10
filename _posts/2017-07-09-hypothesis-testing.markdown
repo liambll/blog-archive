@@ -106,13 +106,13 @@ z = \frac{ \hat{p} - p_0 }{ \sqrt{\frac{p_0(1-p_0)}{n}} }
 
 * __Two proportion pooled z-test:__ test if two population proportions are equal
 \\[
-z = \frac{ \hat{p_1} - \hat{p_2} }{ \sqrt{ \frac{\hat{p_1}(1-\hat{p_1})}{n_1} + \frac{\hat{p_2}(1-\hat{p_2})}{n_2} } } \\\
+z = \frac{ \hat{p_1} - \hat{p_2} }{ \sqrt{ \hat{p}(1-\hat{p})(\frac{1}{n_1} + \frac{1}{n_2}) } } \\\
 \hat{p} = \frac{x_1 + x_2}{n_1 + n_2}
 \\]
 
 * __Two proportion unpooled z-test:__ test difference between two population proportions
 \\[
-z = \frac{ (\hat{p_1} - \hat{p_2}) - d_0 }{ \sqrt{ \hat{p}(1-\hat{p})(\frac{1}{n_1} + \frac{1}{n_2}) } }
+z = \frac{ (\hat{p_1} - \hat{p_2}) - d_0 }{ \sqrt{ \frac{\hat{p_1}(1-\hat{p_1})}{n_1} + \frac{\hat{p_2}(1-\hat{p_2})}{n_2} } }
 \\]
 
 * __F-test:__ test equality of population variances
