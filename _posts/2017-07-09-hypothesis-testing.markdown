@@ -76,26 +76,26 @@ z = \frac{(\bar{x_1} - \bar{x_2}) - d_0}{\sqrt{ \frac{\sigma_1^2}{n_1} + \frac{\
 
 * __One sample t-test:__ test population mean when population variance is unknown
 \\[
-t = \frac{\bar{x}-\mu_0}{s/\sqrt{n}} \\\
+t = \frac{\bar{x}-\mu_0}{ \frac{s}{\sqrt{n}}} \\\
 df = n - 1
 \\]
 
 * __Two sample pooled t-test:__ test difference between two population means when population variances are equal but unknown
 \\[
-t = \frac{(\bar{x_1} - \bar{x_2}) - d_0}{s_p \sqrt{1/n_1 + 1/n_2}} \\\
-s_p = frac{ (n_1-1)s_1^2 + (n_2-1)s_2^2 }{ n_1 + n_2 - 2 } \\\
+t = \frac{(\bar{x_1} - \bar{x_2}) - d_0}{s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}} \\\
+s_p^2 = frac{ (n_1-1)s_1^2 + (n_2-1)s_2^2 }{ n_1 + n_2 - 2 } \\\
 df = n_1 + n_2 - 2
 \\]
 
 * __Two sample unpooled t-test:__ test difference between two population means when population variances are unequal and unknown
 \\[
-t = \frac{(\bar{x_1} - \bar{x_2}) - d_0}{\sqrt{s_1^2/n_1 + s_2^2/n_2}} \\\
-df = \frac{ (s_1^2/n_1 + s_2^2/n_2)^2 }{ (s_1^2/n_1)^2/(n_1-1) + (s_2^2/n_2)^2/(n_2-1)  }
+t = \frac{(\bar{x_1} - \bar{x_2}) - d_0}{\sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} \\\
+df = \frac{ (\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2})^2 }{ \frac{(\frac{s_1^2}{n_1})^2}{n_1-1} + \frac{(\frac{s_2^2}{n_2})^2}{(n_2-1)}  }
 \\]
 
 * __Paired t-test:__ test difference between two population means on the same subjects (eg. before and after)
 \\[
-t = \frac{\bar{d} - d_0}{s_d/\sqrt(n)} \\\
+t = \frac{\bar{d} - d_0}{\frac{s_d}{\sqrt{n}} } \\\
 df = n - 1
 \\]
 
