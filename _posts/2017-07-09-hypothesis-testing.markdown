@@ -60,65 +60,65 @@ Many test statistics are caculated based on asymptotically normal distribution a
 Below are common test statistics:
 * __One sample z-test:__ test population mean when population variance is known
 \\[
-z = \frac{\bar{x}-\mu_0}{ \frac{\sigma} {\sqrt{n}}}
+z = \frac{\bar{x}-\mu_0}{ \frac{\sigma} {\sqrt{n}}} ~ N(0,1)
 \\]
 
 * __Two sample z-test:__ test difference between two population means when population variances are known
 \\[
-z = \frac{(\bar{x_1} - \bar{x_2}) - d_0}{\sqrt{ \frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}}
+z = \frac{(\bar{x_1} - \bar{x_2}) - d_0}{\sqrt{ \frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}} ~ N(0,1)
 \\]
 
 * __One sample t-test:__ test population mean when population variance is unknown
 \\[
-t = \frac{\bar{x}-\mu_0}{ \frac{s}{\sqrt{n}}} \\\
+t = \frac{\bar{x}-\mu_0}{ \frac{s}{\sqrt{n}}} ~ t(df) \\\
 df = n - 1
 \\]
 
 * __Two sample pooled t-test:__ test difference between two population means when population variances are equal but unknown
 \\[
-t = \frac{(\bar{x_1} - \bar{x_2}) - d_0}{s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}} \\\
+t = \frac{(\bar{x_1} - \bar{x_2}) - d_0}{s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}} ~ t(df) \\\
 s_p^2 = \frac{ (n_1-1)s_1^2 + (n_2-1)s_2^2 }{ n_1 + n_2 - 2 } \\\
 df = n_1 + n_2 - 2
 \\]
 
 * __Two sample unpooled t-test:__ test difference between two population means when population variances are unequal and unknown
 \\[
-t = \frac{(\bar{x_1} - \bar{x_2}) - d_0}{\sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} \\\
+t = \frac{(\bar{x_1} - \bar{x_2}) - d_0}{\sqrt{ \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} ~ t(df) \\\
 df = \frac{ (\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2})^2 }{ \frac{(\frac{s_1^2}{n_1})^2}{n_1-1} + \frac{(\frac{s_2^2}{n_2})^2}{(n_2-1)}  }
 \\]
 
 * __Paired t-test:__ test difference between two population means on the same subjects (eg. before and after)
 \\[
-t = \frac{\bar{d} - d_0}{\frac{s_d}{\sqrt{n}} } \\\
+t = \frac{\bar{d} - d_0}{\frac{s_d}{\sqrt{n}} } ~ t(df) \\\
 df = n - 1
 \\]
 
 * __One proportion z-test:__ test population proportion
 \\[
-z = \frac{ \hat{p} - p_0 }{ \sqrt{\frac{p_0(1-p_0)}{n}} }
+z = \frac{ \hat{p} - p_0 }{ \sqrt{\frac{p_0(1-p_0)}{n}} } ~ N(0,1)
 \\]
 
 * __Two proportion pooled z-test:__ test if two population proportions are equal
 \\[
-z = \frac{ \hat{p_1} - \hat{p_2} }{ \sqrt{ \hat{p}(1-\hat{p})(\frac{1}{n_1} + \frac{1}{n_2}) } } \\\
+z = \frac{ \hat{p_1} - \hat{p_2} }{ \sqrt{ \hat{p}(1-\hat{p})(\frac{1}{n_1} + \frac{1}{n_2}) } } ~ N(0,1) \\\
 \hat{p} = \frac{x_1 + x_2}{n_1 + n_2}
 \\]
 
 * __Two proportion unpooled z-test:__ test difference between two population proportions
 \\[
-z = \frac{ (\hat{p_1} - \hat{p_2}) - d_0 }{ \sqrt{ \frac{\hat{p_1}(1-\hat{p_1})}{n_1} + \frac{\hat{p_2}(1-\hat{p_2})}{n_2} } }
+z = \frac{ (\hat{p_1} - \hat{p_2}) - d_0 }{ \sqrt{ \frac{\hat{p_1}(1-\hat{p_1})}{n_1} + \frac{\hat{p_2}(1-\hat{p_2})}{n_2} } } ~ N(0,1)
 \\]
 
 * __F-test:__ test equality of two population variances
 \\[
-F = \frac{s_1^2}{s_2^2} \\\
+F = \frac{s_1^2}{s_2^2} ~ F(df_1,df_2)\\\
 s_1^2 > s_2^2 \\\
 df_1 = n_1 - 1, ~df_2 = n_2 - 1
 \\]
 
 * __Chi-square test:__ test association between two population
 \\[
-\chi^2 = \sum^k \frac{(observed - expected)^2}{expected} \\\
+\chi^2 = \sum^k \frac{(observed - expected)^2}{expected} ~ \chi^2(df) \\\
 df = k - 1
 \\]
 
