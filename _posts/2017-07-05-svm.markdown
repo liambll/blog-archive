@@ -15,7 +15,7 @@ summary: Support Vector Machine (SVM) is a discriminative classifier formally de
 
 "Support Vector Machine (SVM) is a discriminative classifier formally defined by a separating hyperplane."
 
-## 1. Model Description
+## 1. Description
 Suppose some given data points each belong to one of two classes, there would be many hyperplanes that might separate the data into two classes. One logical choice of hyperplane is the one that represents the largest separation between the two classes.
 * Distance from a data point \\(\mathbf{x}\\) to a hyperplane \\(\mathbf{w}^T\mathbf{x} + b = 0\\) is:
 \\[
@@ -32,7 +32,7 @@ where \\(\|\|\mathbf{w}\|\|\_2 = \sqrt{\sum_{i=1}^k w_i^2}\\) and \\(k\\) is num
 </div>
 </div>
 
-## 2. Model Training
+## 2. Math
 To find the hyperplane that represents the largest separation between the two classes, we can formulate the problem as finding a hyperplane that maximizes the margin, i.e. the nearest distance from data points to the hyperplane. 
 
 __Loss function__
