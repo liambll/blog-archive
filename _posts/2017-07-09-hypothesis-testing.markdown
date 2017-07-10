@@ -66,12 +66,12 @@ H_a: \mu > \mu_0
 Below are common test statistics:
 * __One sample z-test:__
 \\[
-z = \frac{bar(x)-\mu_0}{\sigma/\sqrt{n}}
+z = \frac{\bar(x)-\mu_0}{\sigma/\sqrt{n}}
 \\]
 
 * __Two sample z-test:__
 \\[
-z = \frac{bar(x)-\mu_0}{\sigma/\sqrt{n}}
+z = \frac{(\bar(x_1) - \bar(x_2)) - \d_0}{\sqrt{\sigma_1^2/n_1 + \sigma_2^2/n_2}}
 \\]
 
 __Test of equality of two variances__
