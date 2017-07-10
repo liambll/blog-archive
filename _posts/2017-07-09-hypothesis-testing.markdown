@@ -99,6 +99,11 @@ t = \frac{\bar{d} - d_0}{\frac{s_d}{\sqrt{n}} } \\\
 df = n - 1
 \\]
 
+* __One proportion z-test:__ test population propotion
+\\[
+z = \frac{ \hat{p} - p_0 }{ \sqrt{ \frac{p_0(1-p_0)}{n} }
+\\]
+
 It should be emphasized that when sample size is small (eg. due to limited data available), such approximation is no longer appropriate and [extact test](https://en.wikipedia.org/wiki/Exact_test) should be used. 
 
 ## 3. Simpson's Paradox
