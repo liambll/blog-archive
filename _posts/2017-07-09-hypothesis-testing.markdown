@@ -116,7 +116,7 @@ s_1^2 > s_2^2 \\\
 df_1 = n_1 - 1, ~df_2 = n_2 - 1
 \\]
 
-* __Chi-square test:__ test association between two population
+* __Chi-square test:__ test association between two populations
 \\[
 \chi^2 = \sum^k \frac{(observed - expected)^2}{expected} ~ \chi^2(df) \\\
 df = k - 1
