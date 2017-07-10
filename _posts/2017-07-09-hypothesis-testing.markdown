@@ -83,7 +83,7 @@ df = n - 1
 * __Two sample pooled t-test:__ test difference between two population means when population variances are equal but unknown
 \\[
 t = \frac{(\bar{x_1} - \bar{x_2}) - d_0}{s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}} \\\
-s_p^2 = frac{ (n_1-1)s_1^2 + (n_2-1)s_2^2 }{ n_1 + n_2 - 2 } \\\
+s_p^2 = \frac{ (n_1-1)s_1^2 + (n_2-1)s_2^2 }{ n_1 + n_2 - 2 } \\\
 df = n_1 + n_2 - 2
 \\]
 
@@ -101,18 +101,18 @@ df = n - 1
 
 * __One proportion z-test:__ test population proportion
 \\[
-z = \frac{ \hat{p} - p_0 }{ \sqrt{ \frac{p_0(1-p_0)}{n} }
+z = \frac{ \hat{p} - p_0 }{ \sqrt{\frac{p_0(1-p_0)}{n}} }
 \\]
 
 * __Two proportion pooled z-test:__ test if two population proportions are equal
 \\[
-z = \frac{ \hat{p_1} - \hat{p_2} }{ \sqrt{ \frac{\hat{p_1}(1-\hat{p_1})}{n_1} + \frac{\hat{p_2}(1-\hat{p_2})}{n_2} } \\\
+z = \frac{ \hat{p_1} - \hat{p_2} }{ \sqrt{ \frac{\hat{p_1}(1-\hat{p_1})}{n_1} + \frac{\hat{p_2}(1-\hat{p_2})}{n_2} } } \\\
 \hat{p} = \frac{x_1 + x_2}{n_1 + n_2}
 \\]
 
 * __Two proportion unpooled z-test:__ test difference between two population proportions
 \\[
-z = \frac{ (\hat{p_1} - \hat{p_2}) - d_0 }{ \sqrt{ \hat{p}(1-\hat{p})(\frac{1}{n_1} + \frac{1}{n_2}) }
+z = \frac{ (\hat{p_1} - \hat{p_2}) - d_0 }{ \sqrt{ \hat{p}(1-\hat{p})(\frac{1}{n_1} + \frac{1}{n_2}) } }
 \\]
 
 It should be emphasized that when sample size is small (eg. due to limited data available), such approximation is no longer appropriate and [extact test](https://en.wikipedia.org/wiki/Exact_test) should be used. 
