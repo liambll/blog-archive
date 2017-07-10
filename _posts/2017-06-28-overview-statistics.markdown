@@ -21,7 +21,7 @@ Characteristics of statistics techniques:
 
 ## 1. Inferential Statistics
 * Sampling and Bootstrapping
-* Hypothesis Testing
+* [Hypothesis Testing](/blog/hypothesis-testing/)
 
 ## 2. Regression Analysis
 * [Linear Regression](/blog/linear-regression/)
