@@ -55,7 +55,7 @@ After observing data (by collecting evidence), we can calculate certain test sta
 
 
 ## 2. Math
-Many test statistics are caculated based on asymptotically normal distribution approximation for large samples ([central limit theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)). We usually consider \\(n > 30 \\) and \\(np > 10 \\) as sufficiently large sample.
+Many test statistics are caculated based on asymptotically normal distribution approximation for large samples ([central limit theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)). We usually consider \\(n > 30 \\) and \\(np > 10 \\) as sufficiently large, where \\(n\\) is sample size and \\(p\\) is population proportion.
 
 Below are common test statistics:
 * __One sample z-test:__ test population mean when population variance is known
