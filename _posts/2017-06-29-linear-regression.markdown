@@ -93,7 +93,7 @@ in which:
 * \\(\mathbf{y} = [y_1; y_2; \dots; y_N]\\)
 * \\(\mathbf{\bar{X}} = [\mathbf{\bar{x}}_1; \mathbf{\bar{x}}_2; \dots; \mathbf{\bar{x}}_N ] \\)
 
-However, we can use gradient descent to approximate \\(\mathbf{w}\\) instead to avoid large matrix computation.
+However, we usually use gradient descent to approximate \\(\mathbf{w}\\) instead to avoid large matrix computation.
 
 __Variance matrix estimates__
 
