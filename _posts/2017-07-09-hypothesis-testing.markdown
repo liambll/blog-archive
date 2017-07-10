@@ -66,12 +66,12 @@ H_a: \mu > \mu_0
 Below are common test statistics:
 * __One sample z-test:__ test population mean when population variance is known
 \\[
-z = \frac{\bar{x}-\mu_0}{\sigma/\sqrt{n}}
+z = \frac{\bar{x}-\mu_0}{ \frac{\sigma} {\sqrt{n}}}
 \\]
 
 * __Two sample z-test:__ test difference between two population means when population variances are known
 \\[
-z = \frac{(\bar{x_1} - \bar{x_2}) - d_0}{\sqrt{\sigma_1^2/n_1 + \sigma_2^2/n_2}}
+z = \frac{(\bar{x_1} - \bar{x_2}) - d_0}{\sqrt{ \frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}}
 \\]
 
 * __One sample t-test:__ test population mean when population variance is unknown
