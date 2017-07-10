@@ -18,7 +18,7 @@ Some examples:
 * analyze association between mortality rate and smoking habit
 * predict whether borrowers would default based on historical product holdings and account balances.
 
-## 1. Model Description
+## 1. Description
 Relationship between the probability of \\(y\\) being 1 and k explanatory variables \\(\mathbf{x} = [x_1, x_2, ..., x_k] \\):
 \\[
 P(y=1\|\mathbf{x}; \mathbf{w}) = f(\mathbf{w}^T\mathbf{x})
@@ -42,7 +42,7 @@ __Assumptions__
 
 In statistics, logistic regression model makes several assumptions such as linearity between log odd and explanatory variables, error term being independent across observations and independent of explantory variables.
 
-## 2. Model Training
+## 2. Math
 Given a dataset of \\(N\\) observations, we want to find a set of coefficients \\(\mathbf{w}\\) so that the predicted value \\(f(\mathbf{w}^T\mathbf{x}))\\) can accurately represent observed value \\(P(y=1\|\mathbf{x}; \mathbf{w})\\) the most.
 
 __Loss function__
