@@ -95,7 +95,7 @@ df = n - 1
 
 * __One proportion z-test:__ test population proportion
 \\[
-z = \frac{ \hat{p} - p_0 }{ \sqrt{\frac{p_0(1-p_0)}{n}} } ~ N(0,1)
+z = \frac{ \hat{p} - p_0 }{ \sqrt{\frac{p_0(1-p_0)}{n}} } \text{~} N(0,1)
 \\]
 
 * __Two proportion pooled z-test:__ test if two population proportions are equal
