@@ -115,6 +115,12 @@ z = \frac{ \hat{p_1} - \hat{p_2} }{ \sqrt{ \frac{\hat{p_1}(1-\hat{p_1})}{n_1} + 
 z = \frac{ (\hat{p_1} - \hat{p_2}) - d_0 }{ \sqrt{ \hat{p}(1-\hat{p})(\frac{1}{n_1} + \frac{1}{n_2}) } }
 \\]
 
+* __F-test:__ test equality of population variances
+\\[
+F = \sqrt{s_1^2}{s_2^2} \\\
+df_1 = n_1 - 1, ~df_2 = n_2 - 1
+\\]
+
 It should be emphasized that when sample size is small (eg. due to limited data available), such approximation is no longer appropriate and [extact test](https://en.wikipedia.org/wiki/Exact_test) should be used. 
 
 ## 3. Simpson's Paradox
