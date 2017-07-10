@@ -55,13 +55,7 @@ After observing data (by collecting evidence), we can calculate certain test sta
 
 
 ## 2. Math
-Many test statistics are caculated based on asymptotically normal distribution approximation for large samples ([central limit theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)). Let's assume we perform a Hypothesis test with large sample size = \\(N\\) at significant level \\(\alpha\\) and the test statistics has asymptotically normal distribution with variance \\(\sigma^2\\).
-\\[
-H_0: \mu = \mu_0
-H_a: \mu > \mu_0
-\\]
-
-
+Many test statistics are caculated based on asymptotically normal distribution approximation for large samples ([central limit theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)). We usually consider \\(n > 30 \\) and \\(np > 10 \\) as sufficiently large sample.
 
 Below are common test statistics:
 * __One sample z-test:__ test population mean when population variance is known
