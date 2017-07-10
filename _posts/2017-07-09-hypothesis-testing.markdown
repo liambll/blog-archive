@@ -30,7 +30,7 @@ We always assume the null hypothesis is true and then collect evidence (sample d
 </div>
 </div>
 
-* __Type I error:__ also known as false positive, happens when we reject the null hypothesis when in fact it is true. The type I error rate or __significance level \\(\alpha\\)__ is the probability of rejecting the null hypothesis given that it is true. __Confidence level__ is the probability of correctly not rejecting the null hypothesis given that it is true.
+* __Type I error:__ also known as false positive, happens when we reject the null hypothesis when in fact it is true. The type I error rate or __significance level \\(\alpha\\)__ is the probability of incorrectly rejecting the null hypothesis given that it is true. __Confidence level__ is the probability of correctly failing to reject the null hypothesis given that it is true.
 \\[
 Confidence ~level = 1 - \alpha
 \\]
