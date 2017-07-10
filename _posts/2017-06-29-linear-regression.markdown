@@ -20,7 +20,7 @@ Some examples:
 - analyze relationship between customer's satisfaction and customer's waiting time, call duration, discussion topic, etc
 - predict house price based on the house's characteristics (location, areas, number of bed rooms, number of bath rooms, etc)
 
-## 1. Model Description
+## 1. Description
 Relationship between a dependent variable \\(y\\) and k explanatory variables \\(\mathbf{x} = [x_1, x_2, ..., x_k] \\):
 \\[
 y = f(\mathbf{x}) + \epsilon = w_0 + w_1 x_1 + w_2 x_2 + ... + w_k x_k + \epsilon 
@@ -45,7 +45,7 @@ In statistics, strict linear regression model makes several assumptions about th
 
 If any assumption is severely violated, it needs to be handled by performing variable transformation (non-linear transformation, Box-Cox transformation, etc) before any meaningful conclusion can be drawn based on the model.
 
-## 2. Model Training
+## 2. Math
 Given a dataset of \\(N\\) observations, we want to find a set of coefficients \\(\mathbf{w}\\) so that the predicted value \\(f(\mathbf{x})\\) can accurately represent observed value \\(y\\) the most.
 
 __Loss function__
