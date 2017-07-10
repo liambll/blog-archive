@@ -115,9 +115,15 @@ z = \frac{ \hat{p_1} - \hat{p_2} }{ \sqrt{ \hat{p}(1-\hat{p})(\frac{1}{n_1} + \f
 z = \frac{ (\hat{p_1} - \hat{p_2}) - d_0 }{ \sqrt{ \frac{\hat{p_1}(1-\hat{p_1})}{n_1} + \frac{\hat{p_2}(1-\hat{p_2})}{n_2} } }
 \\]
 
-* __F-test:__ test equality of population variances
+* __F-test:__ test equality of two population variances
 \\[
-F = \sqrt{s_1^2}{s_2^2} \\\
+F = \frac{s_1^2}{s_2^2} \\\
+df_1 = n_1 - 1, ~df_2 = n_2 - 1
+\\]
+
+* __Chi-square test:__ test association between two population
+\\[
+\chi^2 = \sum^k \frac{(observed - expected)^2}{expected} \\\
 df_1 = n_1 - 1, ~df_2 = n_2 - 1
 \\]
 
