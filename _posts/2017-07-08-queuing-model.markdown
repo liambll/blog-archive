@@ -15,7 +15,7 @@ summary: Queuing model is a mathematical model that predict queue lengths and wa
 
 "Queuing model is a mathematical model that predict queue lengths and waiting time" to help business decide actions to take in order to keep waiting time or queue length at desired level.
 
-## 1. Model Description
+## 1. Description
 <div class="imgcap">
 <div >
     <img src="/blog/assets/queuing-model/queuing-model.jpg" width = "500">
@@ -59,7 +59,7 @@ Queuing models are usually labeled in the form:
 
 For example, M/M/s denotes a queuing model with multiple servers and exponential distribution for interarrival time and service time.
 
-## 2. Model Solution
+## 2. Math
 Queuing models can provide estimations for:
   * \\(L\\) = Expected number of customers in the system, including those being served (Line Length).
   * \\(L_q\\) = Expected number of customers in the queue, which excludes customers being served.
