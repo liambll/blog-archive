@@ -64,6 +64,6 @@ There are many models that can predict binary outcome (purchase decision) based 
 * integrate model in existing process in production environment
 * monitor business performance and recalibrate the model
 
-Regardless of how high the model's accuracy is, it needs to actually increase sales per customer. That is why we always need to perform business validation of the selected model. For example, we can carry out an A/B testing to compare sales per customers between using the model and not using the model. A model with high accuracy might turn out to increase little sales per customer. That means some of the assumptions are not valid (most likely), or data quality is questionable, or the model and evaluation criteria are not suitable. 
+Regardless of how high the model's accuracy is, it needs to actually increase sales per customer. That is why we always need to perform business validation of the selected model. For example, we can carry out an A/B testing to compare sales per customers between using the model vs. not using the model. A model with high accuracy might turn out to increase little sales per customer. That means some of the assumptions are not valid (most likely), or data quality is questionable, or the model and evaluation criteria are not suitable. 
 
 Monitoring business performance overtime can help detect changes that might invalidate previous model assumptions, and provide a mean to measure values brought by the model.
