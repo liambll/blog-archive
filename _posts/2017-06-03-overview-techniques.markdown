@@ -1,10 +1,10 @@
 ---
 layout: post
 comments: true
-title:  "Introduction"
-title2:  "Introduction"
+title:  "Analytic Techniques Overview"
+title2:  "Analytic Techniques Overview"
 date:   2017-06-03 15:22:00
-permalink: /introduction/
+permalink: /overview-techniques/
 mathjax: true
 tags: Overview
 categories: Overview
