@@ -12,7 +12,12 @@ img: /blog/assets/overview/overview.png
 summary: Data analytics techniques generally fall in to one of three non mutually exclusive fields...
 ---
 
-Data analytics techniques generally fall in to one of three non mutually exclusive fields: Operations Research, Statistics and Machine Learning. All three fields share a common mathematical foundation in probability theory, optimization, and linear algebra. They are widely used to extract insight from data, especially with the rise of Big Data.
+Data analytics techniques generally fall in to one of three non mutually exclusive fields: Operations Research, Statistics and Machine Learning. All three fields share a common mathematical foundation in probability theory, optimization, and linear algebra. They are widely used to extract insight from data, especially with the rise of Big Data. Insight can be:
+* Descritive: What is happening?
+* Diagnostic: Why is something happening?
+* Predictive: What is likely to happen?
+* Prescriptive: What should be done to make something happen?
+
 <div class="imgcap">
 <div >
     <img src="/blog/assets/overview/overview.png" width = "500">
