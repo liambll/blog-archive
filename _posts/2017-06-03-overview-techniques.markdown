@@ -41,4 +41,4 @@ Examples:
 * An IT security firm wants to build an application to detect network intrusion based on network connection characteristics.
 
 ## [Big Data](/blog/overview-big-data/)
-"Big data is a term for datasets that are so large or complex that it would be challenging to ingest, store, analyze, query and visualize such datasets".
+"Big data is a term for datasets that are so large or complex that it would be challenging to ingest, store, analyze, query and visualize such datasets". Even though Big Data does not refer to any quantitive techniques, there are certain considerations that need to be taken into account when applying analytics techniques on big data.
