@@ -20,10 +20,10 @@ summary: Big data is a term for datasets that are so large or complex that it wo
 * Storm
 
 ## 2. Storage
-* Key-value store: Redis
-* Document store: MongoDB
+* Key-value Store: Redis
+* Document Store: MongoDB
 * Wide Column Store: Cassandra, HBase
-* Graph: Neo4j
+* Graph and Triple Store: Neo4j
 
 ## 3. Analysis and Processing
 * Hadoop Map-Reduce
