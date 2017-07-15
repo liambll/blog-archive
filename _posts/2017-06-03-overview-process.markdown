@@ -21,11 +21,11 @@ Data analytics process (also known as data science pipeline) describes recommend
 </div>
 
 ## 1. Business Problem Framing
-It is important to obtain a clear objective at this initial stage.
+It is important to obtain a clear objective at this initial stage. The key is to be specific (5W is useful here).
 * understand business problem, its benefits and constraints
 * determine if the business problem can potentially be solved with an analytics solution
 
-For example, "sales performance" can refer to total sales, sales margin, sales per customer, etc. The key is to be specific (5W is useful here). In this specific scenario, we want to increase sales per customer. There are several analytics approaches we can employ. For example, based on historical purchases, we can attempt to perform individual price optimization (Opertions Research technique). We can also conduct experiments to find out factors influencing purchasing decision and change those factors to drive customer purchases (Statistical Analysis technique). We can even send recommendation to each customer about products that similar people have bought in the past (Machine Learning technique).
+For example, "sales performance" can refer to total sales, sales margin, sales per customer, etc. In this specific scenario, we want to increase sales per customer. There are several analytics approaches we can employ. For example, based on historical purchases, we can attempt to perform individual price optimization (Opertions Research technique). We can also conduct experiments to find out factors influencing purchasing decision and change those factors to drive customer purchases (Statistical Analysis technique). We can even send recommendation to each customer about products that similar people have bought in the past (Machine Learning technique).
 
 ## 2. Analytics Problem Framing
 This step is the "last chance to correct any mistakes or misunderstanding while it is still cheap to do so".
