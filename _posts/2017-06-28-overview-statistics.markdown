@@ -20,8 +20,9 @@ Characteristics of statistics techniques:
 * Statistics has strong focus on likelihood and confidence. While machine learning techniques only asnwer with the "best estimate", statistics techniques can provide interval estimation and associated likelihoods. A Machine learning engineer might say the stock price is most likely to be $40, and a Statistician would say at 95% confidence level, the stock price is within $36-$44.
 
 ## 1. Inferential Statistics
-* Sampling and Bootstrapping
+* Sampling Methods
 * [Hypothesis Testing](/blog/hypothesis-testing/)
+* Design of Experiments
 
 ## 2. Regression Analysis
 * [Linear Regression](/blog/linear-regression/)
