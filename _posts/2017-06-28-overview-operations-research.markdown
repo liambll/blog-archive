@@ -22,9 +22,9 @@ Characteristics of operations research techniques:
 
 ## 2. Network Model
 
-## 3. Inventory Modeling
+## 3. Inventory Model
 
-## [4. Queuing Modeling](/blog/queuing-model/)
+## [4. Queuing Model](/blog/queuing-model/)
 
 ## 5. Simulation Model
 
