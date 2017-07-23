@@ -48,5 +48,5 @@ Characteristics of machine learning techniques:
   * Bayesian network
   * Markov random field<!---  * Restricted Boltzmann machine -->
 
-## 3. Reinforcement Learning
+## 3. [Reinforcement Learning](/blog/reinforecement-learning/)
 
