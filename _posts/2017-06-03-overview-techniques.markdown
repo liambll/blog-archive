@@ -25,7 +25,9 @@ Data analytics techniques generally fall in to one of three non mutually exclusi
 </div>
 
 ## [Operations Research](/blog/overview-operations-research/)
-"Operations research is a discipline that deals with the application of advanced analytical methods to help make better decisions". Operations research focuses on optimization.
+"Operations research is a discipline that deals with the application of advanced analytical methods to help make better decisions". Operations research focuses on decision making.
+* Model parameters are well defined
+* Assumptions about data are defined
 
 Examples:
 * A manufacturing firm wants to find an optimal inventory level in order to minimize inventory storage cost but still be able to meet demand 95% of the time.
@@ -33,6 +35,8 @@ Examples:
 
 ## [Statistics](/blog//overview-statistics/)
 "Statistics is a branch of mathematics that deals with the collection, analysis, interpretation, presentation, and organization of data." The main focus of Statistical Analysis is interpretation.
+* Model parameters need to be learned based on data
+* Assumptions about data are defined
 
 Examples:
 * An e-commerce company has several alternative designs for its new web product. The company wants to find out which design would have more customer click rate.
@@ -40,6 +44,8 @@ Examples:
 
 ## [Machine Learning](/blog/overview-machine-learning/)
 "Machine Learning is a subfield of computer science that give computers the ability to learn from data without being explicitly programmed." A key characteristics of Machine Learning is prediction.
+* Model parameters need to be learned based on data
+* There is little or no assumption about underlying data
 
 Examples:
 * An e-commerce company has historical data on customer purchases. The company wants to find products that each customer is most likely to purchase and send email marketing on those products to each customer. 
