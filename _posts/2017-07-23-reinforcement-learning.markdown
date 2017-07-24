@@ -38,6 +38,6 @@ Given state \\(s\\), __Value of policy \\(V^\pi(s)\\)__ is the expected discount
 \\[
 V^\pi(s) = \sum_{i=0}^∞ \gamma^i r(s_i, \pi(s_i)) | s_0 = s
 \\]
-
+Optimal policy is \\(argmax_{\pi} V^\pi(s) \\)
 
 TBC...
