@@ -45,7 +45,7 @@ Optimal policy is \\(arg \max_{\pi} V^\pi(s) \\). From that, we would have optim
 \\[
 \hat{V}(s) = \max_a r(s, a) + \gamma \sum_{s'} p(s'|s, a)\hat{V}(s')
 \\]
-Value Iteration:
+Value Iteration algorithm:
 * Initialize \\(V_0(s_i) = 0 \\) for all states \\(s_i\\)
 * Set k = 1
 * Loop until convergence:
@@ -63,7 +63,7 @@ Given state \\(s\\), __State-Action Value \\(Q^\(s, a)\\)__ is the expected immi
 \hat{Q}(s, a) = r(s, a) + \gamma \sum_{s'} p(s'|s, a)\hat{V}(s')
 \\]
 Optimal policy is \\(argmax_{a} \hat{Q}(s, a) \\)
-Policy Iteration:
+Policy Iteration algorithm:
 * Initialize \\(\pi_0(s)\\) for all states \\(s\\)
 * Set i = 1
 * Loop until convergence:
