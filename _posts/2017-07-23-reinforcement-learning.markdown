@@ -60,7 +60,7 @@ __Policy Iteration Approach__
 
 Given state \\(s\\), __State-Action Value \\(Q^\(s, a)\\)__ is the expected immidiate rewards obtain if we perform action \\(a\\) on environment state \\(s\\) plus expected discounted sum of future rewards following policy \\(\pi\\). Optimal \\(\hat{Q}\\):
 \\[
-\hat{Q}(s, a) = r(s, a) + \gamma \sum_{s'} p(s'|s, a)\hat{Q}(s')
+\hat{Q}(s, a) = r(s, a) + \gamma \sum_{s'} p(s'|s, a)\hat{V}(s')
 \\]
 Optimal policy is \\(argmax_{a} \hat{Q}(s, a) \\)
 Policy Iteration:
@@ -69,9 +69,9 @@ Policy Iteration:
 * Loop until convergence:
 \\[
 Policy ~evaluation: ~Compute ~V_{k+1}(s) = r(s, \pi(s)) + \gamma \sum_{s'} p(s'|s, \pi(s))V_k(s') \\\
-Policy ~improvement: ~ Compute ~\Q^{\pi_i}(s, a) = r(s, a) + \gamma \sum_{s'} p(s'|s, a)\hat{Q}(s')
+Policy ~improvement: ~ Compute ~Q^{\pi_i}(s, a) = r(s, a) + \gamma \sum_{s'} p(s'|s, a)V^{\pi_i}(s') \\\
+\pi_{i+1}(s) = argmax_a Q^{\pi_i}(s, a)
 \\]
-* Extract policy
 
 
 TBC...
