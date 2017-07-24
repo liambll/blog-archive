@@ -73,4 +73,7 @@ Policy ~improvement: ~ Compute ~Q^{\pi_i}(s, a) = r(s, a) + \gamma \sum_{s'} p(s
 \pi_{i+1}(s) = arg \max_a Q^{\pi_i}(s, a)
 \\]
 
-If we know the dynamic model __T__ p(s'|s, \pi(s)), finding the optimal policy is guranteed and the challenge only lies on computational compexlity. However, it is common that we do not know the dynamic model __T__ p(s'|s, \pi(s)).
+If we know the dynamic model __T__ p(s'|s, \pi(s)) (eg. in the form of probability table), finding the optimal policy is guranteed and the challenge only lies on computational compexlity. However, it is common that we do not know the dynamic model __T__ p(s'|s, \pi(s)). In that case, we need to find a way to perform function estimation.  There are many function approximators (regression, decision tree, neural network, etc) and several methods for estimation:
+* Dynamic programming
+* Monte Carlo method
+* Temporal difference learning
