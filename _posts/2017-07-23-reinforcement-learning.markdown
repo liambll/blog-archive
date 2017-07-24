@@ -21,7 +21,7 @@ summary: Reinforcement learning is a machine learning area that seek to learn ho
 Reinforcement learning model for an agent in an environment can be described using Markov Decision Process \\(<S,A,R,T,\gamma>\\). It assumes Markov property, i.e. outcome of an action depends only on the current state and not previous states: \\(p(s_{1+1}|s_1,a_1,...s_t,a_t) = (p(s_{1+1}|s_t,a_t) \\).
 * __Action:__ a set \\(A\\) of actions that the agent can perform
 * __State:__ a set \\(S\\) of the environment states
-* __T:__ a temporal model specifying state \\(s_{t+1}\\) achieved when the agent perform action \\(a_t\\) on environment state \\(s_t\\)
+* __T:__ a dynamic model specifying state \\(s_{t+1}\\) achieved when the agent perform action \\(a_t\\) on environment state \\(s_t\\)
 * __Reward:__ a reward model \\(R(s)\\), \\(R(s,a)\\), or \\(R(s,a,s')\\) specifying reward \\(r_t\\) achieved when the agent perform action \\(a_t\\) on environment state \\(s_t\\)
 * __Discount factor:__ since we only know the final reward at the end, discount factor \\(\gamma \lte 1\\) is used to measure reward \\(R(s_t)\\) at time t based on final reward.
 
@@ -41,9 +41,9 @@ Given state \\(s\\), __Value of policy \\(V^\pi(s)\\)__ is the expected discount
 V^\pi(s) = \sum_{i=0}^∞ \gamma^i r(s_i, \pi(s_i)) | s_0 = s \\\
 = r(s, \pi(s)) + \gamma \sum_{s'} p(s'|s, \pi(s))V^\pi(s') ~(Markov ~property)
 \\]
-Optimal policy is \\(argmax_{\pi} V^\pi(s) \\). From that, we would have optimal \\(\hat{V}\\): 
+Optimal policy is \\(arg \max_{\pi} V^\pi(s) \\). From that, we would have optimal \\(\hat{V}\\): 
 \\[
-\hat{V}^(s) = \max_a r(s, a) + \gamma \sum_{s'} p(s'|s, a)\hat{V}(s')
+\hat{V}(s) = \max_a r(s, a) + \gamma \sum_{s'} p(s'|s, a)\hat{V}(s')
 \\]
 Value Iteration:
 * Initialize \\(V_0(s_i) = 0 \\) for all states \\(s_i\\)
@@ -70,8 +70,7 @@ Policy Iteration:
 \\[
 Policy ~evaluation: ~Compute ~V_{k+1}(s) = r(s, \pi(s)) + \gamma \sum_{s'} p(s'|s, \pi(s))V_k(s') \\\
 Policy ~improvement: ~ Compute ~Q^{\pi_i}(s, a) = r(s, a) + \gamma \sum_{s'} p(s'|s, a)V^{\pi_i}(s') \\\
-\pi_{i+1}(s) = argmax_a Q^{\pi_i}(s, a)
+\pi_{i+1}(s) = arg \max_a Q^{\pi_i}(s, a)
 \\]
 
-
-TBC...
+If we know the dynamic model __T__ p(s'|s, \pi(s)), finding the optimal policy is guranteed and the challenge only lies on computational compexlity. However, it is common that we do not know the dynamic model __T__ p(s'|s, \pi(s)).
