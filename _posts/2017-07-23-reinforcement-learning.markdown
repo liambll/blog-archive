@@ -41,18 +41,18 @@ Given state \\(s\\), __Value of policy \\(V^\pi(s)\\)__ is the expected discount
 V^\pi(s) = \sum_{i=0}^∞ \gamma^i r(s_i, \pi(s_i)) | s_0 = s \\\
 = r(s, \pi(s)) + \gamma \sum_{s'} p(s'|s, \pi(s))V^\pi(s') ~(Markov ~property)
 \\]
-Optimal policy is \\(argmax_{\pi} V^\pi(s) \\). From that, we would have optimal \\(V*\\): 
+Optimal policy is \\(argmax_{\pi} V^\pi(s) \\). From that, we would have optimal \\(V&ast;\\): 
 \\[
-V*^(s) = \max_a r(s, a) + \gamma \sum_{s'} p(s'|s, a)V*(s')
+V&ast;^(s) = \max_a r(s, a) + \gamma \sum_{s'} p(s'|s, a)V&ast;(s')
 \\]
 
 __Policy Iteration Approach__
 
-Given state \\(s\\), __State-Action Value \\(Q^\(s, a)\\)__ is the expected immidiate rewards obtain if we perform action \\(a\\) on environment state \\(s\\) plus expected discounted sum of future rewards following policy \\(\pi\\). Optimal Q*:
+Given state \\(s\\), __State-Action Value \\(Q^\(s, a)\\)__ is the expected immidiate rewards obtain if we perform action \\(a\\) on environment state \\(s\\) plus expected discounted sum of future rewards following policy \\(\pi\\). Optimal Q&ast;:
 \\[
-Q*(s, a) = 
-= r(s, a) + \gamma \sum_{s'} p(s'|s, a)Q*(s')
+Q&ast;(s, a) = 
+= r(s, a) + \gamma \sum_{s'} p(s'|s, a)Q&ast;(s')
 \\]
-Optimal policy is \\(argmax_{a} Q*(s, a) \\)
+Optimal policy is \\(argmax_{a} Q&ast;(s, a) \\)
 
 TBC...
