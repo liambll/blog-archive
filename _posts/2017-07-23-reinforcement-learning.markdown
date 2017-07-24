@@ -62,7 +62,7 @@ Given state \\(s\\), __State-Action Value \\(Q^\(s, a)\\)__ is the expected immi
 \\[
 \hat{Q}(s, a) = r(s, a) + \gamma \sum_{s'} p(s'|s, a)\hat{V}(s')
 \\]
-Optimal policy is \\(argmax_{a} \hat{Q}(s, a) \\)
+Optimal policy is \\(arg \max_a \hat{Q}(s, a) \\)
 Policy Iteration algorithm:
 * Initialize \\(\pi_0(s)\\) for all states \\(s\\)
 * Set i = 1
