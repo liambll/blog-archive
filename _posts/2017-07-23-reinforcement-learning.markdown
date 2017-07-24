@@ -54,7 +54,7 @@ For ~each ~state ~s: \\\
 V_{k+1}(s) = \max_a r(s, a) + \gamma \sum_{s'} p(s'|s, a)V_k(s')
 \\]
 * Extract policy
-
+<br/>
 
 __Policy Iteration Approach__
 
