@@ -31,4 +31,14 @@ Reinforcement learning model for an agent in an environment can be described usi
 </div>
 </div>
 
+## 2. Mathematics
+We want to find __Policy \\(\pi\\) S -> A__ that specifies optimal action to take in each state.
+
+Given state \\(s\\), __Value of policy \\(V^\pi(s)\\)__ is the expected discounted sum of rewards obtain if we follow policy \\(\pi\\) starting with state s until the end.
+\\[
+z_i^{(L)} = h(a_i^{(L)} \\\
+a_i^{(L)} = \sum_j w_{ij}^{(L-1)} z_j^{(L-1)}
+\\]
+
+
 TBC...
