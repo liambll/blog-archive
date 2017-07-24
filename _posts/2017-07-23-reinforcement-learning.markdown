@@ -35,6 +35,7 @@ Reinforcement learning model for an agent in an environment can be described usi
 We want to find __Policy \\(\pi\\): S -> A__ that specifies optimal action to take in each state.
 
 __Value Iteration Approach__
+
 Given state \\(s\\), __Value of policy \\(V^\pi(s)\\)__ is the expected discounted sum of rewards obtain if we follow policy \\(\pi\\) starting with state s until the end.
 \\[
 V^\pi(s) = \sum_{i=0}^∞ \gamma^i r(s_i, \pi(s_i)) | s_0 = s \\\
@@ -46,6 +47,7 @@ V*^(s) = \max_a r(s, a) + \gamma \sum_{s'} p(s'|s, a)V*(s')
 \\]
 
 __Policy Iteration Approach__
+
 Given state \\(s\\), __State-Action Value \\(Q^\(s, a)\\)__ is the expected immidiate rewards obtain if we perform action \\(a\\) on environment state \\(s\\) plus expected discounted sum of future rewards following policy \\(\pi\\). Optimal Q*:
 \\[
 Q*(s, a) = 
