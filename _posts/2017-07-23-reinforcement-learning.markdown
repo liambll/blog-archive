@@ -45,14 +45,33 @@ Optimal policy is \\(argmax_{\pi} V^\pi(s) \\). From that, we would have optimal
 \\[
 \hat{V}^(s) = \max_a r(s, a) + \gamma \sum_{s'} p(s'|s, a)\hat{V}(s')
 \\]
+Value Iteration:
+* Initialize \\(V_0(s_i) = 0 \\) for all states \\(s_i\\)
+* Set k = 1
+* Loop until convergence:
+\\[
+For ~each ~state ~s: \\\
+V_{k+1}(s) = \max_a r(s, a) + \gamma \sum_{s'} p(s'|s, a)V_k(s')
+\\]
+* Extract policy
+
 
 __Policy Iteration Approach__
 
-Given state \\(s\\), __State-Action Value \\(Q^\(s, a)\\)__ is the expected immidiate rewards obtain if we perform action \\(a\\) on environment state \\(s\\) plus expected discounted sum of future rewards following policy \\(\pi\\). Optimal Q&ast;:
+Given state \\(s\\), __State-Action Value \\(Q^\(s, a)\\)__ is the expected immidiate rewards obtain if we perform action \\(a\\) on environment state \\(s\\) plus expected discounted sum of future rewards following policy \\(\pi\\). Optimal \\(\hat{Q}\\):
 \\[
-\hat{Q}(s, a) = 
-= r(s, a) + \gamma \sum_{s'} p(s'|s, a)\hat{Q}(s')
+\hat{Q}(s, a) = r(s, a) + \gamma \sum_{s'} p(s'|s, a)\hat{Q}(s')
 \\]
 Optimal policy is \\(argmax_{a} \hat{Q}(s, a) \\)
+Policy Iteration:
+* Initialize \\(\pi_0(s)\\) for all states \\(s\\)
+* Set i = 1
+* Loop until convergence:
+\\[
+Policy ~evaluation: ~Compute ~V_{k+1}(s) = r(s, \pi(s)) + \gamma \sum_{s'} p(s'|s, \pi(s))V_k(s') \\\
+Policy ~improvement: ~ Compute ~\Q^{\pi_i}(s, a) = r(s, a) + \gamma \sum_{s'} p(s'|s, a)\hat{Q}(s')
+\\]
+* Extract policy
+
 
 TBC...
