@@ -43,7 +43,7 @@ V^\pi(s) = \sum_{i=0}^∞ \gamma^i r(s_i, \pi(s_i)) | s_0 = s \\\
 \\]
 Optimal policy is \\(argmax_{\pi} V^\pi(s) \\). From that, we would have optimal \\(\hat{V}\\): 
 \\[
-\hat{V^(s) = \max_a r(s, a) + \gamma \sum_{s'} p(s'|s, a)\hat{V}(s')
+\hat{V}^(s) = \max_a r(s, a) + \gamma \sum_{s'} p(s'|s, a)\hat{V}(s')
 \\]
 
 __Policy Iteration Approach__
