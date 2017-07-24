@@ -36,7 +36,8 @@ We want to find __Policy \\(\pi\\): S -> A__ that specifies optimal action to ta
 
 Given state \\(s\\), __Value of policy \\(V^\pi(s)\\)__ is the expected discounted sum of rewards obtain if we follow policy \\(\pi\\) starting with state s until the end.
 \\[
-V^\pi(s) = \sum_{i=0}^∞ \gamma^i r(s_i, \pi(s_i)) | s_0 = s
+V^\pi(s) = \sum_{i=0}^∞ \gamma^i r(s_i, \pi(s_i)) | s_0 = s \\\
+= r(s, \pi(s)) + \gamma \sum_{s'} p(s'|s, \pi(s))V^\pi(s') ~(Markov ~property)
 \\]
 Optimal policy is \\(argmax_{\pi} V^\pi(s) \\)
 
