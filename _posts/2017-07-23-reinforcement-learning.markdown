@@ -23,7 +23,7 @@ Reinforcement learning model for an agent in an environment can be described usi
 * __State:__ a set \\(S\\) of the environment states
 * __T:__ a dynamic model specifying state \\(s_{t+1}\\) achieved when the agent perform action \\(a_t\\) on environment state \\(s_t\\)
 * __Reward:__ a reward model \\(R(s)\\), \\(R(s,a)\\), or \\(R(s,a,s')\\) specifying reward \\(r_t\\) achieved when the agent perform action \\(a_t\\) on environment state \\(s_t\\)
-* __Discount factor:__ since we only know the final reward at the end, discount factor \\(\gamma \lte 1\\) is used to measure reward \\(R(s_t)\\) at time t based on final reward.
+* __Discount factor:__ since we only know the final reward at the end, discount factor \\(\gamma \leq 1\\) is used to measure reward \\(R(s_t)\\) at time t based on final reward.
 
 <div class="imgcap">
 <div >
