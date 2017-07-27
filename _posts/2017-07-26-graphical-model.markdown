@@ -16,7 +16,7 @@ summary: A probabilistic graphical model (PGM) is a probabilistic model for whic
 "A probabilistic graphical model (PGM) is a probabilistic model that uses a graph to express the conditional dependence structure between random variables." Probabilistic graphical model is a marriage of Bayesian Statistics and Machine Learning.
 
 ## 1. Description
-Probabilistic graphical models use a graph-based representation of a set of independences among random variables. There two common branches of graphical models:
+Probabilistic graphical models use a graph-based representation of a set of independences among random variables. There two general branches of graphical models:
 * Directed graphical model, or Bayesian Network: represents a set of random variables and their conditional dependencies using a directed acyclic graph:
 <div class="imgcap">
 <div >
@@ -31,4 +31,6 @@ Probabilistic graphical models use a graph-based representation of a set of inde
 </div>
 </div>
 
-TBC
+There are other specialized probabilistic graphical models (factor graph, restricted Boltzmann machine, etc), but these models will no tbe discussed here.
+
+
