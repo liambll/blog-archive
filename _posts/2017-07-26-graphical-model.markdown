@@ -17,14 +17,14 @@ summary: A probabilistic graphical model (PGM) is a probabilistic model for whic
 
 ## 1. Description
 Probabilistic graphical models use a graph-based representation of a set of independences among random variables. There two general branches of graphical models:
-* Directed graphical model, or Bayesian Network: represents a set of random variables and their conditional dependencies using a directed acyclic graph. For example, a Bayesian Network can represents the relationship between diseases, symptoms and treatment. There are induced dependencies in Bayesian Network, eg. diseases influence symptoms, disease and symptoms influence treatment.
+* Directed graphical model, or Bayesian Network: represents a set of random variables and their conditional dependencies using a directed acyclic graph. For example, a Bayesian Network can represents the relationship between diseases, symptoms and treatment. There are induced dependencies in Bayesian Network, eg. diseases cause certain symptoms, diseases and symptoms lead to certain treatment.
 <div class="imgcap">
 <div >
     <img src="/blog/assets/graphical-model/bayesian-network.png" width = "300">
 </div>
 </div>
 
-* Undirected graphical model, or Markov Network, Markov Random Field: represents a set of random variables and their conditional dependencies using an undirected graph, which can be acyclic or cyclic. Depedencies in Markov Network are not induced. For example, Markov Network can represent an image, with each pixel is one node in the graph. We cannot say a pixel would influence pixels surrouding it, but we can say pixels belong to the same objects might be related to each other.
+* Undirected graphical model, or Markov Network, Markov Random Field: represents a set of random variables and their conditional dependencies using an undirected graph, which can be acyclic or cyclic. Depedencies in Markov Network are not induced. For example, Markov Network can represent an image, with each pixel is one node in the graph. We cannot say a pixel would affect pixels surrouding it, but we can say pixels belong to the same objects might be related to each other.
 <div class="imgcap">
 <div >
     <img src="/blog/assets/graphical-model/markov-random-field.png" width = "300">
