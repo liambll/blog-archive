@@ -20,14 +20,14 @@ Probabilistic graphical models use a graph-based representation of a set of inde
 * Directed graphical model, or Bayesian Network: represents a set of random variables and their conditional dependencies using a directed acyclic graph:
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/graphical-mode/bayesian-network.png" width = "400">
+    <img src="/blog/assets/graphical-model/bayesian-network.png" width = "400">
 </div>
 </div>
 
 * Undirected graphical model, or Markov Random Field: represents a set of random variables and their conditional dependencies using an undirected graph, which can be acyclic or cyclic.
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/reinforcement-learning/markov-random-field.png" width = "400">
+    <img src="/blog/assets/graphical-model/markov-random-field.png" width = "400">
 </div>
 </div>
 
