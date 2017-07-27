@@ -27,7 +27,7 @@ Probabilistic graphical models use a graph-based representation of a set of inde
 * Undirected graphical model, or Markov Random Field: represents a set of random variables and their conditional dependencies using an undirected graph, which can be acyclic or cyclic.
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/reinforcement-learning/markov-random-field.png" width = "500">
+    <img src="/blog/assets/reinforcement-learning/markov-random-field.png" width = "400">
 </div>
 </div>
 
