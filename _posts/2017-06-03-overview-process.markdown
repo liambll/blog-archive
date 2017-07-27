@@ -8,7 +8,7 @@ permalink: /overview-process/
 mathjax: true
 tags: Overview
 categories: Overview
-img: /blog/assets/overview/overview.png
+img: /blog/assets/overview/Analytics-Process.png
 summary: Data analytics techniques generally fall in to one of three non mutually exclusive fields...
 ---
 
