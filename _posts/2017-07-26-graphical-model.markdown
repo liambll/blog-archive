@@ -62,9 +62,17 @@ There are other specialized probabilistic graphical models (factor graph, restri
 ## 2. Mathematics
 There are several tasks we usually perform in probabilistics graphical model:
 * __Inference:__ Given a probabilistic model, we can ask:
-  * __Marginal Inference:__ what is the probability of a given variable?
-  * __Maximum a posteriori (MAP) inference:__ what is the most likely assignment to the variables in the model, conditioned on data?
+  * Marginal Inference: what is the probability of a given variable?
+  * Maximum a posteriori (MAP) inference: what is the most likely assignment to the variables in the model, conditioned on data?
 * __Learning:__ Given a dataset, we would like to fit the best model:
-  * __Parameter Learning:__ estimate the parameters in the graph, i.e. what is the most likely assignment to parameters in the model.
-  * __Structure Learning:__ estimate the structure of the graph, i.e. determine from data how the variables depend on each other.
+  * Parameter Learning: estimate the parameters in the graph, i.e. what is the most likely assignment to parameters in the model.
+  * Structure Learning: estimate the structure of the graph, i.e. determine from data how the variables depend on each other.
+
+Exact inference methods include:
+* __Variable Elimination:__ The variable elimination method repeatedly perform two factor operations: product and marginalization in order to calculate marginal probability for a specific variable:
+Product operation: //(\phi_3(x_c) = \phi_1(x_c) \phi_2(x_c) //)
+Marginalize operation: //(\tau(x) = \sum_y \phi(x, y) //)
+
+
+* __Belief Propagation:__ 
 
