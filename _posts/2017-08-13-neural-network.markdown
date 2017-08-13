@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-title:  "Neural Network and Deep Learning"
-title2:  "Neural Network and Deep Learning"
+title:  "Neural Network"
+title2:  "Neural Network"
 date:   2017-08-13 17:22:00
 permalink: /neural-network/
 mathjax: true
