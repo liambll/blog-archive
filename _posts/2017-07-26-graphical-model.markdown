@@ -69,10 +69,28 @@ There are several tasks we usually perform in probabilistics graphical model:
   * Structure Learning: estimate the structure of the graph, i.e. determine from data how the variables depend on each other.
 
 Exact inference methods include:
-* __Variable Elimination:__ The variable elimination method repeatedly perform two factor operations: product and marginalization in order to calculate marginal probability for a specific variable:
+* __Variable Elimination:__ The variable elimination method repeatedly perform two factor operations: product and marginalization in order to perform marginal inference for a specific variable:
   * Product operation: \\(\phi_3(x_c) = \phi_1(x_c) \phi_2(x_c) \\)
   * Marginalize operation: \\(\tau(x) = \sum_y \phi(x, y) \\)
 Variable elimination ordering is important to achieve improvement running time. 
 
-* __Belief Propagation:__ Belief Propagation method stores 
+* __Belief Propagation:__ Belief Propagation method stores intermediate \\(\tau\\) values while performing variable elimination for the first time. After that, when we need to perform marginal inference for another variable, we can immidiately caculate the result using belief propagation without running variable elimination algorithm again.
+
+* __MAP inference:__
+
+The probabilistic models are often quite complex, and exact inference may be too slow for them. Approximation solutions include:
+* __Sampling method:__ produce answers by repeatedly generating random numbers from distributions in the model. Sampling from distributions can help perform many tasks, including marginal and MAP inference, as well as estimating integrals:
+\\[
+E_{x~p}[f(x)] = \sum_x f(x)p(x)
+\\]
+  * Rejection sampling: compute the area of a region \\(R\\) by sampling in a larger region with a known area and recording the fraction of samples that falls within \\(R\\).
+  * Importance sampling: sample from an alternative distribution q, and then reweigh the samples in a way that their sum still approximates the desired integral for p.
+  * Markov Chain Monte Carlo method: sample from distributions sequentially: Metropolis-Hastings algorithm, Gibbs sampling.
+
+* __Variational method:__ cast inference as an optimization problem by choose an approximating distribution family \\(Q\\) and minizming Kullback-Leibler divergence between \\(Q\\) and actual distribution \\(P\\):
+\\[
+KL(q\|\|p) = \sum_x q(x)\log\fract{q(x)}{p(x)}
+\\]
+
+
 
