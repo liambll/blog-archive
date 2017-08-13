@@ -59,7 +59,7 @@ For ~each ~state ~s: ~V_{k+1}(s) = \max_a r(s, a) + \gamma \sum_{s'} p(s'|s, a)V
 
 __Policy Iteration Approach__
 
-Given state \\(s\\), __State-Action Value \\(Q^\(s, a)\\)__ is the expected immidiate rewards obtain if we perform action \\(a\\) on environment state \\(s\\) plus expected discounted sum of future rewards following policy \\(\pi\\). Optimal \\(\hat{Q}\\):
+Given state \\(s\\), __State-Action Value \\(\hat{Q}(s, a)\\)__ is the expected immidiate rewards obtain if we perform action \\(a\\) on environment state \\(s\\) plus expected discounted sum of future rewards following policy \\(\pi\\). Optimal \\(\hat{Q}\\):
 \\[
 \hat{Q}(s, a) = r(s, a) + \gamma \sum_{s'} p(s'|s, a)\hat{V}(s')
 \\]
