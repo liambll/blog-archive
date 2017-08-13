@@ -23,6 +23,9 @@ Probabilistic graphical models use a graph-based representation of a set of inde
     <img src="/blog/assets/graphical-model/bayesian-network.png" width = "300">
 </div>
 </div>
+\\[
+p(A,B,C,D,E,F) = p(A) p(B|A) p(C|A,E) p(D|B) p(E|B) p(F|C,D,E)
+\\]
 
 * Undirected graphical model, or Markov Network, Markov Random Field: represents a set of random variables and their conditional dependencies using an undirected graph, which can be acyclic or cyclic. Depedencies in Markov Network are not induced. For example, Markov Network can represent an image, with each pixel is one node in the graph. We cannot say a pixel would affect pixels surrouding it, but we can say pixels belong to the same objects might be related to each other.
 <div class="imgcap">
