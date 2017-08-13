@@ -17,7 +17,7 @@ summary: A probabilistic graphical model (PGM) is a probabilistic model for whic
 
 ## 1. Description
 Probabilistic graphical models use a graph-based representation of a set of independences among random variables. There two general branches of graphical models:
-* Directed graphical model, or Bayesian Network: represents a set of random variables and their conditional dependencies using a directed acyclic graph. For example, a Bayesian Network can represents the relationship between diseases, symptoms and treatment. There are induced dependencies in Bayesian Network, eg. diseases cause certain symptoms, diseases and symptoms lead to certain treatment.
+* __Directed graphical model__, or __Bayesian Network__: represents a set of random variables and their conditional dependencies using a directed acyclic graph. For example, a Bayesian Network can represents the relationship between diseases, symptoms and treatment. There are induced dependencies in Bayesian Network, eg. diseases cause certain symptoms, diseases and symptoms lead to certain treatment.
 <div class="imgcap">
 <div >
     <img src="/blog/assets/graphical-model/bayesian-network.png" width = "300">
@@ -33,7 +33,7 @@ In the above example, we have
 
 __Conditional Dependencies:__ In a Bayesian Network \\(X,Y\|Z\\) if \\(X\\) and \\(Y\\) are __[d-seperated](https://en.wikipedia.org/wiki/Bayesian_network#d-separation)__ given \\(Z\\).
 
-* Undirected graphical model, or Markov Network, Markov Random Field: represents a set of random variables and their conditional dependencies using an undirected graph, which can be acyclic or cyclic. Depedencies in Markov Network are not induced. For example, Markov Network can represent an image, with each pixel is one node in the graph. We cannot say a pixel would affect pixels surrouding it, but we can say pixels belong to the same objects might be related to each other.
+* __Undirected graphical model__, or __Markov Network__, __Markov Random Field__: represents a set of random variables and their conditional dependencies using an undirected graph, which can be acyclic or cyclic. Depedencies in Markov Network are not induced. For example, Markov Network can represent an image, with each pixel is one node in the graph. We cannot say a pixel would affect pixels surrouding it, but we can say pixels belong to the same objects might be related to each other.
 <div class="imgcap">
 <div >
     <img src="/blog/assets/graphical-model/markov-random-field.png" width = "300">
@@ -51,7 +51,7 @@ __Conditional Dependencies:__ In a Markov Network, \\(X,Y\|Z\\) if \\(X\\) and \
 
 A Bayesian Network can always be converted to a Markov Network through a process called _moralization_, i.e. adding side edges to all parents of a node and removing their directionality. Markov Networks are more general and plexible, but are more difficult to deal with computationally compared to Bayesian Networks.
 
-When Markov Random Field is used to model conditional probability \\(p(y\|x)\\), it is called a __Conditional Random Field__.
+When a Markov Random Field is used to model conditional probability \\(p(y\|x)\\), it is called a __Conditional Random Field__.
 \\[
 p(y\|x) = \frac{1}{Z(x)} \prod_c \phi_c(x_c, y_c) \\\
 Z = \sum_y \prod_c \phi_c(x_c, y_c)
