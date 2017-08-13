@@ -70,9 +70,9 @@ There are several tasks we usually perform in probabilistics graphical model:
 
 Exact inference methods include:
 * __Variable Elimination:__ The variable elimination method repeatedly perform two factor operations: product and marginalization in order to calculate marginal probability for a specific variable:
-Product operation: //(\phi_3(x_c) = \phi_1(x_c) \phi_2(x_c) //)
-Marginalize operation: //(\tau(x) = \sum_y \phi(x, y) //)
+  * Product operation: \\(\phi_3(x_c) = \phi_1(x_c) \phi_2(x_c) \\)
+  * Marginalize operation: \\(\tau(x) = \sum_y \phi(x, y) \\)
+Variable elimination ordering is important to achieve improvement running time. 
 
-
-* __Belief Propagation:__ 
+* __Belief Propagation:__ Belief Propagation method stores 
 
