@@ -29,7 +29,7 @@ __Joint-probability distribution:__ product of conditional probabilities of each
 p(x_1,x_2,...,x_k) = \prod_i p(x_i\|x_{A_i})
 \\]
 In the above example, we have
-\\(p(A,B,C,D,E,F) = p(A) p(B\|A) p(C\|A,E) p(D\|B) p(E\|B) p(F\|C,D,E) \\)
+\\(p(A,B,C,D,E,F) = p(A) p(B\|A) p(C\|A,E) p(D\|B) p(E\|B) p(F\|C,D,E) \\).
 
 __Conditional Dependencies:__ In a Bayesian Network \\(X,Y\|Z\\) if \\(X\\) and \\(Y\\) are __[d-seperated](https://en.wikipedia.org/wiki/Bayesian_network#d-separation)__ given \\(Z\\).
 
