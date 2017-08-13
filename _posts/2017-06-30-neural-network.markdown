@@ -159,8 +159,21 @@ Setting a good LearningRate is important for neural network training to converge
 </div>
 </div>
 
-
 Conv-ReLU-Pool layers are able to extract features from input matrix with increasing complexity. For example, the first Conv layer can extract curves, the second Conv layer can extract shape, the third layer can extract simple objects, etc. Thanks to max-pooling operation, Convolution is translation invariance, i.e. it can detect feature even when such feature is shifed or rotated.
+Several improvement techniques have been proposed for Convolution neural network:
+* [Inception Module](http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf):
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/neural-network/inception-module.png" width = "200">
+</div>
+</div>
+
+* [Residual Network](https://arxiv.org/abs/1512.03385):
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/neural-network/residual-network.png" width = "200">
+</div>
+</div>
 
 ## 4. Recurrent Neural Network
 A recurrent neural network (RNN) is a special neural network where connections between units form a directed cycle, enabling the network to handle inputs with temporal behavior such as word sequence in a sentence. RNN has many variants, each exhibiting different temporal relationsips.
@@ -191,7 +204,19 @@ Basic RNN only comprises of simple units with sigmoid or tanh activation functio
     <img src="/blog/assets/neural-network/gru.png" width = "200">
 </div>
 </div>
-LSTM and GRU both have multiple sigmoid or tanh activation functions called "gates" to control what information to forget, what new information to retain and what information to output.
+LSTM and GRU both have multiple sigmoid or tanh activation functions called "gates" to control what information to forget, what new information to retain and what information to output. Although LSTM and GRU can handle long-term dependency, they tend to capture more information from the most recent input. Several mechanisms have been proposed to avoid this limitation:
+* [Attention Mechanism](https://nlp.stanford.edu/pubs/emnlp15_attn.pdf): Attention Mechanism is inspired by how human can focus on different parts of image or sentence that are relevant for resoning. With attention mechanism, the network can look at all hidden states (instead of just the last one) to perform reasoning or prediction.
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/neural-network/attention-mechanism.png" width = "200">
+</div>
+</div>
+* [Memory Network](https://arxiv.org/abs/1410.3916): Memory Network is inspired by how human brain store memory and retrieve relevant memory when needed. In memory network, represnetation of input sequences are stored in external memory, allowing the network to read input sequence anytime before making an output and updating the memory contents.
+<div class="imgcap">
+<div >
+    <img src="/blog/assets/neural-network/memory-network.png" width = "200">
+</div>
+</div>
 
 
 While a convolutional neural network specializes in handling spatial feature, a recurrent neural network can use its internal memory in recurrent hidden units to process temporal feature. It is not uncommon to combine convolutional neural network and recurrent neural network to handle inputs involving both image data and sequential data such as video.
