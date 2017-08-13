@@ -91,7 +91,7 @@ E_{x~p}[f(x)] = \sum_x f(x)p(x)
 
 * __Variational method:__ cast inference as an optimization problem by choose an approximating distribution family \\(Q\\) and minizming Kullback-Leibler divergence between \\(Q\\) and actual distribution \\(P\\). In information theory, KL divergence is used to measure differences in information contained within two distributions.
 \\[
-KL(q\|\|p) = \sum_x q(x)\log\fract{q(x)}{p(x)}
+KL(q\|\|p) = \sum_x q(x)\log\frac{q(x)}{p(x)}
 \\]
 There are many proposal for approximating distribution family \\(Q\\): exponential families, neural networks, Gaussian processes, latent variable models, etc. One of the most widely used classes of distributions is simply the set of fully-factored \\(q(x)\\), and such variational inference is called __Mean-field inference__.
 \\[
