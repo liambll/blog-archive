@@ -60,5 +60,11 @@ Z = \sum_y \prod_c \phi_c(x_c, y_c)
 There are other specialized probabilistic graphical models (factor graph, restricted Boltzmann machine, etc), but these models will not be discussed here.
 
 ## 2. Mathematics
-TBC
+There are several tasks we usually perform in probabilistics graphical model:
+* __Inference:__ Given a probabilistic model, we can ask:
+  * __Marginal Inference:__ what is the probability of a given variable?
+  * __Maximum a posteriori (MAP) inference:__ what is the most likely assignment to the variables in the model, conditioned on data?
+* __Learning:__ Given a dataset, we would like to fit the best model:
+  * __Parameter Learning:__ estimate the parameters in the graph, i.e. what is the most likely assignment to parameters in the model.
+  * __Structure Learning:__ estimate the structure of the graph, i.e. determine from data how the variables depend on each other.
 
