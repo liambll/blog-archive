@@ -161,14 +161,14 @@ Setting a good LearningRate is important for neural network training to converge
 
 Conv-ReLU-Pool layers are able to extract features from input matrix with increasing complexity. For example, the first Conv layer can extract curves, the second Conv layer can extract shape, the third layer can extract simple objects, etc. Thanks to max-pooling operation, Convolution is translation invariance, i.e. it can detect feature even when such feature is shifed or rotated.
 Several improvement techniques have been proposed for Convolution neural network:
-* [Inception Module](http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf): 
+* [Inception Module](http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf): The intuition of Inception module is that visual information should be processed at various scales and then aggregated so that the next stage can abstract features from different scales simultaneously.
 <div class="imgcap">
 <div >
     <img src="/blog/assets/neural-network/inception-module.png" width = "200">
 </div>
 </div>
 
-* [Residual Network](https://arxiv.org/abs/1512.03385): 
+* [Residual Network](https://arxiv.org/abs/1512.03385): In residual network, input from previous layer is also made available to the next layer so that the next layer would learn something new from the input that previous layer does not.
 <div class="imgcap">
 <div >
     <img src="/blog/assets/neural-network/residual-network.png" width = "200">
