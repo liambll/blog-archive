@@ -68,6 +68,8 @@ There are several tasks we usually perform in probabilistics graphical model:
   * Parameter Learning: estimate the parameters in the graph, i.e. what is the most likely assignment to parameters in the model.
   * Structure Learning: estimate the structure of the graph, i.e. determine from data how the variables depend on each other.
 
+Learning and inference are related: Inference is a subroutine that we repeatedly perform in learning algorithms.
+
 Exact inference methods include:
 * __Variable Elimination:__ The variable elimination method repeatedly perform two factor operations: product and marginalization in order to perform marginal inference for a specific variable:
   * Product operation: \\(\phi_3(x_c) = \phi_1(x_c) \phi_2(x_c) \\)
@@ -78,7 +80,7 @@ Variable elimination ordering is important to achieve improvement running time.
 
 * __MAP inference:__
 
-The probabilistic models are often quite complex, and exact inference may be too slow for them. Approximation solutions include:
+The probabilistic models are often quite complex, and exact inference may be too slow for them. Approximation methods include:
 * __Sampling method:__ produce answers by repeatedly generating random numbers from distributions in the model. Sampling from distributions can help perform many tasks, including marginal and MAP inference, as well as estimating integrals:
 \\[
 E_{x~p}[f(x)] = \sum_x f(x)p(x)
