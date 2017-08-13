@@ -47,7 +47,7 @@ Z = \sum \prod_c \phi_c(x_c)
 \\]
 In the above example, we have \\(p(A,B,C,D,E,F) = \frac{1}{Z} \phi(A,B,D) \phi(D,E) \phi(C,E) \\).
 
-__Conditional Dependencies:__ In a Markov Network, \\(X,Y|Z\\) if \\(X\\) and \\(Y\\) are not connected by a path if \\(Z\\) is observed. A __Markov blanket__ \\(U\\) of a variable \\(X\\) is the minimal set of nodes such that \\(X\\) is independent from the rest of the graph if \\(U\\) is observed.
+__Conditional Dependencies:__ In a Markov Network, \\(X,Y\|Z\\) if \\(X\\) and \\(Y\\) are not connected by a path if \\(Z\\) is observed. A __Markov blanket__ \\(U\\) of a variable \\(X\\) is the minimal set of nodes such that \\(X\\) is independent from the rest of the graph if \\(U\\) is observed.
 
 A Bayesian Network can always be converted to a Markov Network through a process called _moralization_, i.e. adding side edges to all parents of a node and removing their directionality. Markov Networks are more general and plexible, but are more difficult to deal with computationally compared to Bayesian Networks.
 
