@@ -26,9 +26,10 @@ Probabilistic graphical models use a graph-based representation of a set of inde
 
 __Joint-probability distribution:__ product of conditional probabilities of each node \\(i\\) given its acenstors \\(A_i\\).
 \\[
-p(x_1,x_2,..,x_k) = \prod_i p(x_i\|x_A_i)
+p(x_1,x_2,...,x_k) = \prod_i p(x_i\|x_A_i)
 \\]
-In the above example, we have \\(p(A,B,C,D,E,F) = p(A) p(B\|A) p(C\|A,E) p(D\|B) p(E\|B) p(F\|C,D,E) \\)
+In the above example, we have
+\\(p(A,B,C,D,E,F) = p(A) p(B\|A) p(C\|A,E) p(D\|B) p(E\|B) p(F\|C,D,E) \\)
 
 __Conditional Dependencies:__ In a Bayesian Network \\(X,Y\|Z\\) if \\(X\\) and \\(Y\\) are __[d-seperated](https://en.wikipedia.org/wiki/Bayesian_network#d-separation)__ given \\(Z\\).
 
@@ -39,12 +40,12 @@ __Conditional Dependencies:__ In a Bayesian Network \\(X,Y\|Z\\) if \\(X\\) and 
 </div>
 </div>
 
-__Joint-probability distribution:__ product of score function of each [clique](https://en.wikipedia.org/wiki/Clique_(graph_theory)) \\(c\\), normalized by a constant \\(Z\\) to push the sum of probabilities to 1.
+__Joint-probability distribution:__ product of potential function \\(\phi\\) of each [clique](https://en.wikipedia.org/wiki/Clique_(graph_theory)) \\(c\\), normalized by a constant \\(Z\\) to push the sum of probabilities to 1.
 \\[
-p(x_1,x_2,..,x_k) = \frac{1}{Z} \prod \theta_i(c_i) \\\
-Z = \sum \prod \theta_c(x_c)
+p(x_1,x_2,..,x_k) = \frac{1}{Z} \prod_c \phi_c(x_c) \\\
+Z = \sum \prod_c \phi_c(x_c)
 \\]
-In the above example, we have \\(p(A,B,C,D,E,F) = \frac{1}{Z} \theta(A,B,D) \theta(D,E) \theta(C,E) \\)
+In the above example, we have \\(p(A,B,C,D,E,F) = \frac{1}{Z} \phi(A,B,D) \phi(D,E) \phi(C,E) \\)
 
 __Conditional Dependencies:__ In a Markov Network, \\(X,Y|Z\\) if \\(X\\) and \\(Y\\) are not connected by a path if \\(Z\\) is observed. A __Markov blanket__ \\(U\\) of a variable \\(X\\) is the minimal set of nodes such that \\(X\\) is independent from the rest of the graph if \\(U\\) is observed.
 
@@ -52,8 +53,8 @@ A Bayesian Network can always be converted to a Markov Network through a process
 
 When Markov Random Field is used to model conditional probability \\(p(y\|x)\\), it is called a __Conditional Random Field__.
 \\[
-p(y\|x) = \frac{1}{Z(x)} \prod_c \theta_c(x_c, y_c) \\\
-Z = \sum_y \prod_c \theta_c(x_c, y_c)
+p(y\|x) = \frac{1}{Z(x)} \prod_c \phi_c(x_c, y_c) \\\
+Z = \sum_y \prod_c \phi_c(x_c, y_c)
 \\]
 
 There are other specialized probabilistic graphical models (factor graph, restricted Boltzmann machine, etc), but these models will not be discussed here.
