@@ -26,7 +26,7 @@ Probabilistic graphical models use a graph-based representation of a set of inde
 
 __Joint-probability distribution:__ product of conditional probabilities of each node \\(i\\) given its acenstors \\(A_i\\).
 \\[
-p(x_1,x_2,...,x_k) = \prod_i p(x_i\|x_A_i)
+p(x_1,x_2,...,x_k) = \prod_i p(x_i\|x_{A_i})
 \\]
 In the above example, we have
 \\(p(A,B,C,D,E,F) = p(A) p(B\|A) p(C\|A,E) p(D\|B) p(E\|B) p(F\|C,D,E) \\)
