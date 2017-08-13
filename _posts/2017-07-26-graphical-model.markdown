@@ -45,7 +45,7 @@ __Joint-probability distribution:__ product of potential function \\(\phi\\) of 
 p(x_1,x_2,..,x_k) = \frac{1}{Z} \prod_c \phi_c(x_c) \\\
 Z = \sum \prod_c \phi_c(x_c)
 \\]
-In the above example, we have \\(p(A,B,C,D,E,F) = \frac{1}{Z} \phi(A,B,D) \phi(D,E) \phi(C,E) \\)
+In the above example, we have \\(p(A,B,C,D,E,F) = \frac{1}{Z} \phi(A,B,D) \phi(D,E) \phi(C,E) \\).
 
 __Conditional Dependencies:__ In a Markov Network, \\(X,Y|Z\\) if \\(X\\) and \\(Y\\) are not connected by a path if \\(Z\\) is observed. A __Markov blanket__ \\(U\\) of a variable \\(X\\) is the minimal set of nodes such that \\(X\\) is independent from the rest of the graph if \\(U\\) is observed.
 
