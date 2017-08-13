@@ -161,14 +161,14 @@ Setting a good LearningRate is important for neural network training to converge
 
 Conv-ReLU-Pool layers are able to extract features from input matrix with increasing complexity. For example, the first Conv layer can extract curves, the second Conv layer can extract shape, the third layer can extract simple objects, etc. Thanks to max-pooling operation, Convolution is translation invariance, i.e. it can detect feature even when such feature is shifed or rotated.
 Several improvement techniques have been proposed for Convolution neural network:
-* [Inception Module](http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf):
+* [Inception Module](http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf): 
 <div class="imgcap">
 <div >
     <img src="/blog/assets/neural-network/inception-module.png" width = "200">
 </div>
 </div>
 
-* [Residual Network](https://arxiv.org/abs/1512.03385):
+* [Residual Network](https://arxiv.org/abs/1512.03385): 
 <div class="imgcap">
 <div >
     <img src="/blog/assets/neural-network/residual-network.png" width = "200">
@@ -214,7 +214,7 @@ LSTM and GRU both have multiple sigmoid or tanh activation functions called "gat
 * [Memory Network](https://arxiv.org/abs/1410.3916): Memory Network is inspired by how human brain store memory and retrieve relevant memory when needed. In memory network, represnetation of input sequences are stored in external memory, allowing the network to read input sequence anytime before making an output and updating the memory contents.
 <div class="imgcap">
 <div >
-    <img src="/blog/assets/neural-network/memory-network.png" width = "200">
+    <img src="/blog/assets/neural-network/memory-network.png" width = "400">
 </div>
 </div>
 
