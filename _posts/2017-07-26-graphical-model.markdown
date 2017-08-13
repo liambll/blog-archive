@@ -50,7 +50,7 @@ __Conditional Dependencies:__ In a Markov Network, \\(X,Y|Z\\) if \\(X\\) and \\
 
 A Bayesian Network can always be converted to a Markov Network through a process called _moralization_, i.e. adding side edges to all parents of a node and removing their directionality. Markov Networks are more general and plexible, but are more difficult to deal with computationally compared to Bayesian Networks.
 
-When Markov Random Field is used to model conditional probability p(y|x), it is called a __Conditional Random Field__.
+When Markov Random Field is used to model conditional probability \\(p(y\|x)\\), it is called a __Conditional Random Field__.
 \\[
 p(y\|x) = \frac{1}{Z(x)} \prod_c \theta_c(x_c, y_c) \\\
 Z = \sum_y \prod_c \theta_c(x_c, y_c)
