@@ -24,12 +24,13 @@ Probabilistic graphical models use a graph-based representation of a set of inde
 </div>
 </div>
 
-_Joint-probability distribution:_
+__Joint-probability distribution:__ product of conditional probabilities of each node \\(i\\) given its acenstors \\(A_i\\).
 \\[
-p(A,B,C,D,E,F) = p(A) p(B|A) p(C|A,E) p(D|B) p(E|B) p(F|C,D,E)
+p(x_1,x_2,..,x_k) = \prod p(x_i|x_A_i)
 \\]
+In the above example, we have \\(p(A,B,C,D,E,F) = p(A) p(B|A) p(C|A,E) p(D|B) p(E|B) p(F|C,D,E) \\)
 
-_Conditional Dependencies:_ In a Bayesian Network \\(X,Y|Z\\) if \\(X\\) and \\(Y\\) are [d-seperated](https://en.wikipedia.org/wiki/Bayesian_network#d-separation) given Z.
+__Conditional Dependencies:__ In a Bayesian Network \\(X,Y|Z\\) if \\(X\\) and \\(Y\\) are __[d-seperated](https://en.wikipedia.org/wiki/Bayesian_network#d-separation)__ given \\(Z\\).
 
 * Undirected graphical model, or Markov Network, Markov Random Field: represents a set of random variables and their conditional dependencies using an undirected graph, which can be acyclic or cyclic. Depedencies in Markov Network are not induced. For example, Markov Network can represent an image, with each pixel is one node in the graph. We cannot say a pixel would affect pixels surrouding it, but we can say pixels belong to the same objects might be related to each other.
 <div class="imgcap">
@@ -37,6 +38,17 @@ _Conditional Dependencies:_ In a Bayesian Network \\(X,Y|Z\\) if \\(X\\) and \\(
     <img src="/blog/assets/graphical-model/markov-random-field.png" width = "300">
 </div>
 </div>
+
+__Joint-probability distribution:__ product of score function of each [clique](https://en.wikipedia.org/wiki/Clique_(graph_theory)) \\(c\\), normalized by a constant \\(Z\\) to push the value to 1.
+\\[
+p(x_1,x_2,..,x_k) = \frac{1}{Z} \prod \theta_i(c_i) \\\
+Z = \sum \prod \theta_i(c_i)
+\\]
+In the above example, we have \\(p(A,B,C,D,E,F) = \frac{1}{Z} \theta(A,B,D) \theta(D,E) \theta(C,E) \\)
+
+__Conditional Dependencies:__ In a Markov Network, \\(X,Y|Z\\) if \\(X\\) and \\(Y\\) are not connected by a path if \\(Z\\) is observed. A __Markov blanket__ \\(U\\) of a variable \\(X\\) is the minimal set of nodes such that \\(X\\) is independent from the rest of the graph if \\(U\\) is observed.
+
+A Bayesian Network can always be converted to a Markov Network through a process called _moralization_, i.e. adding side edges to all parents of a node and removing their directionality. Markov Networks are more general and plexible, but are more difficult to deal with computationally compared to Bayesian Networks.
 
 There are other specialized probabilistic graphical models (factor graph, restricted Boltzmann machine, etc), but these models will not be discussed here.
 
