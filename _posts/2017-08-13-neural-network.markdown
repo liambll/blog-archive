@@ -6,7 +6,7 @@ title2:  "Neural Network"
 date:   2017-08-13 17:22:00
 permalink: /neural-network/
 mathjax: true
-tags: Machine-Learning Neural-Network Supervised-Learning Deep-Learning
+tags: Machine-Learning Neural-Network Supervised-Learning
 categories: Machine-Learning
 img: /blog/assets/neural-network/neural-network.png
 summary: Artificial neural networks (ANNs) are computing systems inspired by the biological neural networks that constitute animal brains...
