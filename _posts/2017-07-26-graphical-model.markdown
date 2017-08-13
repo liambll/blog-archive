@@ -26,11 +26,11 @@ Probabilistic graphical models use a graph-based representation of a set of inde
 
 __Joint-probability distribution:__ product of conditional probabilities of each node \\(i\\) given its acenstors \\(A_i\\).
 \\[
-p(x_1,x_2,..,x_k) = \prod_i p(x_i|x_A_i)
+p(x_1,x_2,..,x_k) = \prod_i p(x_i\|x_A_i)
 \\]
-In the above example, we have \\(p(A,B,C,D,E,F) = p(A) p(B|A) p(C|A,E) p(D|B) p(E|B) p(F|C,D,E) \\)
+In the above example, we have \\(p(A,B,C,D,E,F) = p(A) p(B\|A) p(C\|A,E) p(D\|B) p(E\|B) p(F\|C,D,E) \\)
 
-__Conditional Dependencies:__ In a Bayesian Network \\(X,Y|Z\\) if \\(X\\) and \\(Y\\) are __[d-seperated](https://en.wikipedia.org/wiki/Bayesian_network#d-separation)__ given \\(Z\\).
+__Conditional Dependencies:__ In a Bayesian Network \\(X,Y\|Z\\) if \\(X\\) and \\(Y\\) are __[d-seperated](https://en.wikipedia.org/wiki/Bayesian_network#d-separation)__ given \\(Z\\).
 
 * Undirected graphical model, or Markov Network, Markov Random Field: represents a set of random variables and their conditional dependencies using an undirected graph, which can be acyclic or cyclic. Depedencies in Markov Network are not induced. For example, Markov Network can represent an image, with each pixel is one node in the graph. We cannot say a pixel would affect pixels surrouding it, but we can say pixels belong to the same objects might be related to each other.
 <div class="imgcap">
@@ -52,7 +52,7 @@ A Bayesian Network can always be converted to a Markov Network through a process
 
 When Markov Random Field is used to model conditional probability p(y|x), it is called a __Conditional Random Field__.
 \\[
-p(y|x) = \frac{1}{Z(x)} \prod_c \theta_c(x_c, y_c) \\\
+p(y\|x) = \frac{1}{Z(x)} \prod_c \theta_c(x_c, y_c) \\\
 Z = \sum_y \prod_c \theta_c(x_c, y_c)
 \\]
 
