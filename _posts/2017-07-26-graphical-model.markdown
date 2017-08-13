@@ -87,10 +87,13 @@ E_{x~p}[f(x)] = \sum_x f(x)p(x)
   * Importance sampling: sample from an alternative distribution q, and then reweigh the samples in a way that their sum still approximates the desired integral for p.
   * Markov Chain Monte Carlo method: sample from distributions sequentially: Metropolis-Hastings algorithm, Gibbs sampling.
 
-* __Variational method:__ cast inference as an optimization problem by choose an approximating distribution family \\(Q\\) and minizming Kullback-Leibler divergence between \\(Q\\) and actual distribution \\(P\\):
+* __Variational method:__ cast inference as an optimization problem by choose an approximating distribution family \\(Q\\) and minizming Kullback-Leibler divergence between \\(Q\\) and actual distribution \\(P\\). In information theory, KL divergence is used to measure differences in information contained within two distributions.
 \\[
 KL(q\|\|p) = \sum_x q(x)\log\fract{q(x)}{p(x)}
 \\]
-
+There are many proposal for approximating distribution family \\(Q\\): exponential families, neural networks, Gaussian processes, latent variable models, etc. One of the most widely used classes of distributions is simply the set of fully-factored \\(q(x)\\), and such variational inference is called __Mean-field inference__.
+\\[
+q(x) = q_1(x_1)q_2(x_2)...q_n(x_n)
+\\]
 
 
