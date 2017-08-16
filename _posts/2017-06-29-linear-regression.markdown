@@ -97,7 +97,7 @@ However, we usually use gradient descent to approximate \\(\mathbf{w}\\) instead
 
 __Variance matrix estimates__
 
-In machine learning, estimated \\(\mathbf{w}\\) is all we need in order to perform prediction. In statistics, we usually want to get the variance matrix for coefficients in order to caculate confidence intervals at a specific significant level for coefficients and prediction. For that, we need to obtain Hessian matrix by taking second-order deriative of the log-likelihood:
+In machine learning, estimated \\(\mathbf{w}\\) is all we need in order to perform prediction. In statistics, we usually want to get the variance matrix for coefficients in order to caculate confidence intervals at a specific significant level for coefficients and prediction. For that, we need to obtain Hessian matrix by taking second-order derivative of the log-likelihood:
 \\[
 \frac{\partial^2 log~\mathcal{L}(\mathbf{w})}{\partial^2 \mathbf{w}} = 0
 \\]
