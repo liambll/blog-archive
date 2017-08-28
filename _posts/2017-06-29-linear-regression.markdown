@@ -40,6 +40,18 @@ __Assumptions__
 In statistics, strict linear regression model makes several assumptions about the dependent variables, the explanatory variables and their relationship:
 * __Linearity:__ The expected value of the dependent variable is a linear combination of the parameters and the explantory variables. Residual plot is commonly used to visualize any non-linearity relationship.
 * __Independence:__ The error term is independent across observations and independent of explantory variables. That means there is little or no multicollinearity among explanatory variables, and there is no auto-correltion among observations. Correlation matrix, Variance Inflation Factor (VIF), Durbin-Watson test are useful to check if indenpendence assumption is violated.
+  * Correlation matrix shows correlation between every every variable pair. As a rule of thumb, correlation with absolute value of 0.7-1 indicate strong correlation, 0.4-0.7 indicate moderate correlation, 0-0.4 indicate little correlation.
+\\[
+corr(X,Y) = \frac{cov(X,Y)}{\sigma_X \sigma_Y}
+\\]
+  * Variance Inflation Factor (VIF) can be used to measure how much an explanatory variable \\(\X_i\\) is depedent on other explanatory variables by formulating the relationship as a regression model. Let's say \\(R_i^2\\) is the coefficient of determination (i.e. the proportion of the variance in the dependent variable that is predictable from the independent variables) in such regression model. VIF for a variable \\(\X_i\\) can be caculated as below. VIF > 10 indicates strong multicollinearity.
+\\[
+VIF_i = \frac{1}{1 - R_i^2}
+\\]  
+  * Durbin-Watson test is used to detect the presence of autocorrelation (a relationship between values separated from each other by a given time lag) in the residuals. If \\(\e_t\\) is the residual associated with observation at time \\(t\\), Durbin-Watson statistics can be caculated as below. Durbin-Watson statistics smaller than 1 or greater than 3 indicates significant positive/negative autocorrelation.
+\\[
+d = \frac{\sum_{t=2}^T (e_t - e_{t-1})^2}{\sum_{t=1}^T e_t^2}
+\\]   
 * __Homoscedasticity:__ The error between observed and predicted values (i.e. the residuals of the regression) should have constant variance. Goldfeld-Quandt test can be used to detect Heteroskedasticity.
 * __Normality:__ The error term should be normally distributed. Kolmogorov–Smirnov (KS) test is used to detect non-normality.
 
