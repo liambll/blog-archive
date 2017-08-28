@@ -53,7 +53,10 @@ VIF_i = \frac{1}{1 - R_i^2}
 d = \frac{\sum_{t=2}^T (e_t - e_{t-1})^2}{\sum_{t=1}^T e_t^2}
 \\]   
 * __Homoscedasticity:__ The error between observed and predicted values (i.e. the residuals of the regression) should have constant variance. Goldfeld-Quandt test can be used to detect Heteroskedasticity by dividing a dataset into two subsets in which the observations for which the pre-identified explanatory variable takes the lowest values are in one subset, with higher values in the other. Goldfeld-Quandt test statistic is caculated as the ratio of the mean square residual errors for the regressions on the two subsets. The test corresponds to an [F-test](https://en.wikipedia.org/wiki/F-test_of_equality_of_variances) of equality of variances.
-* __Normality:__ The error term should be normally distributed. Kolmogorov–Smirnov (KS) test is used to detect non-normality.
+* __Normality:__ The error term should be normally distributed. Kolmogorov–Smirnov (KS) test is used to detect non-normality. Kolmogorov–Smirnov test (KS test) is a test of the equality of two continuous, one-dimensional probability distributions. For testing for normality of a distribution \\(P\\), samples in \\(P\\) are standardized and compared to a referenced standard normal distribution with the same mean and variance as \\(P\\). If _sup_ is the [supremum](https://en.wikipedia.org/wiki/Infimum_and_supremum) of the set of distances, KS statistics is caculated as below.
+\\[
+D = sup_x \|F_P(x) - F(x)\|
+\\] 
 
 If any assumption is severely violated, it needs to be handled by performing variable transformation (non-linear transformation, Box-Cox transformation, etc) before any meaningful conclusion can be drawn based on the model.
 
