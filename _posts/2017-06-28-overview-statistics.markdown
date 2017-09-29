@@ -26,6 +26,7 @@ Characteristics of statistics techniques:
 
 ## 2. Regression Analysis
 * [Linear Regression](/blog/linear-regression/)
+* Linear Regression Extension
 * [Logistics Regression](/blog/logistic-regression/)
 * Poisson Regression
 
@@ -40,6 +41,7 @@ Characteristics of statistics techniques:
 ## 4. Time Series Analysis
 * ARIMA
 * GARCH
+* Spetral Analysis
 
 ## 5. Spatial Statistics
 
