@@ -1,0 +1,90 @@
+<!--
+<a   href="{{ site.baseurl }}/">
+            <img width="100%" src="{{ site.baseurl }}/images/logo2.png" />
+          </a>-->
+          <nav>
+            <div class="header" style="text-align: center">Connect</div>
+	       <h3 style="text-align: center">Liam Bui</h3>
+              <ul>
+                <li><a style="text-align: center; color: #204081"  href="https://www.linkedin.com/in/liambui" target="_blank">LinkedIn</a></li>
+                <li><a style="text-align: center; color: #204081"  href="https://twitter.com/LiamBLL" target="_blank">Twitter</a></li>
+                <li><a style="text-align: center; color: #204081"  href="https://github.com/liambll" target="_blank">Github</a></li>
+              </ul>	                               	          	          
+          </nav>
+
+          <!-- Google search -->
+         <!--  <table border="0">
+          <div id = "top-widget" style="width: 292px; margin-left: -13.5px; margin-top: -10px; margin-bottom: -15px;">
+         <script>
+           (function() {
+             var cx = '012400735393229091214:mchzvnfnl3a';
+             var gcse = document.createElement('script');
+             gcse.type = 'text/javascript';
+             gcse.async = true;
+             gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+             var s = document.getElementsByTagName('script')[0];
+             s.parentNode.insertBefore(gcse, s);
+           })();
+         </script>
+         <gcse:search></gcse:search>
+          </div>
+          </table> -->
+
+          <!-- <nav>
+          
+            <div class="header">Popular</div>
+            <ul>
+              <li> (**): > 10k views</li>
+              <li> (*) : > 5k views</li>
+            </ul>
+          </nav>-->
+          
+         <!--
+          {% if page.category %}
+          <nav>
+          
+            <div class="header">Latest by category</div>
+            <ul>
+              {% for category in site.categories %}
+                {% if category[0] == page.category %}
+                  {% for post in category[1] offset:0 limit:5 %}
+                    <li><a style="text-align: left; color: #204081;" href="{{ post.url }}">{{ post.title2 }}</a></li>
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </nav>
+          {% endif %}
+          -->
+
+
+
+          <nav>
+            <div class="header">Latest</div>
+            <ul>
+              {% for post in site.posts limit:200 %}
+                <li><a style="text-align: left; color: #204081"  href="/blog{{ post.url }}">{{ post.title2 }}</a></li>
+              {% endfor %}
+            </ul>
+          </nav>
+
+          
+          
+          <!-- <img style = "transform: scaleX(1); width:100%; margin-left:00px;position: absolute;" src = "/images/mai.jpg"> -->
+         
+         <!--  {% if page.previous.url %} 
+            <nav>
+              <div class="header">Previous by date</div>
+              <ul>
+                <li><a style="text-align: left; font-family: 'Roboto Condensed', sans-serif; color: #204081;" href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
+              </ul>
+            </nav>
+          {% endif %} 
+          {% if page.next.url %} 
+            <nav>
+              <div class="header">Next by date</div>
+              <ul>
+                <li><a style="text-align: left; font-family: 'Roboto Condensed', sans-serif; color: #204081;" href="{{ page.next.url }}">{{ page.next.title }}</a></li>
+              </ul>
+            </nav>
+          {% endif %}  -->
