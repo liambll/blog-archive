@@ -1,0 +1,170 @@
+
+          <!-- Google search -->
+          <!--
+          <table border="0">
+          <div id = "top-widget" style="width: 252px; margin-left: -13.5px; margin-top: -10px; margin-bottom: -15px;">
+         <script>
+           (function() {
+             var cx = '012400735393229091214:mchzvnfnl3a';
+             var gcse = document.createElement('script');
+             gcse.type = 'text/javascript';
+             gcse.async = true;
+             gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+             var s = document.getElementsByTagName('script')[0];
+             s.parentNode.insertBefore(gcse, s);
+           })();
+         </script>
+         <gcse:search></gcse:search>
+          </div>
+          </table>
+          -->
+
+          
+
+         <!--  {% if page.category %}
+          <nav>
+          
+            <div class="header">Latest by category</div>
+            <ul>
+              {% for category in site.categories %}
+                {% if category[0] == page.category %}
+                  {% for post in category[1] offset:0 limit:5 %}
+                    <li><a style="text-align: left; font-family: 'Open Sans Condensed', sans-serif; color: #204081;" href="{{ post.url }}">{{ post.title }}</a></li>
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </nav>
+          {% endif %}
+
+
+
+          <nav>
+            <div class="header">Latest</div>
+              {% for post in site.posts limit:20 %}
+                <li><a style="text-align: left; font-family: 'Open Sans Condensed', sans-serif;color: #204081"  href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </nav> -->
+
+          <aside class = "social">
+          <div class = "header">Share</div>
+          {% include share-page.html %}
+          </aside>
+          
+          <!--
+          <nav>
+          <div class = "header" with = "100%">Facebook page</div> -->
+          <!-- <a href = "https://www.facebook.com/machinelearningbasicvn/" target="_blank" title="Follow us"><img src = "/assets/images/facebook.png" width="30"></a> -->
+          <!-- facebook page -->
+        
+         <!-- 
+         <div class="fb-page" data-href="https://www.facebook.com/machinelearningbasicvn/" data-width="250" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/machinelearningbasicvn/" class="fb-xfbml-parse-ignore" ><a style = "color: #204081" href="https://www.facebook.com/machinelearningbasicvn/">Machine Learning cơ bản</a></blockquote></div>
+          
+        
+          </nav>
+          <nav>
+            <div class="header">Forum</div>
+            <a   href="https://www.facebook.com/groups/257768141347267/">
+            <img width="100%" src="{{ site.baseurl }}/assets/14_mlp/multi_layers.png"/>  </a>
+          </nav>
+          <nav>
+          <div class="header">Recommended books</div>
+            <ul>
+              <li> <a style="text-align: left; color: #204081;" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjd7Y_Q-tzTAhVISyYKHUXyCekQFggvMAA&url=http%3A%2F%2Fusers.isr.ist.utl.pt%2F~wurmd%2FLivros%2Fschool%2FBishop%2520-%2520Pattern%2520Recognition%2520And%2520Machine%2520Learning%2520-%2520Springer%2520%25202006.pdf&usg=AFQjCNEVQzQ_dEpxG4P7NamTWUXnVXzCng&sig2=H1WVtom4rq3uh8UfbGX4oA">"Pattern recognition and Machine Learning.", C. Bishop </a></li>
+
+              <li> <a style="text-align: left; color: #204081;" href="https://statweb.stanford.edu/~tibs/ElemStatLearn/">"The Elements of Statistical Learning", T. Hastie et al.  </a></li>
+
+              <li> <a style="text-align: left; color: #204081;" href="http://www.computervisionmodels.com/">"Computer Vision:  Models, Learning, and Inference", Simon J.D. Prince </a></li>
+
+              <li> <a style="text-align: left; color: #204081;" href="https://stanford.edu/~boyd/cvxbook/">"Convex Optimization", Boyd and Vandenberghe</a></li>
+
+            </ul>
+          </nav>
+          -->
+
+          <nav>
+          <div class="header">Online resources</div>
+
+          <ul>
+              <li> <a style="text-align: left; color: #204081;" href="http://cs229.stanford.edu/materials.html" target="_blank">CS229 Machine Learning</a></li>
+
+              <li> <a style="text-align: left; color: #204081;" href="https://ermongroup.github.io/cs228-notes/" target="_blank">CS228 Probabilistic Graphical Model</a></li>
+                    
+              <li> <a style="text-align: left; color: #204081;" href="http://cs231n.stanford.edu/syllabus.html" target="_blank">CS231 Convolutional Neural Networks for Visual Recognition</a></li>           
+                    
+              <li> <a style="text-align: left; color: #204081;" href="http://cs224n.stanford.edu/syllabus.html" target="_blank">CS224 Natural Language Processing with Deep Learning</a></li>
+                    
+              <li> <a style="text-align: left; color: #204081;" href="https://canvas.stanford.edu/courses/51037/assignments/syllabus" target="_blank">CS273 Deep Learning in Genomics</a></li>
+
+              <li> <a style="text-align: left; color: #204081;" href="http://web.stanford.edu/class/cs234/syllabus.html" target="_blank">CS234 Reinforcement Learning</a></li>
+                                      
+              <li> <a style="text-align: left; color: #204081;" href="http://web.stanford.edu/class/cs246/handouts.html" target="_blank">CS246 Mining Massive Data Sets</a></li>
+              
+              <li> <a style="text-align: left; color: #204081;" href="https://onlinecourses.science.psu.edu/stat500/" target="_blank">STAT500 Applied Statistics</a></li> 
+                    
+              <li> <a style="text-align: left; color: #204081;" href="https://onlinecourses.science.psu.edu/stat503/" target="_blank">STAT503 Design of Experiments</a></li>  
+
+              <li> <a style="text-align: left; color: #204081;" href="https://onlinecourses.science.psu.edu/stat506/" target="_blank">STAT506 Sampling Method</a></li>
+                    
+              <li> <a style="text-align: left; color: #204081;" href="https://onlinecourses.science.psu.edu/stat501/" target="_blank">STAT501 Regression Analysis</a></li>  
+                    
+              <li> <a style="text-align: left; color: #204081;" href="https://onlinecourses.science.psu.edu/stat505/" target="_blank">STAT505 Multivariate Statistical Analysis</a></li>  
+
+              <li> <a style="text-align: left; color: #204081;" href="https://onlinecourses.science.psu.edu/stat504/" target="_blank">STAT504 Discrete Data Analysis</a></li>  
+                        
+              <li> <a style="text-align: left; color: #204081;" href="https://onlinecourses.science.psu.edu/stat510/" target="_blank">STAT510 Time Series Analysis</a></li>
+                    
+              <li> <a style="text-align: left; color: #204081;" href="https://onlinecourses.science.psu.edu/stat555/" target="_blank">STAT555 Statistical Analysis of Genomics Data</a></li>
+                    
+              <li> <a style="text-align: left; color: #204081;" href="https://onlinecourses.science.psu.edu/stat857/" target="_blank">STAT857 Statistical Learning</a></li> 
+          <!--    
+              <li> <a style="text-align: left; color: #204081;" href="http://www.parralab.org/teaching/biomed-dsp/" target="_blank">BME I5100: Biomedical Signal Processing</a></li>  
+              
+              <li> <a style="text-align: left; color: #204081;" href="http://www.parralab.org/teaching/med-imaging/" target="_blank">BME I5000: Medical Imaging</a></li>  
+           -->           
+            </ul>
+          </nav>
+
+          <!--
+          <nav>
+          <div class="header">Others</div>
+          <ul>
+              <li> <a style="text-align: left; color: #204081;" href="/2017/02/02/howdoIcreatethisblog/">Blog này được tạo như thế nào?</a></li>
+
+              <li> <a style="text-align: left; color: #204081;" href="http://thepresentwriter.com/chung-toi-da-apply-va-hoc-tien-si-nhu-the-nao-phan-1/">Chúng tôi đã apply và học tiến sỹ như thế nào? (1/2)</a></li>
+
+              <li> <a style="text-align: left; color: #204081;" href="http://thepresentwriter.com/chung-toi-da-apply-va-hoc-tien-si-nhu-the-nao-phan-2/">Chúng tôi đã apply và học tiến sỹ như thế nào? (2/2)</a></li>
+
+              <li> <a style="text-align: left; color: #204081;" href="http://machinelearningmastery.com/inspirational-applications-deep-learning/">8 Inspirational Applications of Deep Learning</a></li>
+
+              <li> <a style="text-align: left; color: #204081;" href="https://ccrma.stanford.edu/~dattorro/matrixcalc.pdf">Matrix calculus</a></li>
+
+              <li> <a style="text-align: left; color: #204081;" href="https://github.com/aymericdamien/TensorFlow-Examples">TensorFlow-Examples</a></li>
+              
+              <li> <a style="text-align: left; color: #204081;" href="https://www.forbes.com/sites/quora/2017/04/05/eight-easy-steps-to-get-started-learning-artificial-intelligence/#53c29fa5b117">Eight Easy Steps To Get Started Learning Artificial Intelligence</a></li>
+              <li> <a style="text-align: left; color: #204081;" href="https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html">The 9 Deep Learning Papers You Need To Know About</a></li>
+
+                     
+
+            </ul>
+          </nav>
+          -->
+          <!-- <img style = "transform: scaleX(1); width:100%; margin-left:00px;position: absolute;" src = "/images/mai.jpg"> -->
+         
+         <!--  {% if page.previous.url %} 
+            <nav>
+              <div class="header">Previous by date</div>
+              <ul>
+                <li><a style="text-align: left; font-family: 'Roboto Condensed', sans-serif; color: #204081;" href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
+              </ul>
+            </nav>
+          {% endif %} 
+          {% if page.next.url %} 
+            <nav>
+              <div class="header">Next by date</div>
+              <ul>
+                <li><a style="text-align: left; font-family: 'Roboto Condensed', sans-serif; color: #204081;" href="{{ page.next.url }}">{{ page.next.title }}</a></li>
+              </ul>
+            </nav>
+          {% endif %}  -->
