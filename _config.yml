@@ -1,35 +1,29 @@
-sass:
-  style: :compressed  # Change to :expanded for debugging
-
-permalink: /:year/:month/:day/:title.html
-
-url: http://liambll.github.io/blog
-
-twitter_username: liambll
-
-future: true
-debug: false
+# Site settings
+title: *folio
+email: you@example.com
+description: > # this means to ignore newlines until "baseurl:"
+  A simple, whitespace, helvetica based portfolio theme.
+baseurl:  # the subpath of your site, e.g. /blog/
+url:  # the base hostname & protocol for your site
+twitter_username: twitter_username
+github_username:  github_username
 
 # Build settings
 markdown: kramdown
-permalink: pretty
-future: true
+
 highlighter: rouge
-linenos: true
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge
 
-# Disqus post comments
-disqus_shortname: liambll
+# Pagination
+paginate: 15
+paginate_path: "/blog/page:num/"
 
-paginate: 6
-paginate_path: "/page:num/"
 
-# `gems: [jekyll-paginate]`
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+  poetry:
+    output: true
+    permalink: /poetry/:path/
 
-gems:
-  - jekyll-sitemap
-  - jekyll-paginate
-theme: jekyll-theme-cayman
+
