@@ -1,15 +1,15 @@
 ---
 layout: post
 comments: true
-title:  "Tutorial: Toxicit Prediction (Part 1)"
-title2:  "Tutorial: Toxicit Prediction (Part 1)"
-date:   2017-08-13 17:22:00
+title:  "Tutorial: Toxicity Prediction (Part 1)"
+title2:  "Tutorial: Toxicity Prediction (Part 1)"
+date:   2018-12-23 17:22:00
 permalink: /tutorial-toxicity-prediction-part-1/
 mathjax: true
-tags: Machine-Learning Neural-Network Supervised-Learning
+tags: Machine-Learning Computational-Chemistry Supervised-Learning
 categories: Machine-Learning
-img: /blog/assets/neural-network/neural-network.png
-summary: Artificial neural networks (ANNs) are computing systems inspired by the biological neural networks that constitute animal brains...
+img: /blog/assets/toxicity-prediction/molecule.png
+summary: Quantitative structure–activity relationship models (QSAR models) are regression or classification models used in the chemical and biological sciences...
 ---
 
 
