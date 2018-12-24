@@ -1,10 +1,10 @@
 ---
 layout: post
 comments: true
-title:  "Neural Network"
-title2:  "Neural Network"
+title:  "Tutorial: Toxicit Prediction (Part 1)"
+title2:  "Tutorial: Toxicit Prediction (Part 1)"
 date:   2017-08-13 17:22:00
-permalink: /neural-network-a/
+permalink: /tutorial-toxicity-prediction-part-1/
 mathjax: true
 tags: Machine-Learning Neural-Network Supervised-Learning
 categories: Machine-Learning
